@@ -249,6 +249,7 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{indentfirst}   % 首段首行缩进
+\usepackage{pdfpages}      % 插入PDF页面（封面封底）
 
 % ── 页面设置 ──────────────────────────────────────────────────────────────────
 \geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm,headheight=14pt}
@@ -272,7 +273,7 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
     linkcolor=darkgray,
     filecolor=darkgray,
     urlcolor=black,
-    pdftitle={新加坡分区历史},
+    pdftitle={新加坡各区历史},
     pdfauthor={Manus AI},
     pdfsubject={新加坡33个选区的历史与城市发展},
 }
@@ -303,19 +304,8 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
 
 \begin{document}
 
-% ── 封面 ──────────────────────────────────────────────────────────────────────
-\begin{titlepage}
-    \centering
-    \vspace*{4cm}
-    {\Huge \bfseries \textcolor{darkgray}{新加坡分区历史} \par}
-    \vspace{1.5cm}
-    {\LARGE \bfseries 基于2025年最新选区划分 \par}
-    \vspace{2cm}
-    \vspace{4cm}
-    {\Large \bfseries Manus AI 编著 \par}
-    \vfill
-    {\large 2026年6月 \par}
-\end{titlepage}
+% ── 封面（pdfpages全页插入） ───────────────────────────────────────────────────────
+\includepdf[pages=1,fitpaper=true]{/home/ubuntu/singapore_book/images/book_cover.pdf}
 
 \frontmatter
 
@@ -416,7 +406,13 @@ for part_name, constituencies in sections.items():
             body += "\\addcontentsline{toc}{section}{参考资料}\n"
             body += refs_formatted + "\n"
 
-latex_footer = "\n\\end{document}\n"
+latex_footer = r"""
+% ── 封底（pdfpages全页插入） ───────────────────────────────────────────────────────
+\backmatter
+\includepdf[pages=1,fitpaper=true]{/home/ubuntu/singapore_book/images/book_backcover.pdf}
+
+\end{document}
+"""
 
 # ── 写入文件 ──────────────────────────────────────────────────────────────────
 output_path = '/home/ubuntu/singapore_book/book_v3.tex'
