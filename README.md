@@ -4,6 +4,8 @@
 
 本书以新加坡选举边界检讨委员会（Electoral Boundaries Review Committee，EBRC）于 2025 年发布的最新选区划分为框架，系统梳理 33 个选区（18 个集选区与 15 个单选区）的历史沿革与城市发展脉络。
 
+[点击此处下载书籍 PDF](https://github.com/ayaka14732/singapore-district-history-book/raw/master/book.pdf)
+
 ## ⚠️ 重要警告
 
 本书内容由 AI 生成。虽然已经经过人工校对，仍发现诸多问题，例如地名的英译中翻译错误、历史细节表述不准确、资料整合遗漏或误读等。请读者谨慎使用本书内容，并在引用、研究或决策前自行核对原始资料。
@@ -43,8 +45,9 @@
 | 文件 | 说明 |
 |------|------|
 | `data/` | Manus agents 产生的研究数据 |
-| `generate.py` | 从研究数据生成 LaTeX 源文件的 Python 脚本 |
 | `images/` | 各选区代表性图片 |
+| `generate.py` | 从研究数据生成 LaTeX 源文件的 Python 脚本 |
+| `book.pdf` | 编译输出的 PDF 书籍 |
 
 ## 编译方法
 
@@ -53,8 +56,6 @@ python generate.py
 xelatex -interaction=nonstopmode book.tex
 xelatex -interaction=nonstopmode book.tex  # 第二次编译以修正目录
 ```
-
-编译输出的 PDF 书籍路径为 `book.pdf`。
 
 ## 数据来源
 
