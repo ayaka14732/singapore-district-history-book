@@ -1,0 +1,19 @@
+# LaTeX 编译产物
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# 旧版本文件
+book.tex
+book.pdf
+book_fixed.tex
+book_fixed.pdf
+test_compile.*
+
+# Python 缓存
+__pycache__/
+*.pyc
