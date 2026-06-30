@@ -38,18 +38,19 @@
 
 | 文件 | 说明 |
 |------|------|
-| `book_v3.tex` | XeLaTeX 主源文件 |
-| `generate_v3.py` | 从研究数据生成 LaTeX 源文件的 Python 脚本 |
+| `data/` | Manus agents 产生的研究数据 |
+| `generate.py` | 从研究数据生成 LaTeX 源文件的 Python 脚本 |
 | `images/` | 各选区代表性图片 |
 
 ## 编译方法
 
 ```bash
-xelatex -interaction=nonstopmode book_v3.tex
-xelatex -interaction=nonstopmode book_v3.tex  # 第二次编译以修正目录
+python generate.py
+xelatex -interaction=nonstopmode book.tex
+xelatex -interaction=nonstopmode book.tex  # 第二次编译以修正目录
 ```
 
-编译输出的 PDF 书籍路径为 `book_v3.pdf`。
+编译输出的 PDF 书籍路径为 `book.pdf`。
 
 ## 数据来源
 

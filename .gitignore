@@ -6,7 +6,6 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
-*.pdf
 
 # 其他文件
 test_compile.*

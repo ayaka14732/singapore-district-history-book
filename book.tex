@@ -1,0 +1,1780 @@
+\documentclass[11pt,a4paper,twoside,openany]{book}
+
+% ── 宏包 ──────────────────────────────────────────────────────────────────────
+\usepackage{xeCJK}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{indentfirst}   % 首段首行缩进
+%\usepackage{pdfpages}      % 插入PDF页面（封面封底）
+
+% ── 页面设置 ──────────────────────────────────────────────────────────────────
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm,headheight=14pt}
+
+% ── 字体设置 ──────────────────────────────────────────────────────────────────
+\setCJKmainfont[BoldFont=Noto Serif CJK SC]{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setmainfont{TeX Gyre Termes}
+
+% ── 中文首行缩进2字符 ─────────────────────────────────────────────────────────
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.3em}
+
+% ── 颜色 ──────────────────────────────────────────────────────────────────────
+\definecolor{primary}{RGB}{90,90,90}
+\definecolor{darkgray}{RGB}{40,40,40}
+
+% ── 超链接设置（所有链接黑色，参考资料URL不着色） ──────────────────────────
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkgray,
+    filecolor=darkgray,
+    urlcolor=black,
+    pdftitle={新加坡各区历史},
+    pdfauthor={Manus AI, 三日月绫香},
+    pdfsubject={新加坡33个选区的历史与城市发展},
+}
+
+% ── 标题格式 ──────────────────────────────────────────────────────────────────
+\titleformat{\part}[display]
+  {\normalfont\huge\bfseries\centering\color{darkgray}}
+  {}{0pt}{\Huge}
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries\color{darkgray}}
+  {}{0pt}{\LARGE}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+% 去掉章之间的空白页
+\renewcommand{\cleardoublepage}{\clearpage}
+
+% ── 图片设置 ──────────────────────────────────────────────────────────────────
+\graphicspath{{./images/}}
+\captionsetup{font=small,labelfont=bf,skip=4pt}
+
+% ── 页眉页脚（页眉无内容无线，页码在页脚外侧角：奇数页右下，偶数页左下） ──────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[RO,LE]{\thepage}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+
+\begin{document}
+
+% ── 封面（pdfpages全页插入） ───────────────────────────────────────────────────────
+%\includepdf[pages=1,fitpaper=true]{./images/book_cover.pdf}
+
+\frontmatter
+
+\chapter*{前言}
+\addcontentsline{toc}{chapter}{前言}
+
+本书以2025年新加坡选区范围检讨委员会（Electoral Boundaries Review Committee，EBRC）发布的最新选区划分为框架，系统梳理新加坡33个选区（18个集选区与15个单选区）的历史沿革与城市发展脉络。
+
+选区作为新加坡政治地理的基本单元，其边界的历次调整折射出城市扩张、人口迁移与政策导向的深层逻辑。从早期甘榜（Kampong）的农业聚落，到新加坡改良信托局（Singapore Improvement Trust，SIT）时期的初步城市化，再到建屋发展局（Housing and Development Board，HDB）主导的大规模新镇建设，每一个选区都是新加坡社会变迁、族群融合与规划理念演进的实体缩影。
+
+本书综合运用英文、中文、马来文等多语种历史档案与学术文献，采用城市社会学与历史地理学的专业视角，力求以高密度的史料与多维度的分析，为读者呈现一幅完整的狮城街区变迁全景图。各章末尾附有参考资料，以便读者深入查阅原始文献。
+
+\clearpage
+
+\renewcommand{\contentsname}{目录}
+\tableofcontents
+
+\mainmatter
+
+\part{第一篇：中部与中南部}
+
+\chapter{女皇镇单选区 (Queenstown SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{queenstown.jpg}
+  \caption{女皇镇组屋区全景，新加坡首个卫星新镇}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+女皇镇单选区（Queenstown SMC）是新加坡的政治选区之一。在新加坡的政治体系中，单选区通常由一名国会议员代表。女皇镇的政治历史与新加坡的整体政治发展紧密相连，尤其是在公共住房政策和城市规划方面。虽然维基百科文章中没有详细列出历次大选结果和重要政治人物，但它指出女皇镇单选区是国会选区之一，并且在2005年福尔法高地（Forfar Heights）的SERS竣工仪式上，荣誉嘉宾是内阁资政李光耀和丹戎巴葛集选区的国会议员。这表明该地区在国家政治中具有一定的关注度。女皇镇的选区划分也可能随着人口结构和城市发展的变化而调整，以适应新加坡不断变化的政治版图。
+
+\section{早期地貌与前城市化时期}
+女皇镇得名于1953年伊丽莎白二世女王加冕，以纪念这一历史事件。该地区在中文普通话中曾被称为“无尾港”（Wu-wei-gang），在福建话中则称为“Boh Beh Kang”，意为“无尽的河流”，因为当地居民无法确定流向芳林山（Hong Lim Hill）和丰兴山（Hong Heng Hill）的水源。在城市化之前，女皇镇是一片广阔的沼泽山谷，中间有一条水道。山谷两侧有两座山丘：凤兴（橡胶种植园）和凤岭（墓地，也称为Boh Beh Kang）。该地区的村庄主要居住着讲福建话和潮州话的居民，他们住在亚答屋中，种植蔬菜、水果，并饲养猪和鸡。英国军事营地布勒营（Buller Camp）也曾设在这里，直到1953年为新的住宅区建设而清理。第二次世界大战期间，巴西班让山脊成为战场，1942年2月，马来兵团与日军在此进行了激烈的巴西班让战役，尽管英勇抵抗，但最终因寡不敌众而失败。2002年，在武吉知马（Bukit Chandu）开设了一座战争博物馆，以纪念这场战役。
+
+\section{城市规划与建设进程}
+女皇镇的城市化进程始于1947年，当时新加坡房屋委员会指出住房不足问题，并提议通过在郊区建设自给自足的住宅区来分散城市人口。这一提议受到战后英国新城运动的影响。新加坡改良信托局（SIT）因其靠近成功的榜鹅公共住房计划而选择女皇镇作为住房开发地点。1953年9月27日，该地区的发展计划首次向公众公布，而女皇镇的第一个屋邨——公主屋邨（以伊丽莎白二世女王的妹妹玛格丽特公主命名）的建设已于1952年7月开始。到1953年末，首批三房式公寓已可入住。到1956年，公主屋邨（后简称公主屋邨）已建成1000多套公寓（包括一房、两房和三房单位）和68套排屋。同年10月，福尔法屋（Forfar House）举行了竣工仪式，这座14层高的建筑在当时是最高的建屋发展局公寓。女皇镇在1950年代由SIT开发，随后在1960年代由建屋发展局（HDB）继续开发，成为新加坡第一个卫星镇。大部分公寓都是低层、步入式的一房、两房或三房单位。主要的开发工作在1960年至1965年的第一个五年建设计划中进行。1952年至1968年间，共建造了19,372个住宅单位。该地区继续发展成为一个自给自足的社区，建成了包括镇中心和游泳体育综合设施在内的各种设施。镇中心于1969年全面建成，设有三家电影院、百货公司、生鲜市场、妇幼保健中心、保龄球馆和夜总会兼餐厅。游泳综合设施于1970年8月建成。在1970年代，新城的成功促使了波娜维斯达（Buona Vista）和荷兰村（Holland Village）的发展，并以女皇镇的老旧社区为模型。然而，到1980年代，该地区已成为一个成熟的社区，老年人口比例高于其他地区，年轻一代逐渐迁移到其他建屋发展局新城。
+
+\section{重要地标与建筑}
+女皇镇拥有众多重要地标和建筑，其中一些具有显著的历史意义。福尔法屋（Forfar House），即第39座，由新加坡改良信托局（SIT）于1956年建造，是一座14层高的建筑，曾是新加坡最高的住宅楼。女皇镇中心于1969年全面建成，设有三家电影院、百货公司、生鲜市场、妇幼保健中心、保龄球馆和夜总会兼餐厅。女皇镇公共图书馆是新加坡第一座社区图书馆，于1970年开放。其他重要地标包括亚历山大医院、女皇镇体育中心和游泳综合设施。在教育方面，新加坡国立大学（NUS）和新加坡理工学院（SP）也位于女皇镇规划区内。商业设施包括Anchorpoint购物中心、Alexandra Central Mall、Queensway购物中心、IKEA Alexandra、The Star Vista和Rochester Mall。此外，虎豹别墅（Haw Par Villa）也是该地区的一个著名景点。
+
+\section{人口变迁与族群结构}
+女皇镇是新加坡第一个卫星镇，因此拥有较高比例的65岁及以上老年居民。许多居民居住在较小的两房和三房单位，使其获得了“老年城镇”的称号。然而，道森（Dawson）地区，特别是公主屋邨的进一步发展，以及玛格丽特通道（Margaret Drive）的现代化改造，吸引了许多年轻的新加坡人迁入，推动了城市更新。截至1990年人口普查，女皇镇总人口为126,071人，拥有31,131个住宅单位。2020年人口普查显示，总人口为95,930人。该地区族群构成多元，早期聚落主要由福建和潮州居民组成，他们居住在亚答屋中，从事蔬菜种植、水果种植和饲养家禽。
+
+\section{近年发展与城市更新}
+女皇镇近年来经历了显著的城市更新和规划项目。2008年，建屋发展局（HDB）宣布将道森（Dawson）屋邨（包括女皇镇旧中心）作为“重塑我们的家园计划”（Remaking Our Heartland programme）的一部分进行重建。该计划旨在振兴住宅区，同时保留其历史特色和社会记忆。自2008年以来，建屋发展局还与国家文物局（NHB）合作，推出了女皇镇遗产径，其中包括图书馆和市场/小贩中心等熟悉的地标。2014年6月6日，前联邦道湿巴刹/小贩中心、女皇镇图书馆和亚历山大医院被列入受保护建筑名单。道森地区的进一步发展，特别是公主屋邨，吸引了许多年轻的新加坡人迁入。2006年，玛格丽特通道（Margaret Drive）被宣布将发展成为一个拥有现代化设施的区域，包括Penrith等新的私人公寓项目，为该历史区域增添了现代住宅选择。
+
+\section{社区记忆与空间认同}
+女皇镇作为新加坡首个卫星镇，拥有悠久的历史和丰富的社区生活。由于其较长的发展历史，该地区老年人口比例较高，许多居民居住在较小的两房和三房单位，因此女皇镇曾被称为“老年城镇”。然而，随着道森（Dawson）地区，特别是公主屋邨的进一步发展，以及玛格丽特通道（Margaret Drive）的现代化改造，吸引了许多年轻的新加坡人迁入，为社区注入了新的活力。当地社区也积极发展，例如MyQueenstown等在线社区的出现，促进了居民对地区遗产的认同感和归属感，改变了该地区的形象。这些努力旨在在城市更新的同时，保留女皇镇的历史特色和社会记忆，确保不同年龄阶层的居民都能在这里找到归属感和共享记忆。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Queenstown, Singapore. \url{https://en.wikipedia.org/wiki/Queenstown,_Singapore}
+  \item Wikipedia. 女皇镇. \url{https://zh.wikipedia.org/wiki/%E5%A5%B3%E7%9A%87%E9%95%87}
+  \item Roots.sg. Queenstown: The Queen of Singapore's Heartlands. \url{https://www.roots.gov.sg/stories-landing/stories/queenstown-the-queen-of-housing-estates/story}
+  \item URA Conservation Portal. QUEENSTOWN ESTATE. \url{https://www.ura.gov.sg/Conservation-Portal/Explore/History?bldgid=QNSTM}
+  \item National Library Board. Queenstown | Infopedia. \url{https://eresources.nlb.gov.sg/infopedia/articles/SIP_404_2005-01-18.html}
+  \item HDB. Queenstown, Singapore's First Satellite Town, to be Rejuvenated to.... \url{https://www.hdb.gov.sg/hdb-pulse/news/2023/queenstown-roh}
+  \item Zaobao. 包揽多个第一女皇镇走过岁月焕新姿. \url{https://www.zaobao.com.sg/lifestyle/trending/story20231015-1441366}
+  \item My Community. My Queenstown Heritage Trail Brochure. \url{https://mycommunity.org.sg/wp-content/uploads/2020/05/My-Queenstown-Heritage-Trail-Brochure.pdf}
+  \item CityPopulation.de. Queenstown (Planning Area, Singapore) - Population Statistics, Charts, Map and Location. \url{https://www.citypopulation.de/en/singapore/admin/central/10__queenstown/}
+  \item 8world. 女皇镇“好友聚乐部@美玲”开幕为居民提供社会和健康支持. \url{https://www.8world.com/singapore/opening-of-happy-village-at-mei-ling-2733106}
+  \item Stackedhomes. 女皇镇时隔7年的首个新盘配备完整设施——即便仅有462个单位. \url{https://stackedhomes.com/zh/penrith-condo-preview/}
+\end{enumerate}
+
+\chapter{丹戎巴葛集选区 (Tanjong Pagar GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{tanjong_pagar.jpg}
+  \caption{丹戎巴葛一带的历史街区与现代天际线}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+丹戎巴葛集选区在新加坡的政治版图中占据着举足轻重的地位，其政治历史与新加坡的建国历程紧密相连。1955年，丹戎巴葛作为单选区首次设立，新加坡开国总理李光耀先生便在此地开启了他的政治生涯。他于1955年大选中赢得丹戎巴葛议席，并在随后的60年间一直担任该选区的国会议员，直至2015年3月23日逝世。丹戎巴葛因此被视为李光耀政治生涯的起点，也是人民行动党（PAP）最早设立支部并开展政治活动的核心区域之一，对新加坡的政治发展产生了深远影响。
+
+随着新加坡选举制度的演变，丹戎巴葛在1988年被重组为集选区（Group Representation Constituency, GRC），旨在确保少数族裔在国会中拥有代表。目前，丹戎巴葛集选区是一个五人集选区，涵盖了武吉维士、亨德申-道生、摩绵-甲柏、丹戎巴葛-直落布兰雅等多个分区。在最近的2025年大选中，人民行动党（PAP）在丹戎巴葛集选区取得了压倒性胜利，以81.03\%的得票率击败了改革人民联盟（People's Alliance for Reform, PAR），再次巩固了其在该选区的强大支持基础。现任教育部长陈振声领导的人民行动党团队成功守住了这一传统票仓，显示了该选区对执政党的持续信任。
+
+在李光耀先生之后，英兰妮·拉惹（Indranee Rajah）曾是丹戎巴葛集选区的重要政治人物，她于2001年加入该选区，并在2025年转任榜鹅西集选区。目前，符策襄（Foo Cexiang）担任丹戎巴葛-中峇鲁分区的国会议员。而集选区东部的克丽达亚-金声分区则由约瑟芬·张（Josephine Teo）自2020年起担任国会议员。这些政治人物的更迭与选区划界的调整，共同构成了丹戎巴葛集选区丰富而复杂的政治地理背景，反映了新加坡政治生态的动态变化。
+
+\section{早期地貌与前城市化时期}
+丹戎巴葛（Tanjong Pagar）的名称源于马来语，意为“桩子海角”，这可能与早期渔民在此设置的奎笼（一种用木桩和横木搭建的离岸捕鱼陷阱）有关，也可能指后来在此修建的码头。根据1836年乔治·德拉姆古尔·科尔曼的地图，该地区曾被称为“Tanjong Passar”，因此“Tanjong Pagar”也可能是其讹变。在英国殖民管理之前，丹戎巴葛地区已有一个小规模的华人社区。19世纪上半叶，该地区以农业为主，种植甘蜜、肉豆蔻和水果，富有的欧洲人和华人在此购买大片土地建立种植园。1823年，斯坦福·莱佛士爵士将新加坡河西南区域划定为“华人甘榜”和“朱利亚甘榜”，吸引了大量华人与南印度移民，共同构成了该地区多元族群的早期社会面貌。
+
+武吉美拉（Bukit Merah），在马来语中意为“红山”，其得名源于20世纪50年代土地开挖时发现的红色土壤。一个流传的民间传说则将这片红土与一位名叫杭纳迪姆的男孩的血迹联系起来。根据约翰·特恩布尔·汤姆森在1844年和1846年绘制的调查地图，武吉美拉在早期被描绘为一片森林。19世纪期间，该地区的土地被“甘蜜之王”佘有进等商人购买，用于种植甘蜜和胡椒。然而，由于甘蜜加工需要大量木材作为燃料，导致森林枯竭，到19世纪80年代后，武吉美拉的农业价值逐渐丧失，转变为一片由山丘、低地和沼泽组成的区域。20世纪20年代，武吉美拉镇中心所在地曾被称为“米粉平原”，因早期福建移民在此晾晒自制米粉而得名，后来因被用作垃圾倾倒场而被称为“垃圾山”。同时，抗日英雄林谋盛的父亲在20世纪20年代也曾在此拥有一家砖厂，显示了该地区早期的工业活动。
+
+直落布兰雅（Telok Blangah）的历史可追溯至14世纪，中国商人汪大渊在其著作中提及的“龙牙门”很可能指的就是这一区域，该地曾因其独特的岩石地貌“石叻门”而闻名。汪大渊笔下的当地居民既有与华人和谐共处的描述，也有被其称为“野蛮人”的记载，暗示了该地区早期复杂的社会构成，其中海人（Orang Laut）和马来海盗是主要居民。马来语中“Telok”意为海湾，“Blangah”的词源则不甚明确，可能指烹饪锅，也可能是武吉士语中“停泊处”的古词。19世纪初，直落布兰雅成为柔佛苏丹国重要马来王室成员天猛公阿都拉曼的领地，许多马来人和海人在此建立甘榜（村落）。1820年，威廉·法夸尔注意到直落布兰雅的深水港潜力，为后来英国在此地的开发奠定了基础。
+
+\section{城市规划与建设进程}
+丹戎巴葛集选区内的城市化进程展现了新加坡从早期渔村向现代化都市转型的缩影。丹戎巴葛广场（Tanjong Pagar Plaza）的建设是该区域城市更新的重要里程碑，其住宅部分于1977年和1980年分两期竣工，作为早期城市更新计划的一部分，旨在为中央商务区注入居住活力。该综合体包含一个两层高的裙楼，内设湿巴刹和熟食中心，并由七座组屋大楼构成，体现了新加坡在城市核心区域发展混合用途项目的策略。而杜生庄（The Pinnacle@Duxton）则代表了新加坡公共住房设计的巅峰，这座屡获殊荣的50层住宅项目，是全球首个拥有两座500米长空中花园的公共住宅，其设计在2001年通过国际建筑设计竞赛选出，并于原丹戎巴葛最早的两座公共住宅地块上建成，极大地提升了该区域的居住密度与生活品质。
+
+武吉美拉（Bukit Merah）的城市化历史则更为悠久。根据1844年和1846年的地图记载，该地区最初为茂密的森林。19世纪中叶，此地曾是甘蜜和胡椒种植园的所在地，但因过度砍伐薪柴，其农业价值在19世纪80年代后逐渐衰退，转变为丘陵、低地和沼泽交错的地貌。20世纪初，武吉美拉镇中心所在地曾是“米粉平原”，后因作为垃圾倾倒场而被称为“垃圾山”。1955年，新加坡改良信托局（SIT）在此兴建了21座七层政府组屋，标志着该地区大规模公共住房建设的开端。进入20世纪60年代，随着人口的快速增长，一房至三房的高层公共住宅迅速拔地而起，以满足日益增长的住房需求，奠定了武吉美拉作为成熟组屋区的格局。
+
+直落布兰雅（Telok Blangah）的城市发展则主要由建屋发展局（HDB）在20世纪70年代初期推动。该地区被规划为新加坡的第三个新镇，总面积达365公顷，包含五个社区，坐落于花柏山（Mount Faber）的山麓地带。建屋局在此地进行了大规模的住宅建设，旨在为居民提供现代化的居住环境和完善的社区设施。这些规划和建设不仅改变了直落布兰雅的自然地貌，也为大量居民提供了可负担的住房，使其从一个历史悠久的港湾区域逐步发展成为一个功能齐全、配套完善的居住社区，与丹戎巴葛和武吉美拉共同构成了集选区内多元的城市景观。
+
+\section{重要地标与建筑}
+丹戎巴葛集选区内拥有众多具有历史意义和现代特色的地标与建筑，共同塑造了该区域独特的城市风貌。在丹戎巴葛区域，天福宫（Thian Hock Keng Temple）作为新加坡最古老的福建寺庙之一，于1973年被列为国家古迹，见证了早期华人移民的信仰与社群发展。峇峇屋（Baba House）则是一座展示土生华人历史、建筑和文化遗产的博物馆。此外，丹戎巴葛火车站（Tanjong Pagar Railway Station）作为一座建于1932年的艺术装饰风格建筑，曾是连接新加坡与马来半岛的重要交通枢纽，虽已于2011年停止运营，但其独特的建筑风格和历史意义使其成为重要的文化遗产。现代地标则包括于2016年竣工的国浩大厦（Guoco Tower），它是新加坡最高的建筑，集办公、住宅、零售于一体，象征着丹戎巴葛作为中央商务区核心的地位。
+
+武吉美拉区域的地标则以自然景观和公共设施为主。花柏山（Mount Faber）是新加坡南部海岸的最高点，山顶的花柏山公园（Mount Faber Park）提供了俯瞰城市和港口的全景视野。亨德申波浪桥（Henderson Waves）是连接花柏山公园和直落布兰雅山公园的人行天桥，以其独特的波浪形设计成为该区域的标志性建筑。此外，红山（Redhill）区域的组屋群，特别是新加坡改良信托局（SIT）在1955年建造的七层政府组屋，以及后来发展起来的武吉美拉镇中心（Bukit Merah Town Centre）和武吉美拉巴士转换站，都反映了该区域作为公共住宅区的历史演变。新加坡中央医院（Singapore General Hospital）作为新加坡历史最悠久、规模最大的医院之一，也坐落于武吉美拉区域，是重要的医疗设施。
+
+直落布兰雅区域则以其滨海风光和休闲设施而闻名。怡丰城（VivoCity）是新加坡最大的购物中心之一，集购物、餐饮、娱乐于一体，吸引了大量本地居民和游客。海滨中心（HarbourFront Centre）作为重要的交通枢纽，连接着圣淘沙岛。拉柏多公园（Labrador Park）则是一处历史悠久的自然保护区，曾是19世纪的防御前哨，如今保留了丰富的自然生态和历史遗迹。这些地标共同构成了丹戎巴葛集选区内多元且富有活力的城市景观，既有历史的沉淀，也有现代的繁华。
+
+\section{人口变迁与族群结构}
+丹戎巴葛集选区内各区域的人口变迁与族群结构，反映了新加坡作为一个多元文化社会的缩影。丹戎巴葛在19世纪早期便吸引了华人与南印度移民，形成了一个多元的早期社区。根据统计数据，丹戎巴葛次分区的人口约为5,688人，其中华人占多数，同时也有一定数量的马来族、印度族及其他族群居民，男性人口略高于女性。该区域的族群构成在很大程度上受到其作为商业中心和港口的历史影响，吸引了来自不同背景的劳工和商人在此定居，形成了独特的城市人口景观。
+
+武吉美拉规划区拥有超过15万居民，是中央区人口最稠密的区域之一。其族群构成以华人为主，约占总人口的79.9\%，其次是马来族和印度族。早期，武吉美拉曾是福建移民的聚居地，他们在此从事农业活动，如晾晒米粉，这在一定程度上塑造了该区域早期的族群面貌。随着城市化进程的推进和公共住房的建设，武吉美拉的人口结构逐渐趋于多元化，但华人社群仍保持其主导地位。直落布兰雅地区在历史上曾是马来族群的重要聚居地，但随着建屋发展局（HDB）在20世纪70年代初的大规模公共住房建设，以及旨在促进族群融合的住房政策，该地区的人口结构变得更加多元，从一个以马来族为主的区域转变为一个多民族混居的社区。这些人口变迁与族群融合的历程，共同构成了丹戎巴葛集选区丰富的人文地理图景。
+
+\section{近年发展与城市更新}
+丹戎巴葛集选区内的近年发展与城市更新项目，旨在将该区域打造为更具活力和可持续性的城市中心。丹戎巴葛区域正经历显著的转型，其中最引人瞩目的是“南部濒水区”（Greater Southern Waterfront, GSW）项目。该项目计划在2030年后启动，将丹戎巴葛港口区域改造为一个面积是滨海湾三倍的综合性空间，涵盖新的住宅、办公、休闲设施和生活中心，并沿海滨建设一条长达30公里的滨海长廊，连接拉柏多公园至滨海南花园。此外，安顺-丹戎巴葛区域也正逐步发展成为一个充满活力的多功能城市社区，预计将新增超过1,100个住宅单位，以满足城市居民对中心区域居住的需求。丹戎巴葛中心（Guoco Tower）作为新加坡最高的建筑，其建成也标志着该区域在商业和城市景观上的重大提升，并配套有15万平方英尺的园景公园，为城市居民提供了宝贵的绿色空间。
+
+武吉美拉区域的城市更新主要通过“再创我们的家园”（Remaking Our Heartland, ROH）计划进行。该计划旨在振兴旧社区，包括对武吉美拉镇中心进行翻新，增加更多绿色空间，并建设新的行人道和自行车道，以提升居民的生活品质和区域的宜居性。这些改造项目不仅改善了基础设施，也加强了社区内部的连接性，例如通过改善与铁路走廊的连接，为居民提供了更多的休闲和通勤选择。武吉美拉的持续发展，体现了新加坡在城市规划中对旧有社区活力的再造和对可持续发展理念的追求。
+
+直落布兰雅区域的城市更新虽然没有像丹戎巴葛那样大规模的港口改造项目，但其作为城市再开发的一部分，也持续关注社区的活力和居民的生活质量。尽管具体的近期大型项目信息较少，但该区域的城市发展始终与新加坡整体的城市规划政策相契合，强调在更新过程中保持社区的凝聚力。例如，在进行城市更新项目时，政府和社区组织会努力平衡现代化建设与社区认同的维护，确保居民在享受新设施的同时，也能感受到社区的归属感。这些努力共同促进了丹戎巴葛集选区内各区域的持续发展与进步。
+
+\section{社区记忆与空间认同}
+丹戎巴葛集选区内的社区记忆与空间认同，是其多元历史和持续城市发展共同塑造的复杂图景。丹戎巴葛区域以其新旧交融的独特魅力，深刻影响着居民的认同感。高耸的摩天大楼与受保护的店屋并存，形成了鲜明的对比，这种物理空间的并置也反映在居民的集体记忆中。例如，丹戎巴葛广场的组屋居民，尽管居住在市中心，但其社区生活依然围绕着湿巴刹和熟食中心展开，这些日常场景构成了他们对社区的深层记忆。杜生庄（The Pinnacle@Duxton）的居民则通过其独特的空中花园和公共空间，形成了“空中甘榜”的垂直社区概念，这种创新的居住模式在提供高密度生活的同时，也促进了邻里间的互动与归属感。
+
+武吉美拉区域的社区记忆则更多地根植于其作为早期公共住房区的历史。许多居民在此成长，对该区域的图书馆、社区中心和公共游乐场有着深厚的情感联结。这些公共空间不仅是居民日常生活的场所，更是集体记忆的载体，承载着不同年龄层居民的共同经历和情感。例如，武吉美拉镇中心的翻新和绿色空间的增加，旨在在提升区域功能性的同时，也强化居民对“家园”的认同感，通过保留和活化具有历史意义的场所，让新老居民都能找到情感的寄托。社区营造活动，如通过壁画讲述历史文化故事，也进一步加深了居民对该区域的文化认同。
+
+直落布兰雅区域的社区记忆与空间认同，则与海滨生活和自然环境紧密相连。该区域的居民，无论是长期居住的老一辈，还是新迁入的年轻家庭，都对花柏山公园、拉柏多公园等自然地标有着特殊的感情。这些地方不仅是休闲娱乐的场所，也是家庭聚会、邻里交流的重要空间。通过社区活动，如集体拼贴 Telok Blangah 的记忆、地标和瞬间，居民们共同构建和分享着对这片土地的认同。这种对自然和公共空间的共同体验，有助于形成跨年龄层的社区凝聚力，使直落布兰雅不仅仅是一个居住地，更是一个充满活力的生活共同体。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Urban Redevelopment Authority. Tanjong Pagar - Singapore - Conservation Portal. \url{https://www.ura.gov.sg/Conservation-Portal/Explore/History?bldgid=TJPA}
+  \item Wikipedia. Tanjong Pagar. \url{https://en.wikipedia.org/wiki/Tanjong_Pagar}
+  \item National Library Board. Tanjong Pagar. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=5fbe63df-0d44-4e2a-b6c2-36fab71294dd}
+  \item National Library Board. Bukit Merah. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=3cc4f4df-dcb6-40b8-b5b8-62c3be63c24c}
+  \item Wikipedia. Bukit Merah. \url{https://en.wikipedia.org/wiki/Bukit_Merah}
+  \item Pineapple Hills. From mangroves, barbarians and pirates to an important British port: join me for a walk through the astounding Malay maritime history of Telok Blangah. \url{https://www.pineapplehillsg.com/post/from-the-haunt-of-barbarians-and-pirates-to-an-important-british-port-the-astounding-history-of-tel}
+  \item Medium. Is Living in an Old Flat at Tanjong Pagar Still Worth It?. \url{https://medium.com/@jethrowritesforfun/is-the-hdb-at-tanjong-pagar-worth-staying-54bf61dd9b74}
+  \item Latest Project Launch. Pinnacle @ Duxton (D02) HDB Resale in Tanjong Pagar. \url{https://www.latestprojectlaunch.com/pinnacleatduxton.html}
+  \item National Archives of Singapore. HDB-UNDATED.pdf. \url{https://www.nas.gov.sg/archivesonline/data/pdfdoc/HDB-UNDATED.pdf}
+  \item City Population. Tanjong Pagar (Subzone, Singapore) - Population Statistics, Charts. \url{https://www.citypopulation.de/en/singapore/admin/downtown_core/10412__tanjong_pagar/}
+  \item City Population. Bukit Merah (Planning Area, Singapore) - City Population. \url{https://www.citypopulation.de/en/singapore/admin/102__bukit_merah/}
+  \item Wikipedia. Tanjong Pagar Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Tanjong_Pagar_Group_Representation_Constituency}
+  \item Business Times. Singapore election 2025: PAP wins Tanjong Pagar with 81.03\% of. \url{https://www.businesstimes.com.sg/singapore/ge2025-pap-retains-stronghold-tanjong-pagar-grc-81-03-votes}
+  \item Straits Times. Tanjong Pagar 'where it all began' for Lee Kuan Yew and Singapore. \url{https://www.straitstimes.com/singapore/tanjong-pagar-where-it-all-began-for-lee-kuan-yew-and-singapore-indranee-rajah}
+  \item Discover Tanjong Pagar. Discover Tanjong Pagar Set Up To Drive Transformation in the. \url{https://www.discovertanjongpagar.sg/dtp-set-up-to-drive-transformation/}
+  \item URA Master Plan. Rejuvenating our Downtown. \url{https://www.uradraftmasterplan.gov.sg/regional-plans/central-area/rejuvenating-our-downtown/}
+  \item Landezine International Landscape Award. TANJONG PAGAR PARK. \url{https://landezine-award.com/tanjong-pagar-park/}
+  \item HDB. OUR TOWN, BUKIT MERAH. \url{https://www.hdb.gov.sg/-/media/about-us/our-role/plan-and-design-towns/town-design-guides/Bukit-Merah-Town-Design-Guide.pdf}
+  \item Yahoo Finance. HDB estate Bukit Merah to get makeover: Refurbished town centre. \url{https://sg.finance.yahoo.com/news/hdb-estate-bukit-merah-makeover-refurbished-town-centre-green-spaces-075633834.html}
+  \item Design and Architecture. Placemaking Special: Discover Tanjong Pagar. \url{https://www.designandarchitecture.com/article/placemaking-special-discover-tanjong-pagar.html}
+  \item Instagram. The stories of Telok Blangah are best told by those who live them. \url{https://www.instagram.com/p/DZrCZBuH7GX/}
+  \item Facebook. Walking through Telok Blangah Hill Park, you'll spot one. \url{https://www.facebook.com/NEASingapore/posts/walking-through-telok-blangah-hill-park-youll-spot-one-of-the-southern-ridges-mo/1206021295005617/}
+\end{enumerate}
+
+\chapter{惹兰勿刹集选区 (Jalan Besar GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{jalan_besar.jpg}
+  \caption{惹兰勿刹一带的传统店屋建筑群}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+惹兰勿刹集选区是一个四人集选区，由几个城市郊区和新加坡中部地区组成。该集选区在1988年大选中首次设立，当时由李文献领导的人民行动党团队以62.68\%的得票率获胜。在1997年大选中，人民行动党团队以67.55\%的得票率获胜。1999年，集选区议员Choo Wee Khiang因欺诈指控辞职，但由于是集选区，未举行补选，其工作量由团队其他成员分担。 [7]
+
+2001年和2006年大选中，人民行动党团队分别以74.49\%和69.26\%的得票率获胜。2011年大选前，惹兰勿刹集选区被解散，其部分区域被重新划入丹戎巴葛集选区和单选区。然而，在2015年大选前，该集选区再次重组，大部分区域的划分变化被撤销，人民行动党团队以67.75\%的得票率获胜。2020年大选中，人民行动党团队以65.36\%的得票率获胜。2025年4月17日，人民行动党宣布Heng Chee How将在2025年大选中由Shawn Loh取代。 [7]
+
+\section{早期地貌与前城市化时期}
+甘榜格南（Kampong Glam）最初是一个繁荣的港口城镇，其名称来源于“gelam”树。1822年，斯坦福·莱佛士将该地区划拨给马来人、阿拉伯人、武吉士人、爪哇人等社区。该地区随后成为马来皇室、贸易、思想和文化生活的重要中心。在获得甘榜格南这个名字之前，该地区被称为Seduyong。1831年，由囚犯工人开发。 [2] [3]
+
+黄埔（Whampoa）地区曾是19世纪和20世纪初新加坡最著名豪宅之一——黄埔大厦的所在地，该豪宅由胡亚基（Whampoa）于1840年建造。黄埔路、黄埔河以及该住宅区都以他的名字命名。后来，该豪宅被另一位富商佘连城（Seah Liang Seah）更名为Bendemeer House。孙中山博士也曾在此居住过一段时间。 [5]
+
+\section{城市规划与建设进程}
+新加坡的公共住房历史主要分为新加坡改良信托局（SIT）时期和建屋发展局（HDB）时期。SIT在成立的三十年间仅建造了32,000套住房，于1959年解散，并于1960年被建屋发展局取代。 [4]
+
+甘榜格南于1989年被划定为保护区。1999年，甘榜格南皇宫被改建为马来文化遗产中心。 [2]
+
+哥南亚逸地区在1952年，SIT在Bendemeer Road尽头建造了SIT组屋。 [4]
+
+黄埔大厦及其30英亩的土地于1964年被政府以380万新元收购，并拆除用于住房和工业项目。建屋发展局建造了13座组屋（22-34座）和公共设施。黄埔西34座组屋，一栋12层高、312米长的组屋，于七十年代初建成（租约始于1972年1月）。 [5]
+
+\section{重要地标与建筑}
+惹兰勿刹集选区内的重要地标包括：甘榜格南的苏丹回教堂（Sultan Mosque）和马来传统文化馆（Malay Heritage Centre），以及苏丹门73号的Bendahara House和Pondok Java（一个表演爪哇传统文化艺术的剧场）。 [2] [3]
+
+黄埔地区的重要地标是黄埔西34座组屋，这是新加坡最长的组屋之一。 [5]
+
+哥南亚逸地区的重要地标包括哥南亚逸民众俱乐部（Kolam Ayer Community Club）和哥南亚逸ABC海滨（Kolam Ayer ABC Waterfront）。 [6]
+
+\section{人口变迁与族群结构}
+甘榜格南在1824年，除了马来人、阿拉伯人、武吉士人、爪哇人和巴瑶人等社区居民外，至少有三分之一的居民是华人。穆斯林移民在甘榜格南定居，形成了不同的“迷你甘榜”，如甘榜武吉士、甘榜爪哇和甘榜马六甲。 [2]
+
+\section{近年发展与城市更新}
+惹兰勿刹集选区在2026年至2030年期间将实施一项五年总体规划，其中包括100多个改进项目。该计划旨在通过增强公共空间、创建更绿色、更互联的城镇，将惹兰勿刹打造成一个充满活力和温馨的家园。该计划以“建设充满活力的可持续社区”、“培育关爱包容的城镇”和“建立牢固的纽带”为三大支柱。 [8]
+
+甘榜格南地区近年来也有城市更新项目，例如“活力场所计划”下的壁画项目，旨在通过艺术和社区参与来激活公共空间，促进社区联系和对遗产的自豪感。 [9]
+
+哥南亚逸地区近期也有多项升级，包括重新开放的哥南亚逸桥，以及新的住房开发和体育设施，旨在保持社区的活力和连接。 [6]
+
+\section{社区记忆与空间认同}
+甘榜格南（Kampong Glam）被视为一个充满共享故事的生动画布。艺术家们通过社区驱动的壁画项目，将甘榜格南不断演变的身份融入视觉叙事中，旨在视觉化其丰富的历史和充满活力的现在。该壁画旨在成为一个活生生的社区地图，邀请居民贡献他们的个人记忆和故事，同时也引导游客了解该社区。当地人和游客都会驻足欣赏壁画中描绘的熟悉场景，并分享他们对该地区的记忆。一位老年居民曾指着一幅彩绘店屋，分享她童年时的故事，引发了与路人的热烈交流。该项目旨在激发自豪感、联系感，并庆祝甘榜格南充满活力的文化遗产。该壁画项目是“活力场所计划”的一部分，旨在通过艺术家和社区利益相关者之间的共同创作，促进新加坡公共空间的活力，培养独特的城市风貌。 [9]
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Jalan Besar Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Jalan_Besar_Group_Representation_Constituency}
+  \item National Library Board. Kampong Glam. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=47db69f8-11cf-49ec-b0a8-3e16ca018bb9}
+  \item Urban Redevelopment Authority. Stories and lessons from the stakeholders of Kampong Gelam. \url{https://www.ura.gov.sg/Corporate/Resources/Ideas-and-Trends/Stories-lessons-Kampong-Gelam}
+  \item Remember Singapore. From Villages to Flats (Part 2) – Public Housing in Singapore. \url{https://remembersingapore.org/2012/05/11/from-villages-to-flats-part-2/}
+  \item Remember Singapore. Whampoa’s Majestic Long Curved HDB Block. \url{https://remembersingapore.org/2021/10/15/whampoa-block-34-hdb-flat/}
+  \item Facebook. Kolam Ayer Community Club. \url{https://www.facebook.com/KolamAyerCC/}
+  \item Wikipedia. Jalan Besar Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Jalan_Besar_Group_Representation_Constituency}
+  \item Jalan Besar Town Council. Jalan Besar GRC 5-Year Master Plan. \url{https://jbtc.org.sg/publications/jalan-besar-grc-master-plan-2026-2030/}
+  \item National Arts Council. A Particular Place: Mapping Memories in Kampong Glam. \url{https://www.nac.gov.sg/support/advocacy/oursgarts-stories/supporting-the-arts--enriching-lives/a-particular-place--mapping-memories-in-kampong-glam}
+\end{enumerate}
+
+\chapter{碧山-大巴窑集选区 (Bishan-Toa Payoh GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{bishan_toa_payoh.jpg}
+  \caption{碧山-大巴窑新镇的组屋景观}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+碧山-大巴窑集选区（Bishan–Toa Payoh GRC）自1997年成立以来，一直是人民行动党（PAP）的坚固堡垒。该集选区最初为五人集选区，在1997年、2001年和2006年的大选中均无人竞选而自动当选。2011年大选，新加坡人民党（SPP）领袖詹时中（Chiam See Tong）率队挑战，人民行动党团队以56.93\%的得票率险胜。2015年大选前，集选区范围有所扩大，纳入了马里士他（Balestier）、麦里芝水库（MacRitchie Reservoir）和诺维娜（Novena部分区域），人民行动党团队以73.59\%的得票率再次获胜。2020年大选前，选区划分再次调整，马里士他与诺维娜部分区域划入惹兰勿刹集选区（Jalan Besar GRC），波东巴西单选区（Potong Pasir SMC）的部分住宅区并入大巴窑东，而碧山北（Bishan North）和顺福（Shunfu）则被划出，组成了新的玛丽蒙单选区（Marymount SMC），碧山-大巴窑集选区因此缩减为四人集选区。人民行动党团队以67.26\%的得票率击败新加坡人民党。在2025年大选，原议员黄循财（Ng Eng Hen）和张志贤（Chong Kee Hiong）宣布退休，由交通部长兼原议员徐芳达（Chee Hong Tat）领衔，与萨吉安迪·苏帕特（Saktiandi Supaat）、蔡银洲（Cai Yinzhou）和陈丽莎（Elysa Chen）组成新团队，再次对阵新加坡人民党，并以75\%的得票率赢得选举。
+
+\section{早期地貌与前城市化时期}
+碧山-大巴窑集选区所涵盖的区域拥有丰富的早期历史。碧山（Bishan）的名称源于其前身“碧山亭”（Peck San Theng），这是一个由广东和客家社群于1870年建立的大型华人义山。该义山最初是为广东人提供安葬之地，后来也接纳了其他方言群体和种族。围绕着碧山亭，逐渐形成了一个名为“甘榜山亭”（Kampong San Teng）的村落，居民主要是墓地看守人、掘墓人以及销售祭祀用品的小贩。随着20世纪初华人移民的涌入，甘榜山亭发展成为一个拥有华人学校、传统茶馆、湿巴刹和露天电影院的繁荣社区，村落生活围绕着清明节、重阳节和中元节等祭祀活动展开。在二战期间，碧山亭义山曾是英军与日军激战的战场，许多华人在此寻求庇护。大巴窑（Toa Payoh）的名称在福建话中意为“大沼泽”（toa意为“大”，payoh意为“沼泽”），与马来语中的“paya lebar”（大沼泽地）含义相似。在城市化之前，大巴窑是一个广阔且臭名昭著的棚户区，大部分居民从事农业和养猪业，也有小贩、工厂工人等。该地区在1950年代和1960年代曾因帮派活动猖獗而被戏称为“东方芝加哥”。
+
+\section{城市规划与建设进程}
+碧山-大巴窑集选区的城市化进程是新加坡公共住房发展史上的重要篇章。大巴窑是新加坡第二个卫星镇，也是建屋发展局（HDB）在1960年成立后，第一个完全由其规划和建设的城镇。在1960年代早期，大巴窑曾是一个拥有约3,000户棚户家庭的广阔区域，大部分土地被菜农耕种。建屋发展局在1962年开始进行土地清理工作，并于1964年初启动了大规模的重建项目。1966年6月，首批居民迁入大巴窑的组屋。该镇被设计为一个自给自足的社区，拥有完善的邻里中心、商店、体育设施、公园和学校。到1995年，大巴窑经历了大规模的更新计划，许多旧组屋被新建筑取代，镇中心也得到了现代化改造。碧山地区的城市化则始于1980年代，其前身是广惠肇碧山亭义山和甘榜山亭村落。1973年，政府停止了碧山亭的土葬，并于1979年正式征用其土地用于城市发展。从1983年到1990年，碧山亭被重新开发为碧山新镇。原甘榜山亭的居民被重新安置到其他新镇，其中大部分迁往宏茂桥。碧山组屋的设计中融入了亭子式的屋顶，以纪念其作为墓地的历史。碧山和大巴窑的城市化进程都体现了新加坡政府在解决住房短缺、实现社会融合和建设现代化城市方面的努力。
+
+\section{重要地标与建筑}
+碧山-大巴窑集选区内拥有众多重要的地标和建筑，这些地标见证了该区域的历史变迁和城市发展。在碧山，广惠肇碧山亭（Kwong Wai Siew Peck San Theng）作为历史悠久的华人义山，其后来的骨灰瓮塔被誉为“死者的公寓”，而碧山组屋的亭子式屋顶设计也融入了对该历史的纪念。碧山地铁站因其建在旧墓地之上，也衍生出许多都市传说，成为一个独特的文化地标。此外，碧山活跃的社区中心和公园也是居民休闲娱乐的重要场所。在大巴窑，建屋发展局中心（HDB Hub）是该区域的核心商业和行政设施，也是建屋发展局的总部所在地，集商业、休闲和交通枢纽于一体。大巴窑镇公园（Toa Payoh Town Park）以其园林景观和标志性的27米高观景塔而闻名，是居民放松身心的好去处。大巴窑龙形游乐场（Toa Payoh Dragon Playground）是新加坡仅存的几个传统龙形游乐场之一，承载着许多新加坡人的童年记忆。区域内还有大巴窑体育场（Toa Payoh Stadium）、大巴窑游泳中心（Toa Payoh Swimming Complex）等体育设施。宗教地标包括莲山双林寺（Lian Shan Shuang Lin Monastery）、斯里维拉马卡利亚曼兴都庙（Sri Vairavimada Kaliamman Temple）、穆哈吉林回教堂（Masjid Muhajirin）和升华基督教堂（Church of the Risen Christ）等，体现了社区的多元文化和宗教融合。
+
+\section{人口变迁与族群结构}
+碧山-大巴窑集选区的人口构成反映了新加坡多元种族的特点。在城市化进程之前，碧山地区（原名甘榜山亭）的早期聚落主要由华人移民组成，特别是广惠肇（Cantonese）社群，他们围绕着碧山亭义山而居，形成了以宗族和方言群体为纽带的社区。随着时间的推移，墓地也接纳了其他方言群体和种族。大巴窑作为新加坡最早的卫星镇之一，在建屋发展局（HDB）的规划下，旨在容纳多元种族的人口。根据2024年6月的数据，大巴窑规划区总人口为139,310人，人口密度为17,000人/平方公里。虽然早期规划的人口目标为15万至20万人，但实际居住人口略少。该区域的族群构成随着新加坡整体人口政策和住房分配的变化而演变，但始终保持着不同族群和谐共处的特点。近年来，随着新组屋项目和公寓的建设，该区域也吸引了新的居民，进一步丰富了其人口结构。
+
+\section{近年发展与城市更新}
+碧山-大巴窑集选区近年来经历了显著的城市更新和发展。在2015年大选前，集选区范围有所扩大，纳入了马里士他、麦里芝水库和诺维娜部分区域。2020年大选前，选区划分再次调整，马里士他与诺维娜部分区域划入惹兰勿刹集选区，波东巴西单选区的部分住宅区并入大巴窑东，而碧山北和顺福则被划出，组成了新的玛丽蒙单选区，碧山-大巴窑集选区因此缩减为四人集选区。这些边界变化旨在更好地平衡选区人口和发展需求。在政治方面，2025年大选见证了原议员黄循财和张志贤的退休，交通部长徐芳达领衔新团队，并成功以75\%的得票率赢得选举，显示了人民行动党在该区域的持续影响力。在城市规划和建设方面，该区域持续有新的组屋（BTO）项目推出，例如在碧山-大巴窑以及新的快乐山（Mount Pleasant）区域都有新的住宅开发项目。快乐山的首批约1,500套组屋预计于10月推出，该33公顷的住宅区最终将包含约5,000套组屋。这些新项目旨在满足不断增长的住房需求，并为区域带来新的活力和居民。交通部长徐芳达指出，保持碧山-大巴窑和玛丽蒙的边界不变有助于减少区域服务的不确定性，并强调团队将继续致力于城镇的更新和设施服务的改善，以确保该区域对所有年龄段的居民来说都是一个宜居的家园。
+
+\section{社区记忆与空间认同}
+碧山地区居民的社区记忆与空间认同深受其作为广惠肇碧山亭义山（Peck San Theng）的历史影响。早期甘榜居民与墓地共存，儿童在墓地玩耍，甚至有“钓鱼”的趣事，展现了人与逝者之间独特的互动模式。这种“与死者共生”的观念，从甘榜时代延续到现代碧山镇，体现在建筑设计（如碧山组屋的亭子屋顶）和都市传说（如碧山地铁站的灵异故事）中。尽管城市化带来了现代化生活，许多前甘榜居民仍对过去的生活方式、人际关系和社区氛围怀有深深的怀旧之情，认为在现代化进程中失去了一些熟悉的东西。这种记忆不仅是历史的印记，也塑造了居民对该区域独特的空间认同。对于大巴窑，居民的记忆更多集中在其作为新加坡首批由建屋发展局（HDB）规划建设的卫星镇的经历，以及其作为早期公共住房典范的地位。虽然早期曾有“芝加哥”的称号，但随着城市更新和社区活动的开展，居民对大巴窑的认同更多来源于其作为成熟社区的稳定性和便利性，以及共同参与社区活动所建立的集体记忆。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Bishan–Toa Payoh Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Bishan%E2%80%93Toa_Payoh_Group_Representation_Constituency}
+  \item Parliament of Singapore. PARL | Constituency - Bishan-Toa Payoh GRC. \url{https://www.parliament.gov.sg/mps/constituency/details/bishan-toa-payoh-grc}
+  \item Straits Times. GE2025: PAP wins Bishan-Toa Payoh GRC with 75.21\% of vote and Marymount SMC with 70.7\% of vote. \url{https://www.straitstimes.com/singapore/politics/ge2025-pap-wins-bishan-toa-payoh-grc-with-75-21-of-vote-and-marymount-smc-with-70-7-of-votes}
+  \item Straits Times. GE2025: Retaining Bishan-Toa Payoh, Marymount boundaries helps reduce uncertainty, says Chee Hong Tat. \url{https://www.straitstimes.com/singapore/politics/ge2025-retaining-bishan-toa-payoh-marymount-boundaries-helps-reduce-uncertainty-says-chee}
+  \item Wikipedia. Toa Payoh. \url{https://en.wikipedia.org/wiki/Toa_Payoh}
+  \item NLB. Toa Payoh New Town. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=34366c06-b39d-4f93-891a-15ac39195371}
+  \item Roots.sg. Toa Payoh Heritage Trail. \url{https://www.roots.gov.sg/places/places-landing/trails/toa-payoh-heritage-trail}
+  \item NLB. Bishan. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=a0091427-7cb6-46c0-89f2-679e20330463}
+  \item HDB. Our Towns - Bishan. \url{https://www.hdb.gov.sg/about-us/our-towns-and-estates/bishan}
+  \item Roots.sg. Bishan: Living with the Dead. \url{https://www.roots.gov.sg/stories-landing/stories/bishan-living-with-the-dead/story}
+  \item Reddit. Went to bishan and felt so emotional and cried. \url{https://www.reddit.com/r/SingaporeRaw/comments/1uimoio/went_to_bishan_and_felt_so_emotional_and_cried/}
+\end{enumerate}
+
+\chapter{玛丽蒙单选区 (Marymount SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{marymount.jpg}
+  \caption{玛丽蒙一带的绿化住宅环境}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+玛丽蒙单选区（Marymount SMC）是新加坡中部的一个单议席选区，由碧山-大巴窑市镇理事会负责管理。该选区是在2020年新加坡大选前，根据选举局定期调整选区划分的原则而设立的。在2020年的大选中，人民行动党（PAP）的候选人颜晓芳（Gan Siow Huang）以70.70\%的得票率成功击败了新加坡前进党（PSP）的竞争对手，赢得了玛丽蒙单选区的议席。这次选举结果不仅是该选区成立以来的首次，也充分展现了人民行动党在该区域的强大民意基础。颜晓芳作为该选区的首位国会议员，积极致力于推动社区发展和基础设施的改善，例如在2025年4月20日她曾提及的玛丽蒙基础设施改善计划。选区划分的调整是新加坡选举制度的常态化实践，旨在确保选区人口的均衡性和代表性，而玛丽蒙单选区的设立，也反映了新加坡城市发展和人口分布变化对政治版图所产生的深远影响。
+
+\section{早期地貌与前城市化时期}
+在1960年代以前，玛丽蒙及碧山东部地区曾是广东籍居民的墓地。随着新加坡城市发展的需求，1964年该区域开始进行大规模建设，并在1960年代末期完成了所有墓地的迁移和火化，为未来的住宅和商业开发腾出空间。玛丽蒙这一地名直接来源于玛丽蒙修道院学校。1947年，仁爱修女会（Good Shepherd Sisters）从政府手中获得了位于汤申路790号的一块土地，并将其命名为“玛丽蒙”，在此建立了修道院和学校。这标志着该地区从传统的墓葬用地向教育和社区服务功能转型的开端，也为后续的城市化进程奠定了基础。早期玛丽蒙地区的地貌特征主要以未开发土地和零星的乡村聚落为主，与新加坡其他地区在城市化前的状况相似，多为农业或自然植被覆盖。
+
+\section{城市规划与建设进程}
+在1960年代以前，玛丽蒙及碧山东部地区曾是广东籍居民的墓地。1964年，随着城市发展的需要，该区域启动了大规模的建设工程，并在1960年代末期完成了所有墓地的迁移和火化，为后续的住宅和商业开发奠定了基础。与玛丽蒙相邻的大巴窑地区，在1964年由建屋发展局（HDB）启动了卫星镇的规划和建设，其中包括35,000套低成本高层公共住房单元，旨在容纳250,000居民。尽管玛丽蒙本身并非建屋发展局首批明确规划的卫星镇之一，但其为住宅和商业用途而进行的开发与当时建屋发展局在周边地区所做的广泛努力相吻合。近期，玛丽蒙地铁站附近的一个建屋发展局项目预示着该区域公共住房建设的持续发展，这表明玛丽蒙在新加坡的城市化进程中，从早期的墓葬用地逐步转变为重要的居住和商业区域，并持续进行着城市更新和发展。
+
+\section{重要地标与建筑}
+玛丽蒙地区拥有多个重要的地标和设施，其中最具代表性的是玛丽蒙修道院学校，它不仅是该区域的命名来源，也是一所历史悠久的教育机构。交通方面，环线上的玛丽蒙地铁站（CC16）是该区域重要的交通枢纽，连接着新加坡的各个主要区域。在商业设施方面，Mapex等综合性工业和办公楼宇位于地铁站附近，为轻工业和办公需求提供空间。此外，玛丽蒙社区俱乐部是居民进行社区活动和交流的重要场所，定期举办各类活动以增强社区凝聚力。玛丽蒙中心则由仁爱修女会运营，延续了玛丽蒙修道院学校的慈善精神，为弱势群体提供社会服务，是该区域重要的文化和社会服务机构。
+
+\section{人口变迁与族群结构}
+玛丽蒙作为新加坡碧山规划区的一个分区，其人口结构反映了新加坡整体的多元族群特征。根据2025年的数据，玛丽蒙次分区的人口总数约为28,760人，而2020年的人口普查显示常住人口为29,620人。该区域的居民主要由居住在政府组屋（HDB）的家庭组成，这表明其在新加坡的城市化进程中扮演了重要的居住功能。虽然没有针对玛丽蒙次分区具体族群比例的详细数据，但可以推断其遵循新加坡华人、马来人、印度人及其他族群（CMIO）的普遍构成。随着城市发展和人口流动，玛丽蒙的人口组成也在不断演变，但其作为以家庭为主的组屋区特征保持不变，为不同背景的居民提供了稳定的居住环境。
+
+\section{近年发展与城市更新}
+玛丽蒙地区近年来经历了显著的城市更新与发展。其中，靠近玛丽蒙地铁站的多个地块被规划用于新建住宅，部分住宅楼宇预计将超过40层，旨在提供更多住房选择并优化城市景观。例如，于2018年启动并于2023年竣工的JadeScape项目，在顺福路（Shunfu Road）提供了1,206个住宅单位，显著增加了该区域的居住密度和现代化水平。此外，玛丽蒙社区俱乐部积极推动“玛丽蒙关怀计划与绿色计划”，致力于社区基础设施的改善和环境的可持续发展。在交通方面，沿着玛丽蒙路进行的南北廊道（North-South Corridor）城市改造项目，以及预计分别于2030年和2032年开通的跨岛线（Cross Island Line）第一和第二阶段，将进一步提升该区域的交通便利性和连接性，预示着玛丽蒙未来将继续保持其作为新加坡中部重要居住和交通枢纽的地位。
+
+\section{社区记忆与空间认同}
+玛丽蒙的社区记忆与空间认同深受其历史发展轨迹和重要机构的影响。玛丽蒙修道院学校作为该地区的地名来源和长期存在的教育机构，在几代居民心中留下了深刻的印记，成为社区集体记忆的重要组成部分。学校不仅是教育的场所，更是社区活动的中心，其历史与发展与玛丽蒙区域的变迁紧密相连。此外，玛丽蒙社区俱乐部在凝聚居民、组织各类活动方面发挥着关键作用，例如每年举办的国庆晚宴等活动，为不同年龄层的居民提供了交流互动、共同庆祝的平台，从而强化了社区的归属感和空间认同。这些活动和机构帮助居民构建了对玛丽蒙的共同记忆，形成了独特的社区文化。随着城市更新和新居民的迁入，如何在保留原有社区记忆的同时，吸纳新元素，构建更具包容性的空间认同，是玛丽蒙未来发展面临的挑战。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Bishan-Toa Payoh Town Council. Our History. \url{https://www.btptc.org.sg/AboutUs/OurHistory}
+  \item Wikipedia. Marymount, Singapore. \url{https://en.wikipedia.org/wiki/Marymount,_Singapore}
+  \item Marymount Convent School. Our Heritage. \url{https://www.marymountconvent.moe.edu.sg/about-us/our-heritage/}
+  \item History of the Catholic Church in Singapore. Marymount. \url{https://history.catholic.sg/catholic-event/marymount/}
+  \item Urban Redevelopment Authority of Singapore (URA). Our Planning Work. \url{https://www.linkedin.com/posts/urasingapore_our-planning-work-also-involves-ensuring-activity-6732583504011513856-iAfe}
+  \item Facebook. 约6900个预购组屋单位6月推出南部濒水区项目受瞩目. \url{https://www.facebook.com/groups/SinZiTai/posts/1573053380672656/}
+  \item Tripadvisor. THE 5 BEST Things to Do in Marymount (2026). \url{https://www.tripadvisor.com/Attractions-g294265-Activities-zfn15622569-Singapore.html}
+  \item Facebook. Marymount Singapore. \url{https://www.facebook.com/205141649591359}
+  \item Tatinta. Marymount. \url{https://tatinta.com/en/diem-den/marymount/5550}
+  \item CommercialGuru. Commercial Properties for Rent - Marymount Rent, Jun 2026. \url{https://www.commercialguru.com.sg/property-for-rent/p/marymount-rent}
+  \item YouTube. Freehold Light Industrial/Office, 2 Minutes To Marymount MRT | Mapex. \url{https://www.youtube.com/watch?v=Ys1plDKf5B0}
+  \item co. 160 Commercial Property for Rent Near Marymount MRT. \url{https://www.99.co/singapore/rent/commercial/marymount-mrt}
+  \item Marymount View. Condos And Commercial Spaces In Singapore. \url{https://cos.sg/product/marymount-view/}
+  \item Facebook. Marymount Community Club. \url{https://www.facebook.com/MarymountCC/}
+  \item Caritas Singapore. Marymount Centre | Member. \url{https://www.caritas-singapore.org/caritas-singapore/marymount-centre/}
+  \item CityPopulation.de. Marymount (Subzone, Singapore) - Population Statistics, Charts. \url{https://www.citypopulation.de/en/singapore/admin/bishan/10102__marymount/}
+  \item Grokipedia. Marymount, Singapore. \url{https://grokipedia.com/page/marymount_singapore}
+  \item Wikipedia. Marymount Single Member Constituency. \url{https://en.wikipedia.org/wiki/Marymount_Single_Member_Constituency}
+  \item AsiaOne. PAP's Gan Siow Huang wins Marymount SMC with 70.70\% of votes. \url{https://www.asiaone.com/singapore/paps-gan-siow-huang-wins-marymount-smc-7070-votes-over-psps-jeffrey-khoo}
+  \item Straits Times. GE2025: PAP wins Bishan-Toa Payoh GRC with 75.21\% of vote and Marymount SMC with 70.7\% of votes. \url{https://www.straitstimes.com/singapore/politics/ge2025-pap-wins-bishan-toa-payoh-grc-with-75-21-of-votes-and-marymount-smc-with-70-7-of-votes}
+  \item Instagram. In addition to infrastructural improvements to make Marymount. \url{https://www.instagram.com/reel/DIscVfWSmSN/}
+  \item Yahoo Singapore. The development is about a five-minute walk from Marymount MRT. \url{https://www.facebook.com/YahooSingapore/posts/the-development-is-about-a-five-minute-walk-from-marymount-mrt-station-more/1313752087466187/}
+  \item Straits Times. Land plots near Marymount, Caldecott and other MRT stations being readied for new homes. \url{https://www.straitstimes.com/singapore/housing/land-plots-near-marymount-caldecott-and-other-mrt-stations-being-readied-for-new-homes}
+  \item Reddit. What is being built next to the Marymount MRT. \url{https://www.reddit.com/r/askSingapore/comments/1owoju2/what_is_being_built_next_to_the_marymount_mrt/}
+  \item Facebook. MARYMOUNT CARE PLAN \& GREEN PLAN We want to hear from. \url{https://www.facebook.com/MarymountCC/posts/marymount-care-plan-green-planwe-want-to-hear-from-you-share-with-us-your-ideas-/5875762592449274/}
+  \item ArchDaily. Henning Larsen-Led Team Unveils Master Plan for Singapore’s North-South Corridor Urban Transformation. \url{https://www.archdaily.com/1020554/henning-larsen-led-team-unveils-master-plan-for-singapores-north-south-corridor-urban-transformation/66cd9d47d393f12e97446f24-henning-larsen-led-team-unveils-master-plan-for-singapores-north-south-corridor-urban-transformation-photo}
+  \item Instagram. Marymount marked Singapore's 60th birthday at the. \url{https://www.instagram.com/reel/DNM5n9XzUTS/}
+  \item Instagram. OurMarymount (@marymountco\_). \url{https://www.instagram.com/marymountco_/?hl=en}
+\end{enumerate}
+
+\chapter{波东巴西单选区 (Potong Pasir SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{potong_pasir.jpg}
+  \caption{波东巴西组屋区街景}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+波东巴西单选区于1968年设立，在其存在的最初16年里一直由人民行动党（PAP）执政。1984年，新加坡民主党（SDP）的詹时中（Chiam See Tong）以60.28\%的得票率击败人民行动党的马宝丹（Mah Bow Tan），赢得了该选区。詹时中作为反对党议员，在此选区连任26年（1984-2011），先后代表新加坡民主党、新加坡人民党（SPP）和新加坡民主联盟（SDA），创下了当时反对党议员任期最长的记录，使波东巴西成为著名的反对党堡垒。
+
+2011年大选，詹时中转战碧山-大巴窑集选区，其妻罗丽娜（Lina Loh）代表新加坡人民党参选波东巴西，但以114票（0.72\%）的微弱劣势败给人民行动党的司徒宇斌（Sitoh Yih Pin）。司徒宇斌随后连续三届（2011、2015、2020）担任该区议员。2020年，选区边界发生变化，波东巴西单选区吸收了马林百列集选区的如新（Joo Seng）地区，同时将部分投票区划归碧山-大巴窑集选区。
+
+2025年大选，司徒宇斌退休，人民行动党派出杨陞才（Alex Yeo）参选，最终杨陞才以69.20\%的得票率击败新加坡人民党的李健铨（Williamson Lee）和人民改革联盟的林鼎（Lim Tean），成功守土。由于比达达利地区人口增加，部分选区在2025年大选前被划回新的马林百列-百德利集选区。
+
+\section{早期地貌与前城市化时期}
+波东巴西的早期历史可以追溯到20世纪初，其地名“Potong Pasir”在马来语中意为“割沙”，源于1910年至1937年间该地区盛行的采沙活动。这些采沙活动形成了与加冷河相连的四个池塘，其中两个在1968年大洪水后被保留下来。这些池塘曾为当地猴子提供食物。到20世纪50年代中期，波东巴西已成为新加坡最重要的蔬菜种植区之一，土地自19世纪30年代起便被开垦。当地农民多为广东人，他们采用传统方法成功种植蔬菜，其中水蕹菜是主要作物，一小部分农田用于种植椰子树。农民居住在亚答屋、锌皮屋和半混凝土房屋中，乡村道路状况不佳，多数农民向政府租赁土地。该地区历史上常发生洪水，村民会在伍德斯维尔山上的圣安德烈学校避难。
+
+\section{城市规划与建设进程}
+波东巴西的城市化进程在过去五十年中经历了快速而深刻的变革。在1970年代，随着政府大规模重建计划的启动，大部分村民因土地被征用而迁出。到了1980年代，公共住房项目波东巴西组屋区开始成形，建设始于1982年，首批高层组屋于1984年竣工。这些组屋独特的斜坡屋顶成为波东巴西最具辨识度的标志。尽管经历了快速的城市化，该地区仍设法保留了其田园诗般的氛围。历史上，一条名为“惹兰波东巴西”（Jalan Potong Pasir）的道路曾贯穿该区域，界定了单选区的范围，从大巴窑8巷（Lorong 8 Toa Payoh）延伸至实龙岗路上段（Upper Serangoon Road）的波东巴西1道（Potong Pasir Avenue 1）。20世纪中叶，为了改善居民生活，该地区在1950年代修建了跨越池塘的桥梁，1952年设立了乡村社区中心，并在1960年代引入了自来水和电力供应。这些基础设施的改善为后续的大规模城市化奠定了基础。
+
+\section{重要地标与建筑}
+波东巴西地区拥有多个重要地标和设施。其中，波东巴西民众俱乐部（Potong Pasir Community Club）是社区活动中心，内设多功能厅、活动室和肯德基快餐店。圣安德烈村（St Andrew's Village）是该地区重要的教育集群，包括圣安德烈小学、中学和初级学院，这些学校在2000年代重新汇聚于波东巴西，村庄于2006年8月26日正式启用。此外，波东巴西组屋独特的斜坡屋顶已成为该地区的标志性建筑。近年来，附近比达达利（Bidadari）地区的新开发项目也为波东巴西带来了新的商业和住宅设施，进一步丰富了该区域的城市景观。
+
+\section{人口变迁与族群结构}
+波东巴西的人口结构和族群历史反映了其从农业社区到现代化住宅区的演变。在20世纪中叶，该地区主要是以广东人为主的蔬菜种植农户。2024年，波东巴西分区的人口为12,920人。由于比达达利地区新开发项目的人口增长，2025年选民人数大幅增加67\%，达到30,971人。这表明该地区的人口构成正在发生变化，新居民的涌入带来了更多元化的族群构成。
+
+\section{近年发展与城市更新}
+近年来，波东巴西经历了显著的城市更新和规划项目。其中最突出的是附近比达达利（Bidadari）新住宅区的开发，这为波东巴西带来了更多的便利设施和居民。比达达利的发展导致该选区在2025年大选前的注册选民数量增加了67\%，达到30,971人。为了适应人口的显著增长和城市规划的需要，波东巴西单选区的边界在2020年和2025年进行了调整。2020年，该选区吸收了马林百列集选区的如新（Joo Seng）地区，并将其部分投票区划归碧山-大巴窑集选区。2025年，由于比达达利地区人口的进一步增加，部分选区又被划回新的马林百列-百德利集选区。这些变化反映了新加坡城市规划局（URA）总体规划对该地区发展的指导，旨在未来10到15年内优化土地利用和居民生活质量。
+
+\section{社区记忆与空间认同}
+波东巴西的社区记忆深植于其从洪水频发的乡村地区转变为现代化住宅区的历程。老一辈居民清晰地记得该地区曾是重要的采沙场，其马来语名称“Potong Pasir”意为“割沙”，以及一个以广东人为主的繁荣蔬菜种植社区。频繁且严重的洪水，特别是1969年和1978年的洪灾，是其标志性记忆，圣安德烈学校在这些艰难时期曾是村民的历史避难所。这种共同克服逆境的经历培养了居民之间强烈的甘榜精神和互助意识。
+
+尽管经历了广泛的城市发展，波东巴西仍保持着“田园诗般的氛围”和紧密的社区精神。这体现在邻里互动和居民在社区活动中乐于开放家园的轶事中，反映了高度的信任和友爱。组屋标志性的斜坡屋顶不仅是建筑特色，也是波东巴西集体记忆和身份中根深蒂固的突出视觉符号。反对党议员詹时中长期担任该区议员，也构成了社区政治记忆的重要部分，塑造了其作为前反对党堡垒的独特身份。
+
+然而，近期城市更新的快速步伐，包括附近比达达利新区的开发和新建私人住宅，为社区记忆带来了动态元素。这些变化带来了现代化的便利设施和新居民，但也引发了对传统“甘榜精神”的保留和社区不断演变特征的思考。艺术项目，如“OH! Open House”展览，试图探索这些记忆层面，从该地区作为沙丘的地质起源到其过去和现在的社会动态，突显了其历史根源与未来愿景之间持续的对话。居民们常常对更简单的时代怀有怀旧之情，即使他们拥抱当代城市生活的便利，这也促成了复杂且不断演变的空间认同。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Potong Pasir Single Member Constituency. \url{https://en.wikipedia.org/wiki/Potong_Pasir_Single_Member_Constituency}
+  \item Wikipedia. Potong Pasir. \url{https://en.wikipedia.org/wiki/Potong_Pasir}
+  \item OH! Open House. OH! Potong Pasir: Tour \& Artists. \url{https://ohopenhouse.org/OH-Potong-Pasir-Tour-Artists}
+  \item Yahoo Finance. Potong Pasir: The idyllic town imbued with community spirit. \url{https://sg.finance.yahoo.com/news/potong-pasir-idyllic-town-imbued-000000387.html}
+  \item SFCCA. 留在记忆中的波东巴西. \url{https://sfcca.sg/2025/05/12/%E7%95%99%E5%9C%A8%E8%AE%B0%E5%BF%86%E4%B8%AD%E7%9A%84%E6%B3%A2%E4%B8%9C%E5%B7%B4%E8%A5%BF/}
+  \item Navalants Blog. 波东巴西---经历过沧桑的脸庞，最美Potong Pasir. \url{http://navalants.blogspot.com/2020/04/potong-pasir.html}
+  \item Zaobao. 用艺术探索波东巴西被遗忘的空间. \url{https://www.zaobao.com.sg/culture/arts/story20160317-593627}
+\end{enumerate}
+
+\chapter{拉丁马士单选区 (Radin Mas SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{radin_mas.jpg}
+  \caption{拉丁马士一带的住宅区景观}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+拉丁马士选区的政治历史可追溯至1976年，当时它作为一个单选区（SMC）首次设立。在1976年的大选中，人民行动党（PAP）候选人戈文达萨米·奈杜（Govindasamy Naidu）以75.65\%的得票率击败工人党（WP）候选人奥斯曼·本·阿卜杜拉（Othman bin Abdullah），赢得该议席。1977年，奈杜在任内去世后，举行了补选，伯纳德·陈（Bernard Chen）代表人民行动党再次赢得选举，以70.59\%的得票率战胜工人党秘书长惹耶勒南（J. B. Jeyaretnam）。在随后的1980年大选中，人民行动党的穆罕默德·卡西姆·阿卜杜勒·贾巴尔（Mohamed Kassim Abdul Jabbar）以64.07\%的得票率获胜。1984年，人民行动党候选人赖荣昌（Lai Weng Cheong）因病退出，由庄熙国（Chng Hee Kok）接替，他以53.78\%的得票率击败工人党候选人黄康泰（Wong Hong Toy）。
+
+1988年大选前，随着集选区（GRC）制度的引入，拉丁马士单选区被废除，并并入三成员的直落布兰雅集选区。直到2011年大选前，拉丁马士才从丹戎巴葛集选区（Tanjong Pagar GRC）中重新划出，再次成为一个单选区。时任人民行动党议员陈川仁（Sam Tan）在该届大选中以67.1\%的得票率击败国民团结党（NSP）的叶耀荣（Yip Yew Weng），成功连任。2015年大选，陈川仁在与独立候选人韩慧慧（Han Hui Hui）和改革党（RP）的库马尔·阿帕武（Kumar Appavoo）的三方角逐中，以77.25\%的更高得票率再次胜出。韩慧慧因未能获得至少12.5\%的选票而失去选举保证金。
+
+2020年大选前，陈川仁宣布退休，人民行动党派出杨莉明（Melvin Yong）参选，他以74.01\%的得票率击败改革党的库马尔·阿帕武，成功守住该议席。在2025年的大选中，拉丁马士单选区再次出现三方竞争，独立候选人罗家强（Darryl Lo Kar Keong）参选，他获得了23.52\%的选票，而库马尔·阿帕武代表改革联盟（PAR）参选，得票率为7.36\%，因未达标而失去保证金。杨莉明最终以69.12\%的得票率再次当选。值得注意的是，2025年大选前，拉丁马士单选区的选区范围有所扩大，纳入了原西海岸集选区（West Coast GRC）最东部的投票区，覆盖了港湾（HarbourFront）和圣淘沙（Sentosa）的组屋区，选民人数达到25,497人。
+
+\section{早期地貌与前城市化时期}
+拉丁马士（Radin Mas）选区的名称源于爪哇民间传说中的拉丁马士阿育公主（Radin Mas Ayu）。相传，这位公主是爪哇满者伯夷王国一位王子（Pangeran Adipati Agung）的女儿，因宫廷内斗，王子携幼女逃至淡马锡（古新加坡），约在14世纪。王子在直落布兰雅一带安顿下来，并因协助当地居民抵御海盗而受到苏丹的青睐，获赐花柏山附近土地并与一位贵族女子联姻。然而，拉丁马士阿育公主最终为保护父亲免受继母及其亲属的迫害而牺牲。她的墓地位于花柏山坡，成为马来和爪哇社区敬仰的圣地（keramat），“Radin”意指爪哇贵族，“Mas”意为黄金，合起来“Radin Mas Ayu”意为“金色的美丽公主”，该地区因此得名。尽管这一传说缺乏直接的历史文献佐证，但其文化意义深远，并与新加坡发现的满者伯夷时期文物相契合，成为当地重要的文化遗产。
+
+在英国殖民时期（1819年开埠后），拉丁马士地区仍以乡村风貌为主，是直落布兰雅（Telok Blangah）山脚下重要的马来甘榜（Kampong Radin Mas）之一，其聚落可追溯至19世纪初期。该甘榜位于直落布兰雅、武吉普美（Bukit Purmei）和惹兰红山（Jalan Bukit Merah）之间的山坡地带，居民主要从事小规模农业、渔业和贸易活动，居住在亚答屋顶的木屋中，生活围绕着公共水井和道路展开。1820年代至1830年代，随着爪哇、武吉士和马来移民的涌入，该村落逐渐发展，到19世纪中叶已拥有数百人口，并以其独特的文化习俗和对拉丁马士阿育圣地的崇敬而闻名。该地区的地貌特征显著，包括起伏的山丘地形，如花柏山（Mount Faber）和直落布兰雅山（Telok Blangah Hill），海拔平均约20米，花柏山最高点可达85米。这些山丘在19世纪时多为森林和沼泽地带，沿吉宝港（Keppel Harbour）一带则为低洼海岸线。英国殖民政府曾将直落布兰雅一带的深水港口视为发展潜力区，但早期开发因红树林沼泽和海盗问题而进展缓慢。1827年，英国对新加坡南部水域进行勘测，并逐步从天猛公（Temenggong Abdul Rahman）家族手中回购或租赁土地，规划新港口建设。花柏山顶在1828年设立了旗杆，用于向进出港口的船只传递信号，而通往山顶的道路则由查尔斯·爱德华·法柏（Charles Edward Faber）于1845年开辟，花柏山也因此得名。天猛公家族，特别是天猛公阿都拉曼及其子天猛公达因·易卜拉欣（Temenggong Daeng Ibrahim），在直落布兰雅地区拥有重要的影响力，他们的宫殿和皇家墓地也坐落于此，反映了该地区在新加坡早期历史中的战略地位和多元文化交汇。
+
+\section{城市规划与建设进程}
+新加坡的城市化进程在独立后加速，其中住房发展局（HDB）扮演了核心角色。在拉丁马士及周边地区，城市规划与建设的历史可以追溯到新加坡改善信托局（SIT）时期，但真正大规模的变革发生在HDB成立之后。1960年代，HDB在林金山（Lim Kim San）的领导下，推行“五年计划”，优先建设大量低成本高密度组屋，以解决当时严重的住房短缺问题。尽管早期组屋设计注重实用性而非美观，但其建设速度极快，到1970年已建成11万套住房，显著改善了居民的居住条件。这一时期，HDB也面临着来自棚户区居民的抵触，但通过强制搬迁和提供更好的居住环境，逐步推动了城市化进程。
+
+进入1970年代，HDB启动了“新一代”组屋计划，开始在远离市中心的新镇进行大规模建设，其中包括直落布兰雅新镇。大约在1971年至1973年间，直落布兰雅新镇的建设启动，该区域被规划为综合性住宅区，旨在提供现代化的居住环境。1973年，历史悠久的拉丁马士甘榜被完全拆除，为新一轮的城市发展让路，原居民被重新安置到其他组屋区，例如实拉路（Silat Road）一带。随后，该地区被改造为现代化的住宅区，例如邻近的武吉普美（Bukit Purmei）组屋项目，占地20公顷，规划建设了2300个单位，包括878套三房式、1284套四房式和135套五房式组屋。这些组屋配备了电力、自来水和卫生设施，标志着从传统亚答屋到多层混凝土建筑的转变。到1980年代，HDB进一步推出了“Model A”等多种户型，并致力于为每个组屋区打造独特的身份，通过不同的色彩方案、立面处理和建筑材料来体现。例如，1981年至1983年间，HDB在武吉普美等小型社区继续建设，进一步完善了拉丁马士地区的城市面貌。这些规划不仅提供了住房，也通过完善的道路网络和基础设施建设，将拉丁马士与市中心及周边工业区紧密连接起来，促进了区域经济的发展和居民生活的便利化。
+
+\section{重要地标与建筑}
+拉丁马士选区及其毗邻的直落布兰雅地区拥有众多具有历史、文化和现代意义的地标与设施。其中，拉丁马士圣地（Keramat Radin Mas）是该地区最重要的文化地标之一，它纪念了传说中的爪哇公主拉丁马士阿育，是马来和爪哇社区的精神寄托，也是该地区名称的由来。该圣地在19世纪末期已被记录为砖砌结构，屋顶为亚答，显示其悠久的历史和作为朝圣地的地位。
+
+自然与休闲地标方面，花柏山（Mount Faber）和直落布兰雅山公园（Telok Blangah Hill Park）是该区域的显著特色。花柏山不仅是新加坡南部最高的山丘之一，也是连接圣淘沙岛的缆车起点，其山顶提供了俯瞰城市和港口的壮丽景色。直落布兰雅山公园则以其优美的梯田景观和亨德森波浪桥（Henderson Waves）而闻名，后者是南部山脊（Southern Ridges）步行道系统的重要组成部分，连接了多个公园，为居民提供了丰富的户外休闲空间。历史建筑方面，位于直落布兰雅山上的阿尔卡夫大厦（Alkaff Mansion）是一座具有殖民时期风格的豪宅，见证了该地区早期富裕阶层的生活。
+
+在社区和商业设施方面，拉丁马士社区俱乐部（Radin Mas Community Club）是居民进行社交和文化活动的重要场所，提供多样化的社区服务和设施。此外，该地区还拥有历史悠久的马士清真寺（Masjid Radin Mas），是当地穆斯林社区的信仰中心。虽然不在拉丁马士选区内，但紧邻的港湾中心（HarbourFront）的怡丰城（VivoCity）作为新加坡最大的购物中心之一，为拉丁马士居民提供了便捷的商业和娱乐选择。这些地标和设施共同构成了拉丁马士选区独特的城市景观和社区生活图景。
+
+\section{人口变迁与族群结构}
+拉丁马士地区的人口变迁与族群结构，深刻反映了新加坡城市化进程中的社会转型。在英国殖民早期，拉丁马士是一个以马来族群为主的甘榜（Kampong Radin Mas），其居民主要由爪哇族和马来族移民构成，他们在此从事农业、渔业和贸易活动。根据历史记载，到19世纪中叶，该甘榜已拥有数百人口，形成了独特的马来文化社区。这一时期的族群构成相对单一，以马来文化和伊斯兰信仰为核心。
+
+随着新加坡在1965年独立后大规模公共住房计划的推行，拉丁马士地区经历了显著的人口结构变化。原有的甘榜居民在1970年代被重新安置到其他组屋区，该地区随后被开发为高密度公共住房区，吸引了来自新加坡不同族群的居民迁入。例如，直落布兰雅路（Telok Blangah Drive）次分区在2025年的人口估计为18,730人，人口密度达到每平方公里12,873人，显示出高度城市化和多元族群共居的特点。这种由单一族群甘榜向多元族群公共住房社区的转变，是新加坡住房政策旨在促进种族和谐与社会融合的体现，也使得拉丁马士的族群构成变得更加多元化，反映了新加坡作为一个多民族国家的缩影。
+
+\section{近年发展与城市更新}
+近年来，拉丁马士选区及其周边地区经历了显著的城市更新与发展，旨在提升居民的生活品质和区域的整体活力。在公共住房方面，直落布兰雅灯塔（Telok Blangah Beacon）是2021年5月推出的一个预购组屋（BTO）项目，位于红山（Bukit Merah）区内，提供三房式和四房式单位，满足了居民的住房需求。此外，直落布兰雅景园（Telok Blangah Parcview）是另一个重要的组屋项目，建于高地之上，拥有1480个单位，被设计为一个自给自足的社区。
+
+在私人住宅领域，前吉宝高尔夫球场（Keppel Golf Course）沿直落布兰雅路的地段被重新开发为直落布兰雅公寓（Telok Blangah Residences），这标志着该地区私人住宅市场的发展。城市基础设施的改善也是近期发展的重点，丹戎巴葛（Tanjong Pagar）和拉丁马士地区在未来五年内将加强互联互通，包括增设连接桥的户外电梯、空中连廊、有盖走道以及组屋楼下的落客区，以提高居民出行的便利性。
+
+社区设施方面，六层楼高的拉丁马士社区俱乐部（Radin Mas Community Club）进行了升级改造，新增了表演艺术工作室和烹饪工作室等现代化设施，为居民提供了更丰富的文化和休闲选择。此外，拉丁马士托儿中心（Radin Mas Childcare Centre）引入了创新的“彩带小径”设计，模糊了室内外学习空间的界限，为儿童创造了独特的学习环境。这些项目共同展现了拉丁马士地区在城市规划和更新方面的持续努力，旨在打造一个更宜居、更具活力的社区。
+
+\section{社区记忆与空间认同}
+拉丁马士的社区记忆与空间认同，是其独特历史与多元文化交织的产物。该地区曾是重要的马来甘榜，其早期居民以爪哇族和马来族为主，他们在此生活、繁衍，形成了深厚的社区纽带。传说中的拉丁马士阿育公主的故事，作为该地区名称的由来，深深植根于当地居民的集体记忆中，尤其是在马来和爪哇社区，她的圣地（Keramat Radin Mas）至今仍是重要的文化象征和精神寄托。这种对历史人物和事件的共同记忆，构成了社区认同的核心。
+
+随着1970年代大规模城市化进程的推进，原有的甘榜被拆除，取而代之的是高密度组屋。尽管物理环境发生了巨大变化，但许多老居民，特别是老年群体，仍然保留着对甘榜时代的生活记忆，这些记忆通过口述历史、家庭传承和社区活动得以延续。例如，新加坡国立大学李光耀公共政策学院在2011年的一项研究中指出，拉丁马士是新加坡的一个缩影，拥有老龄化人口，这表明老年居民在塑造社区记忆和空间认同方面发挥着关键作用。他们对旧日街巷、邻里关系和生活方式的怀念，为新一代居民提供了了解社区历史的窗口。
+
+当代拉丁马士的社区认同也体现在其活跃的社区活动和设施中。拉丁马士社区俱乐部作为重要的社区中心，通过举办各类文化、艺术和社交活动，促进了不同年龄和族群居民之间的互动与融合。社区艺术项目，如在连接拉丁马士小学和圣特丽莎女校的天桥上展示的艺术品，也旨在通过视觉形式强化社区的归属感和集体记忆。这些努力共同构建了拉丁马士独特的空间认同，使其在快速发展的城市环境中，依然保留着丰富的历史底蕴和充满活力的社区精神。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item National Library Board. Radin Mas housing estate, 1982. \url{https://www.nlb.gov.sg/main/image-detail?cmsuuid=c85e355d-aa65-41d8-a47d-7d4e0839d252}
+  \item Wikipedia. Radin Mas Single Member Constituency. \url{https://en.wikipedia.org/wiki/Radin_Mas_Single_Member_Constituency}
+  \item Wikipedia. Radin Mas Constituency. \url{https://en.wikipedia.org/wiki/Radin_Mas_Constituency}
+  \item Elections Department Singapore. 2025 Parliamentary General Election Results. \url{https://www.eld.gov.sg/finalresults2025.html}
+  \item The Online Citizen. GE2025 Results: PAP wins Radin Mas SMC with 69.17\% of the vote. \url{https://www.theonlinecitizen.com/2025/05/04/ge2025-results-pap-wins-radin-mas-smc-with-69-17-of-the-vote}
+  \item Pineapple Hills. From mangroves, barbarians and pirates to an important British port: join me for a walk through the astounding Malay maritime history of Telok Blangah. \url{https://www.pineapplehillsg.com/post/from-the-haunt-of-barbarians-and-pirates-to-an-important-british-port-the-astounding-history-of-tel}
+  \item History Delocalized. The Many 'Fabers' of 'Telok Blangah Hill'. \url{http://historydelocalized.blogspot.com/2021/01/the-many-fabers-of-telok-blangah-hill.html}
+  \item Google Sites. The Bukits of Singapore - Telok Blangah Hill. \url{https://sites.google.com/view/sgbukits/telok-blangah-hill}
+  \item Grokipedia. Radin Mas, Singapore. \url{https://grokipedia.com/page/radin_mas_singapore}
+  \item City Population. Telok Blangah Drive (Subzone, Singapore). \url{http://www.citypopulation.de/en/singapore/admin/bukit_merah/10213__telok_blangah_drive/}
+  \item BTOHQ. Telok Blangah Beacon | BTO Project Progress Update. \url{https://www.btohq.com/bto-project-spec/telok-blangah-beacon}
+  \item Telok Blangah Residences. Home. \url{https://www.telokblangah-residences.com/}
+  \item Straits Times. Tanjong Pagar and Radin Mas to get better connectivity in next five years. \url{https://www.straitstimes.com/politics/tanjong-pagar-and-radin-mas-to-get-better-connectivity-in-next-five-years}
+  \item Straits Times. Radin Mas Community Club offers glimpse into future as Singapore's first smart CC. \url{https://www.straitstimes.com/singapore/radin-mas-community-club-offers-glimpse-into-future-as-singapores-first-smart-cc}
+  \item Radin Mas Primary School. Radin Mas Community Art Project. \url{https://www.radinmaspri.moe.edu.sg/radin-mas-community-art-project/}
+  \item Singapore Public Housing. History of HDB. \url{https://singaporepublichousing.fandom.com/wiki/History_of_hdb}
+\end{enumerate}
+
+\chapter{哥本峇鲁单选区 (Kebun Baru SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{kebun_baru.jpg}
+  \caption{哥本峇鲁一带的绿化社区环境}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+哥本峇鲁单选区（Kebun Baru SMC）于1980年从宏茂桥单选区中划出并首次设立，由人民行动党（PAP）的林文兴（Lim Boon Heng）担任议员[1][5]。在1988年大选后，随着集选区（GRC）制度的引入，哥本峇鲁单选区于1991年被废除，并入新成立的宏茂桥集选区[1][5]。在此期间，哥本峇鲁区域成为宏茂桥集选区德义区的一部分，由李显龙（Lee Hsien Loong）领导[5]。2015年，选区边界调整将哥本峇鲁从宏茂桥集选区划入义顺集选区[5]。在2020年大选前，选举区划界委员会建议将哥本峇鲁重新划设为独立的单选区，并由人民行动党的郭献川（Henry Kwek）以62.92\%的得票率击败新加坡前进党（PSP）的Kumaran Pillai赢得该席位[1][5]。在2025年大选中，郭献川以68.5\%的得票率再次当选，击败了PSP的Tony Tan[1]。
+
+\section{早期地貌与前城市化时期}
+哥本峇鲁（Kebun Baru）的名称源于马来语，意为“新花园”，其前身是甘榜哥本峇鲁（Kampong Kebun Baharu），一个在1965年新加坡独立前以农业活动为主的乡村聚落[2][3]。该地区曾是宏茂桥广阔乡村景观的一部分，遍布甘榜、鱼塘和养猪场，这些都反映了早期定居者的农耕生活方式[5]。在城市化进程之前，该区域的土地主要用于农业，居民过着传统的甘榜生活。随着新加坡的快速发展，这些乡村地区逐渐被纳入城市规划，为后来的住宅和基础设施建设奠定了基础。哥本峇鲁的命名也反映了其从旧有乡村风貌向“新花园”城市环境的转变，承载着历史的记忆和对未来的展望。
+
+\section{城市规划与建设进程}
+哥本峇鲁的城市化进程与新加坡独立后的住房发展政策紧密相连。在1960年代和1970年代，为了解决住房短缺问题并推动现代化，新加坡政府通过建屋发展局（HDB）积极推行公共住房计划[5]。哥本峇鲁所在的宏茂桥地区，包括甘榜哥本峇鲁在内的传统甘榜，被逐步清理，居民被安置到新建的组屋中[5]。1973年，建屋发展局宣布将宏茂桥，包括哥本峇鲁，建设成为一个自给自足的新市镇，配备住宅、商业和娱乐设施[5]。到1976年，宏茂桥已建成超过9,200套组屋，市镇中心也为进一步的基础设施建设做好了准备[5]。哥本峇鲁在这一时期成为建屋发展局建筑创新的试验田[5]。1984年，时任哥本峇鲁国会议员的林文兴提出了市镇理事会（Town Council）的概念，旨在加强居民对屋邨管理的参与，这促成了1986年宏茂桥市镇理事会作为试点成立，并最终影响了1988年《市镇理事会法案》的制定[5]。这一系列举措标志着哥本峇鲁从乡村甘榜向现代化、规划完善的住宅区的全面转型。
+
+\section{重要地标与建筑}
+哥本峇鲁区域内拥有多个重要地标和设施，反映了其社区生活和城市发展。其中，美华巴刹与熟食中心（Mayflower Market and Food Centre）是居民日常购物和餐饮的重要场所[2]。哥本峇鲁社区俱乐部（Kebun Baru Community Club）是社区活动的中心，于2018年进行了翻新，提供运动、学前教育、老年护理和代际活动空间[3]。绿地方面，宏茂桥市镇公园西（Ang Mo Kio Town Garden West）是一个占地21公顷的公园，提供蜿蜒的小径、跑步道和山顶广场，是居民休闲娱乐的好去处[5]。毗邻的碧山-宏茂桥公园（Bishan-Ang Mo Kio Park）则是一个更大的城市公园，拥有自然化的加冷河，增强了该区域的自然景观和生物多样性[5]。此外，哥本峇鲁观鸟俱乐部（Kebun Baru Birdsinging Club）是新加坡最大的观鸟场所，也是该区域独特的文化地标[5]。
+
+\section{人口变迁与族群结构}
+截至2024年，哥本峇鲁的总人口为21,980人，其中男性占46.6\%（10,240人），女性占53.4\%（11,740人）[2]。该区域的人口结构以公共住房居民为主，2024年有18,850名居民居住在组屋（85.8\%），1,790名居民（8.1\%）居住在公寓和其他私人住宅，另有1,140名居民（5.2\%）居住在有地房产[2]。族群构成方面，华族居民占绝大多数，为18,710人（82.7\%），马来族居民为1,820人（8.0\%），印度族居民为1,590人（7.0\%），其他族群为510人（2.3\%）[5]。历史上，哥本峇鲁从1970年代的甘榜居民安置开始，人口稳步增长，从一个新开发的住宅区发展成为新加坡城市化进程中一个人口密集的城市分区。
+
+\section{近年发展与城市更新}
+近年来，哥本峇鲁经历了显著的城市更新和发展。2018年，哥本峇鲁社区俱乐部（Kebun Baru Community Club）进行了全面翻新并重新开放，提供了现代化的设施，包括休息区、屋顶烧烤炉、体育和学前教育设施，以及一个老年护理中心，旨在创建一个关爱和包容的社区[3]。在住宅方面，新的HDB项目如Kebun Baru Edge融入了生态友好设计，例如屋顶花园、可回收垃圾槽和ABC Waters设计元素，以促进可持续城市生活[5]。此外，社区还致力于提升居民的生活品质，例如通过“银色升级计划”（Silver Upgrading Programme）对老旧组屋进行升级改造，并建设连接便利设施的连道，使居民出行更安全、凉爽和便捷[4]。这些发展项目旨在满足居民不断变化的需求，并提升整个区域的宜居性。
+
+\section{社区记忆与空间认同}
+Kebun Baru的社区记忆与空间认同深受其从乡村甘榜到现代化住宅区的转变影响。居民对该区域的认同感根植于其“新花园”的马来语名称，象征着宁静与繁荣。社区活动和设施在塑造居民记忆方面扮演了重要角色。例如，建于1980年代的哥本峇鲁观鸟俱乐部是新加坡最大的观鸟比赛和展示场所，不仅是当地的标志性地标，也承载着许多居民的共同记忆，成为社交和友谊的中心。社区中心（Kebun Baru Community Club）在2018年进行了翻新，提供了运动、学前教育、老年护理和代际活动空间，进一步促进了社区凝聚力。此外，社区还积极推行“关爱和包容”的理念，通过老年痴呆症友好计划、青年与老年人共同参与的活动以及志愿服务机会，营造了一个互助友爱的邻里环境。这些举措不仅增强了居民的归属感，也让不同年龄层的居民对该区域形成了积极的空间记忆，认为这是一个充满活力、关怀备至的家园。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Kebun Baru Single Member Constituency - Wikipedia. \url{https://en.wikipedia.org/wiki/Kebun_Baru_Single_Member_Constituency}
+  \item Kebun Baru - Wikipedia. \url{https://en.wikipedia.org/wiki/Kebun_Baru}
+  \item Our Heritage - Our Kebun Baru. \url{https://kebunbaru.pa.gov.sg/about-us/our-heritage/}
+  \item Ang Mo Kio Town Council on Instagram: "   New Community ...". \url{https://www.instagram.com/p/DG0EXHNL7m/}
+  \item Kebun Baru — Grokipedia. \url{https://grokipedia.com/page/kebun_baru}
+  \item 哥本峇鲁单选区 - 维基百科. \url{https://zh.wikipedia.org/zh-cn/%E5%93%A5%E6%9C%AC%E5%B3%87%E9%B2%81%E5%8D%95%E9%80%89%E5%8C%BA}
+  \item Discover Kebun Baru. \url{http://kbmcv2010.blogspot.com/p/about-kebun-baru.html}
+\end{enumerate}
+
+
+\part{第二篇：东部}
+
+\chapter{东海岸集选区 (East Coast GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{east_coast.jpg}
+  \caption{东海岸公园海滨景观}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+东海岸集选区（East Coast GRC）的政治历史经历了显著的演变。实乞纳（Siglap）在1955年立法议会选举中曾是樟宜乡村选区的一部分。从1959年至1991年，实乞纳是一个单选区，在此期间，该席位一直由人民行动党（PAP）的议员持有，包括Sahorah binte Ahmad（1959-1963年）、Abdul Rahim bin Ishak（1963-1984年）和Abdullah Tarmugi（1984-1991年）。1991年，实乞纳被并入勿洛集选区（Bedok GRC），该集选区于1996年更名为东海岸集选区。目前的东海岸集选区包括勿洛（Bedok）、樟宜-四美（Changi–Simei）、凤山（Fengshan）、甘榜菜市（Kampong Chai Chee）和如切（Joo Chiat）等分区。近年来，东海岸集选区一直是竞争激烈的选区。在2020年大选中，工人党（WP）在该选区取得了显著进展。在2025年大选中，人民行动党团队以58.76\%的得票率击败工人党，相比2020年大选的53.39\%有所上升。2025年大选前，新加坡的选区划分进行了重大调整，影响了西海岸、东海岸和马林百列等集选区。选举局检讨委员会建议设立33个选区，其中包括18个集选区。
+
+\section{早期地貌与前城市化时期}
+东海岸集选区及其组成区域拥有悠久而丰富的早期历史。东海岸路（East Coast Road）早在1828年的Philip Jackson中尉的城镇规划中就被划定，但直到1902年才建成，连接了加东（Katong）和勿洛（Bedok），成为加东地区文化和商业的主干道。勿洛（Bedok）位于新加坡东部，其名称可能源于马来语“bedoh”（鼓），用于清真寺召集祈祷，或指“biduk”（小渔船）。1604年的地图中已提及勿洛河（Sungei Bedok），表明其地名历史悠久。勿洛最初被称为Tanah Merah Kecil，在Raffles时代Franklin和Jackson的地图中也标示了“Sungei Badok”位于“小红崖”附近。惹兰森巴丹（Jalan Sempadan）的墓地安葬着前莱佛士时代的廖内（Rhio）和婆罗洲（Bornean）居民。四美（Simei）的名称“四美”源于汉语拼音，指代中国古代四大美女，其街道最初也以她们命名。四美在1980年代的“讲华语运动”期间，由方言名称“Soo Bee”改为现在的名称。凤山（Fengshan）虽然在1980年代从勿洛新镇中划分出来，但其历史更为悠久，与1902年由汕头移民建立的洪山庙（Hong San Temple）紧密相关，该庙是早期村民的中心，并催生了洪山公学。菜市（Kampong Chai Chee）最初是一个以蔬菜市场闻名的农村地区，在1920年代形成了以华人为主的甘榜。实乞纳（Siglap）在1846年的地图中已有记载，其名称可能源于马来语“gelap”（黑暗），指该地区茂密的树木或一次日食。Tok Lasam被认为是实乞纳甘榜的创始人，该地区曾是渔村、椰子种植园，甚至有海盗村落的记载。19世纪中叶，实乞纳以椰子和果树种植园闻名，法兰克尔家族（Frankel family）在此拥有大量种植园，并以歌剧命名了该地区的道路。
+
+\section{城市规划与建设进程}
+东海岸集选区及其组成区域的城市化进程在新加坡的城市发展中扮演了关键角色，尤其是在SIT（新加坡改良信托局）和HDB（建屋发展局）时期。勿洛（Bedok）的城市化始于1966年东海岸填海计划的第一阶段，部分区域被填海造地。1971年8月，勿洛被纳入大规模的东海岸发展项目。到1976年3月，HDB已在该地区建造了4,600套组屋。1994年勿洛发展指导计划（Bedok Development Guide Plan）公布时，勿洛已是一个成熟的住宅区，并计划再建造16,500套住房。2013年总蓝图草案进一步规划了勿洛的振兴，包括新建小贩中心、市镇广场和综合社区设施。四美（Simei）在1980年代城市化之前是一个广阔、人口稀少的农村地区。它是HDB“设计与建造计划”的早期试点之一，该计划旨在通过机械化建筑技术快速高效地完成公共住房项目。1984年12月，四美公共住房项目的建设启动，首批16栋组屋（6,120套）于1986年末完工。至少4,592套组屋采用了预制建筑方法，将施工时间缩短了30\%。2009年，四美推出了公寓式组屋Parc Lumiere，反映了当时住房市场的蓬勃发展。东海岸公园（East Coast Park）是新加坡最大的公园，完全建在填海土地上，于1970年代开放，是东海岸填海项目的重要组成部分。该公园的开发始于1971年，旨在为公众提供休闲娱乐场所，并不断扩建和升级，增加了游泳泻湖、自行车道、水上中心和各种餐饮设施。实乞纳（Siglap）的填海工程早在1956年就开始，1964年至1970年的东海岸填海项目进一步扩大了其海岸线，导致渔村被取代，但也在填海土地上建设了东海岸公园大道（ECP）、东海岸公园和马林百列（Marine Parade）公共住房区，以及Laguna Park、Lagoon View和Neptune Court等住宅项目。菜市（Kampong Chai Chee）的重建始于1970年代初，涉及工业化和公共住房建设，成为东部地区最早的城市住宅区之一。凤山（Fengshan）在1980年代从勿洛新镇中划分出来，其发展也与HDB的规划紧密相连，许多居民从旧村落迁入新组屋。这些区域的城市化历史共同描绘了东海岸地区从乡村渔村和种植园向现代化、高密度住宅和休闲区的转型。
+
+\section{重要地标与建筑}
+东海岸集选区及其组成区域拥有众多重要的地标、建筑和设施。加东（Katong）地区的地标包括加东购物中心（Katong Shopping Centre）、奥迪安加东购物中心（Odeon Katong Shopping Complex）、东门大厦（Eastgate building）、加东广场（Katong Plaza）、112加东（112 Katong，前身为加东商城）、派拉蒙购物中心（Paramount Shopping Centre）、派拉蒙酒店（Paramount Hotel，现更名为东村酒店）、大美华乐斯酒店（Grand Mecure Roxy Hotel，前身为世纪乐斯公园酒店）、天宝大厦（Tembeling Centre）和圣家堂（Church of the Holy Family）。勿洛（Bedok）的重要地标有勿洛码头（Bedok Jetty）、勿洛蓄水池公园（Bedok Reservoir Park）、新樟宜路上段（New Upper Changi Road）和万佛林寺（Man Fatt Lam Temple）。未来规划还包括新的小贩中心、市镇广场以及包含社区俱乐部、体育设施、图书馆和综合诊疗所的综合大楼。四美（Simei）的主要设施包括东城购物中心（Eastpoint Mall）、圣安德鲁社区医院（St Andrew’s Community Hospital）、樟宜综合医院（Changi General Hospital）、尚育小学（Changkat Primary School）、尚育中学（Changkat Changi Secondary School）、慈光学校（Metta School）、工艺教育学院东区学院（ITE College East）、四美地铁站（Simei MRT station）和四美公园连道（Simei Park Connector）。东海岸公园（East Coast Park）的地标有勿洛码头、国家帆船中心（National Sailing Centre）、东海岸人工湖美食中心（East Coast Lagoon Food Centre）、Parkland Green、自行车公园（Cyclist Park）和Coastal PlayGrove。凤山（Fengshan）的地标包括新加坡邮政实巴丹勿洛（Singapore Post Simpang Bedok）和凤山小学（Fengshan Primary School）。菜市（Kampong Chai Chee）有菜市市场、阿安沙回教堂（Masjid Al-Ansar）、新加坡防痨协会康护乌塔拉姆医疗中心（Singapore Anti-Tuberculosis Association CommHealth Uttamram Medical Centre）和平仪中学（Ping Yi Secondary School）。实乞纳（Siglap）则有实乞纳中心（Siglap Centre）、职总平价实乞纳新市场（Fairprice Siglap New Market）、Siglap V、多所教堂和寺庙，以及多所学校，如维多利亚初级学院（Victoria Junior College）和维多利亚学校（Victoria School）。
+
+\section{人口变迁与族群结构}
+东海岸集选区的人口构成和变迁历史展现了其独特的社会面貌。历史上，东海岸路（East Coast Road）沿线的加东（Katong）地区主要是土生华人（Peranakan）和欧亚裔（Eurasian）的聚居地。勿洛（Bedok）是新加坡人口最多的地区之一，截至2013年，居民人数达到294,100人。四美（Simei）截至2015年有42,710名居民，其公共住房政策中包含族群配额。实乞纳（Siglap）在1970年代主要是一个中上阶层和中产阶级的住宅区，约75\%的居民属于这两个群体。1980年代，实乞纳选区拥有岛上最高比例的白领工人，其中约40\%是专业人士、行政人员或经理。历史上，实乞纳的渔村居民主要是苏门答腊渔民，也存在华人、马来人村落，20世纪初还有日本渔村。这些数据反映了东海岸地区从早期多元族群的沿海聚落，逐步演变为现代化、高密度且经济结构多元的住宅区。
+
+\section{近年发展与城市更新}
+东海岸集选区及其组成区域近年来经历了显著的城市更新和发展项目。整个东海岸集选区推出了“东海岸计划（2020-2025）”，旨在提供更好的住房、更强的支持和更紧密的社区联系。勿洛（Bedok）根据2013年总蓝图草案正在进行振兴，计划建设新的小贩中心、市镇广场以及包含社区俱乐部、体育设施、图书馆和综合诊疗所的综合大楼。四美（Simei）在2009年推出了公寓式组屋Parc Lumiere，市场反响热烈。东城购物中心（Eastpoint Mall）在2013-2014年进行了大规模翻新。圣安德鲁社区医院（St Andrew’s Community Hospital）于2005年迁至四美，毗邻樟宜综合医院（Changi General Hospital）。工艺教育学院东区学院（ITE College East）于2005年启用。樟宜-四美地区也被纳入国家自行车计划，新增了自行车道。东海岸公园（East Coast Park）在2003年进行了大规模升级，包括扩建、翻新美食中心和增加餐饮店。后续发展包括增设九重葛花园（Bougainvillea Garden）、滑水公园Ski360（现已关闭），并于2005年宣布了1.6亿新元的改造计划。Big Splash于2008年重新开放为Playground @ Big Splash。Marine Cove在2016年重新开发并开放。Parkland Green（2014年）、自行车公园（2019年）和Coastal PlayGrove（2021年）等新设施也已建成。公园还计划与滨海湾东花园（Bay East Garden）连接。实乞纳（Siglap）自1990年代以来，高档零售店、餐馆和私人公寓不断涌现，成为“雅皮士聚集地”。实乞纳中心（Siglap Centre）购物中心于1993年开业。汤申-东海岸线（Thomson-East Coast Line）上的实乞纳地铁站于2024年6月开通。该地区还设有实乞纳公园连道（Siglap Park Connector）和实乞纳线性公园（Siglap Linear Park）。
+
+\section{社区记忆与空间认同}
+东海岸集选区及其组成区域的居民拥有丰富而多样的空间记忆与认同。在大规模填海造地之前，许多居民，特别是年长一辈，对沿海的甘榜生活怀有深厚情感。例如，Bernard Han回忆起在马林百列（Marine Parade）等地区，海岸线就在家门口，孩子们在海边度过了独特的童年。Bedok Corner的居民Ronald Ho则描述了在甘榜勿洛（Kampong Bedok）丰富多彩的童年，包括爬树、采摘水果和在沙矿中游泳。前实乞纳（Siglap）居民Rita Fernando也记得甘榜里强大的社区意识和种族和谐，邻里之间互相分享。在菜市（Chai Chee），居民们通过菜市场建立了紧密的联系，Yeo Hong Eng回忆起邻里之间共享水井等资源。填海造地项目虽然改变了地貌和居民生活，但也带来了新的机遇和居住环境。许多居民搬入菜市和勿洛新镇的组屋后，生活条件得到改善，例如Mah Eng Siong和Keith Tan都对新居的便利和视野感到满意。对于年轻一代，东海岸公园（East Coast Park）承载着重要的空间记忆，Cassandra Lee深情回忆起与父亲在公园骑行的经历。社区在面对挑战时也展现出韧性，如Felicia Goh回忆勿洛低洼地区频繁的洪水，居民们将家具搬到楼上，孩子们则将此视为玩耍的机会。Aloysius Leo De Conceicao则讲述了1962年甘榜实乞纳火灾时，邻里如何团结一致协助消防队。节庆和娱乐活动也是社区记忆的重要组成部分，勿洛海滩曾是度假、野餐、钓鱼和船只比赛的中心，T. F. Hwang回忆起1950年代勿洛-实乞纳年度船只比赛的盛况。正在进行的“重塑我们的家园”（Remaking Our Heartlands）项目通过整合现代设施和文化遗产，确保该地区丰富的历史与发展并存，并通过勿洛文化遗产径（Bedok Heritage Trail）鼓励人们探索当地历史。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Thulaja, Naidu Ratnala. East Coast Road. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=e60f9070-a3df-4f90-94dc-7acd9b81b1fc}
+  \item Cornelius-Takahama, Vernon. Bedok. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=d1f526c4-5a90-4a2f-b56f-8384b44cb6c7}
+  \item Kong, Yen Lin. Simei. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=bbba152b-d497-4239-9b62-329d39ad9572}
+  \item Wikipedia. East Coast Park. \url{https://en.wikipedia.org/wiki/East_Coast_Park}
+  \item Roots.sg. Fengshan Estate. \url{https://www.roots.gov.sg/places/places-landing/Places/landmarks/bedok-trail/fengshan-estate}
+  \item Roots.sg. Chai Chee. \url{https://www.roots.gov.sg/places/places-landing/Places/landmarks/bedok-trail/chai-chee}
+  \item Koh, Jaime, Ho, Stephanie. Siglap. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=a9e727aa-c3b4-41a1-969c-1ac718843d34}
+  \item Wikipedia. Siglap. \url{https://en.wikipedia.org/wiki/Siglap}
+  \item Roots.sg. Bedok Heritage Trail: A Glimpse of the Seaside Town of the Past. \url{https://www.roots.gov.sg/stories-landing/stories/bedok-heritage-trail/story}
+  \item Parliament of Singapore. East Coast GRC. \url{https://www.parliament.gov.sg/mps/constituency/details/east-coast-grc}
+  \item Straits Times. GE2025: PAP wins 58.76\% of votes against WP in East Coast, takes Mountbatten with 63.84\%. \url{https://www.straitstimes.com/singapore/politics/ge2025-pap-wins-58-76-of-votes-against-wp-in-east-coast-takes-mountbatten-with-63-84}
+  \item Channel News Asia. GE2025: Major boundary changes to West Coast, East Coast and Marine Parade GRCs. \url{https://www.channelnewsasia.com/singapore/ge2025-west-coast-east-coast-marine-parade-grc-electoral-boundary-changes-general-elections-4992546}
+  \item Our East Coast. The Plan - East Side, Best Side. \url{https://oureastcoast.sg/the-plan.html}
+\end{enumerate}
+
+\chapter{马林百列-勿拉德高地集选区 (Marine Parade-Braddell Heights GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{marine_parade.jpg}
+  \caption{马林百列一带的海滨住宅区}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+马林百列集选区于1988年成立，由时任副总理吴作栋领导，人民行动党自成立以来一直掌控该选区。吴作栋自1976年首次当选马林百列单选区议员后，便一直是该地区的重要政治人物。1992年，马林百列集选区举行了一次补选，尽管工人党领袖惹耶勒南曾表示有意参选，但最终未提交提名文件，人民行动党在与新加坡民主党、国民团结党和新加坡正义党的竞争中获胜。2011年和2015年，人民行动党团队分别在国民团结党和工人党的挑战下赢得选举。2020年大选，人民行动党再次击败工人党。2023年，时任国会议长陈川仁因个人原因辞去议员职务。在2025年大选前，马林百列集选区被废除，其部分区域（如柴厝和如切）划入东海岸集选区，其余部分与蒙巴登、波东巴西单选区的部分区域以及整个麦波申单选区合并，组成了新的马林百列-勿拉德高地集选区。
+
+\section{早期地貌与前城市化时期}
+马林百列-勿拉德高地集选区所涵盖的区域拥有丰富的早期历史。在填海造地之前，马林百列的海岸线远比现在靠内，沿岸分布着中华游泳会、甘榜安柏（一个马来村落）、海景酒店、天主教圣婴女校（CHIJ Katong Convent）和圣伯特理中学等地标。富裕人家在此建造了海滨别墅，如李俊源的振裕园和蔡金吉于1898年建造的海风37号。如切地区在19世纪20年代曾是椰子和棉花种植园，包括Confederate Estate等。该地区以富有的华族地主兼慈善家周如切命名，他于20世纪初在此购买了大量土地，并开放Confederate Estate Road（后更名为如切路）供公众使用。如切吸引了土生华人、欧亚裔以及华族、马来族和印度族社区。勿拉德路（Braddell Road）以英国殖民时期的著名律师和公务员布拉德尔家族命名。勿拉德路的建设始于1930年，作为外环路的一部分，但在大萧条期间一度停滞，于1935年恢复。二战期间，该地区是新加坡战役的前线。战后，勿拉德高地（Braddell Heights）地区开始发展，1949年由私人公司启动了勿拉德高地住宅区的建设。芽笼士乃是新加坡最古老的马来聚居地之一，其名称源于19世纪阿拉伯裔Alsagoff家族在此建立的香茅（serai）加工厂（kilang）。甘榜肯巴根则是一个私人住宅区，在1970年代仍保留着浓厚的乡村气息，有小溪、榕树以及附近的猪禽养殖场。
+
+\section{城市规划与建设进程}
+马林百列是新加坡第一个完全建立在填海土地上的市镇。填海工程始于新马合并时期的一个试点项目，在新加坡独立后全面展开，利用勿洛和实乞纳山丘的土壤以及进口沙子进行。1974年，首批组屋建成，但初期公共设施不足，如小贩中心、诊疗所和百汇广场等设施在第二阶段才逐步完善。建屋发展局还建造了海皇阁中等收入公寓，以满足较高收入公务员的住房需求。勿拉德高地在二战后开始城市发展，1947年，政府征地曾威胁到当地华族居民的居住权，后经马来亚华人公会（MCA）介入，为受影响家庭争取到安置土地。勿拉德高地住宅区于1949年由私人公司启动建设，并于1950年投入使用。如切地区在战后也经历了快速发展，购物中心、电影院（如Roxy和Odeon）和超市相继出现。1991年，市区重建局（URA）将如切的518栋建筑（主要是过渡期、晚期和装饰艺术风格的两层店屋和排屋）列为保护对象，并于1993年将其指定为保护区。2011年，如切被评为新加坡首个“文化遗产镇”，进一步推动了其城市遗产的保护与发展。这些城市化进程共同塑造了这些区域的现代面貌和功能，反映了新加坡在住房、基础设施和文化遗产保护方面的努力。
+
+\section{重要地标与建筑}
+马林百列-勿拉德高地集选区内拥有众多重要地标和建筑。马林百列的主要地标包括百汇广场（Parkway Parade）、马林百列社区综合大厦（内设社区俱乐部、图书馆和The Necessary Stage剧团），以及作为主要休闲区的东海岸公园，园内设有极限滑轮公园（Xtreme Skatepark）和新加坡滑浪公园（Singapore Wake Park）。如切地区则以其独特的文化遗产而闻名，包括著名的娘惹风格店屋林立的坤成路（Koon Seng Road）、斯里森帕加维纳亚加寺庙（Sri Senpaga Vinayagar Temple）、观音堂、欧亚裔协会（内设欧亚裔文化中心）和圣家堂。芽笼士乃的标志性建筑是1964年建成的芽笼士乃巴刹（Geylang Serai Market），它不仅是重要的商业设施，更是马来文化和历史的象征，此外还有如切综合大厦（Joo Chiat Complex）。勿拉德高地地区则有勿拉德路桥和勿拉德高架桥，这些是重要的交通基础设施。
+
+\section{人口变迁与族群结构}
+如切地区在历史上是一个多元文化的大熔炉。20世纪初，大量土生华人（Peranakan）和欧亚裔人口迁入，与原有的华族、马来族和印度族社区共同生活。天主教堂和学校的建立进一步巩固了欧亚裔在当地的存在。芽笼士乃是新加坡重要的马来文化中心和传统聚居地，保留着浓厚的马来风情。马林百列则在1970年代随着组屋的建成而吸引了大量居民迁入，形成了公共住房与私人公寓并存的混合社区，吸引了包括中高收入家庭在内的多元人口结构。这些区域的人口变迁反映了新加坡城市发展的缩影，从早期的种植园经济到后来的城市化进程，不同族群的迁徙与融合共同塑造了这些地区的独特社会面貌。
+
+\section{近年发展与城市更新}
+马林百列地区近年来经历了显著的城市更新和发展。汤申-东海岸线（TEL）地铁站（马林百列站和马林台站）的开通，极大地提升了该地区的交通便利性。为了应对气候变化导致的海平面上升威胁，新加坡政府计划在东海岸水域建造“长岛”（Long Island），这将是一个大型填海项目，旨在提供新的蓄水池、休闲设施、住宅和工业园区。如切地区在2000年代曾因酒吧和按摩院等场所的泛滥而声誉受损，但经过社区和政府的共同努力，该地区进行了大规模的整治，如今已成功转型为文化遗产区，拥有修复后的店屋、精品酒店、艺术画廊和高档餐饮场所。勿拉德路也持续进行基础设施升级，包括勿拉德高架桥和多条高架道路的建设，以缓解交通拥堵，提升区域的通行效率。
+
+\section{社区记忆与空间认同}
+马林百列的早期居民对高楼望海的生活充满向往，尽管初期面临窗框生锈、交通不便和设施匮乏等挑战，但这些都构成了他们独特的社区记忆。甘榜肯巴根的老一辈居民则怀念着乡村的童年时光，包括在泥泞的小溪上荡秋千、玩街头足球，以及清晨从附近猪农场飘来的煮泔水喂猪的独特气味。如切的居民则对该地区充满活力的多元文化氛围、繁华的Roxy和Odeon电影院以及Tay Buan Guan超市记忆犹新。在2000年代，社区居民积极参与“拯救如切”行动，成功遏制了该地区的风化活动，重塑了社区的良好声誉，也强化了居民对自身文化遗产的认同。东海岸公园则承载着几代人的共同记忆，从昔日的Big Splash水上乐园（现已改造为Coastal PlayGrove）到东海岸人工湖（现已发展为新加坡滑浪公园），这些休闲场所见证了社区居民的成长与变迁，成为他们共享空间记忆的重要组成部分。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Alvin Chua. Joo Chiat. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=e84d96e6-53d3-4cb6-a0fc-63d9e0f1dca5}
+  \item NLB. Braddell Road. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=6db78146-1096-49a1-a24b-039d331d31c5}
+  \item NLB. Growing up in Kampong Kembangan : featuring the morning stench. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=A-f1a3e6b4-cdf3-4bd5-9db3-e7dd44299bcc}
+  \item 李国樑. 阳光、大海和沙滩为伴的马林百列. \url{https://sfcca.sg/2024/12/30/%E9%98%B3%E5%85%89%E3%80%81%E5%A4%A7%E6%B5%B7%E5%92%8C%E6%B2%99%E6%BB%A9%E4%B8%BA%E4%BC%B4%E7%9A%84%E9%A9%AC%E6%9E%97%E7%99%BE%E5%88%97/}
+  \item Wikipedia. Marine Parade Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Marine_Parade_Group_Representation_Constituency}
+  \item Wikipedia. 马林百列集选区. \url{https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%9E%97%E7%99%BE%E5%88%97%E9%9B%86%E9%80%89%E5%8C%BA}
+  \item Wikipedia. 马林百列. \url{https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%9E%97%E7%99%BE%E5%88%97}
+  \item 联合早报. 芽笼士乃洋溢马来风情. \url{https://www.zaobao.com.sg/zlifestyle/travel/story20170914-794363}
+  \item SFCCA. 芽笼士乃：马来人心中的文化纽带. \url{https://sfcca.sg/2023/12/31/%E8%8A%BD%E7%AC%BC%E5%A3%AB%E4%B9%83%EF%BC%9A%E9%A9%AC%E6%9D%A5%E4%BA%BA%E5%BF%83%E4%B8%AD%E7%9A%84%E6%96%87%E5%8C%96%E7%BA%BD%E5%B8%A6/}
+\end{enumerate}
+
+\chapter{阿裕尼集选区 (Aljunied GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{aljunied.jpg}
+  \caption{阿裕尼一带的组屋与商业区}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+阿裕尼集选区在新加坡政治史上具有里程碑式的意义。该集选区成立于1988年，最初由执政的人民行动党（PAP）控制。2011年大选是历史性的转折点，由刘程强（Low Thia Khiang）率领的工人党（Workers' Party）团队以54.72\%的得票率击败了由时任外交部长杨荣文（George Yeo）和总理公署部长陈惠华（Lim Hwee Hua）带领的PAP团队。这是新加坡历史上反对党首次赢得集选区，导致两名内阁部长落选。在2015年大选中，工人党以50.96\%的微弱优势（仅领先1.9\%）险胜PAP，成功守住该区。2020年大选，在毕丹星（Pritam Singh）的带领下，工人党以59.95\%的得票率扩大了优势。在最新的2025年大选中，尽管选区边界有所调整（勿洛蓄水池以东的部分投票区被划入淡滨尼集选区），工人党团队（包括毕丹星、林瑞莲、严燕松、张文杰和莫哈默法理）依然以59.68\%的得票率成功卫守阿裕尼集选区。
+
+\section{早期地貌与前城市化时期}
+阿裕尼集选区（Aljunied GRC）覆盖了新加坡东部和东北部的多个区域，包括友诺士（Eunos）、加基武吉（Kaki Bukit）、巴耶利峇（Paya Lebar）、实龙岗（Serangoon）和勿洛蓄水池-榜鹅（Bedok Reservoir-Punggol）。这些区域在城市化前有着丰富的历史。友诺士地区最初是一个拥有种植园和农田的乡村地带。1920年代末，在新加坡马来民族联盟联合创始人兼首位立法局马来代表穆罕默德·友诺士·本·阿卜杜拉（Mohamed Eunos bin Abdullah）的倡导下，政府拨出土地和资金建立了甘榜马来由（Kampong Melayu），后来为了纪念他而改名为甘榜友诺士（Kampong Eunos）。这是新加坡大陆上最后一个马来人聚居地之一，主要安置因加冷机场建设而搬迁的马来居民。加基武吉（Kaki Bukit）在马来语中意为“山脚”，在1960年代作为惹兰友诺士马来人聚居地的延伸而发展，当时该地区布满了甘榜房屋和以马来语命名的道路。巴耶利峇（Paya Lebar）的名字来源于马来语“paya”（沼泽）和“lebar”（宽阔），在19世纪中后期，这里有许多农业定居点。实龙岗路（Serangoon Road）则是新加坡最早修建的道路之一，最初是为了连接市区和东北部的实龙岗港口，后来逐渐发展成为印度裔社区的聚集地，早期主要从事砖窑和养牛业。勿洛蓄水池区域在1970年代曾是建屋发展局（HDB）的采砂场，后来才被改造为蓄水池。
+
+\section{城市规划与建设进程}
+阿裕尼集选区内各区域的城市化进程主要在建屋发展局（HDB）的规划下进行。1980年代，惹兰友诺士马来人聚居地被取消宪报公布，甘榜房屋被拆除，居民被重新安置到现在的勿洛蓄水池等新建的HDB组屋区。加基武吉的丘陵地带被夷平，部分泥土用于东海岸地区的填海工程。随后，加基武吉被规划为工业区，建立了多个高科技工业园，如加基武吉工业园和友诺士科技园。巴耶利峇在1955年建成了新加坡首个国际机场，成为该地区的重要地标。1981年樟宜机场启用后，巴耶利峇机场转为军用空军基地。根据市区重建局（URA）的规划，巴耶利峇及周边地区逐渐发展为商业和工业中心。勿洛蓄水池作为公共事业局（PUB）双溪实里达/勿洛供水计划的一部分，于1983年开始建设，1986年完工，将原有的采砂场改造成了面积达88公顷的蓄水池，以满足东部地区日益增长的淡水需求。随着泛岛高速公路（PIE）和多条地铁线（如东西线、东北线、滨海市区线和环线）的建成，该选区的交通网络得到了极大的完善，促进了住宅和商业的全面发展。
+
+\section{重要地标与建筑}
+阿裕尼集选区内拥有多个重要地标和设施。在商业和零售方面，巴耶利峇区域发展迅速，拥有巴耶利峇中心（Paya Lebar Quarter, PLQ）、巴耶利峇广场（Paya Lebar Square）、新邮中心（SingPost Centre）等大型综合商业项目。在休闲和自然景观方面，勿洛蓄水池（Bedok Reservoir）是著名的地标，水库面积达88万平方米，周围建有勿洛蓄水池公园，提供水上运动（如皮划艇、龙舟）、树顶冒险乐园（Forest Adventure）以及长达4.3公里的环湖步道。交通枢纽方面，友诺士地铁站（Eunos MRT）以其仿照传统马来高脚屋的独特屋顶设计而闻名，展现了当地的文化特色。此外，该区域还包括实龙岗花园（Serangoon Garden）等知名住宅和餐饮区，以及加基武吉的众多高科技工业大楼。
+
+\section{人口变迁与族群结构}
+阿裕尼集选区的人口结构反映了新加坡多元种族的特点，同时也保留了深厚的历史印记。在早期，友诺士和加基武吉地区是重要的马来人聚居地（Kampong Melayu），聚集了大量从加冷、甘榜格南和武吉士地区搬迁来的马来居民。实龙岗地区则因早期的砖窑和养牛业，吸引了大量南印度穆斯林和印度教徒，逐渐形成了印度裔社区的聚居地。随着1980年代甘榜的拆除和HDB组屋的建设，居民被重新安置，人口结构变得更加混合。如今，该选区不仅有传统的马来和印度裔社区遗迹，还居住着大量的华裔居民。加基武吉作为工业区，周边也建有宿舍以安置外籍劳工。整体而言，阿裕尼集选区是一个融合了历史族群记忆与现代多元人口的成熟社区。
+
+\section{近年发展与城市更新}
+近年来，阿裕尼集选区经历了显著的城市更新和规划发展。巴耶利峇区域被市区重建局（URA）指定为重要的商业枢纽，巴耶利峇中心（PLQ）等大型混合用途开发项目的落成，极大地提升了该区域的商业活力和吸引力。勿洛蓄水池公园在PUB的“活跃、美丽、干净（ABC）水畔”计划下进行了升级，增加了照明、无障碍通道、观景台和水上运动设施，成为东部居民重要的休闲中心。加基武吉地区随着滨海市区线（Downtown Line）加基武吉地铁站的开通，交通连通性大幅提升。此外，政府宣布巴耶利峇空军基地将于2030年代起搬迁，这将释放约800公顷的土地用于新的住宅、商业和工业发展，同时解除周边地区（包括加基武吉和后港部分地区）的建筑高度限制，为阿裕尼集选区未来的城市重塑提供了巨大的潜力。
+
+\section{社区记忆与空间认同}
+阿裕尼集选区承载着不同年龄阶层居民丰富的空间记忆与认同。对于年长的马来居民而言，友诺士和加基武吉唤起了他们对昔日甘榜马来由（Kampong Melayu）的怀旧之情，那是新加坡大陆上最后的马来村落之一，充满了紧密的社区联系和传统生活方式。友诺士地铁站的马来高脚屋设计，至今仍是这种文化认同的视觉象征。对于中年和年轻一代，勿洛蓄水池是他们共同的休闲记忆空间。从1970年代的采砂场蜕变为美丽的蓄水池公园，这里见证了无数家庭的周末野餐、学校的越野跑以及年轻人的水上运动和树顶冒险。实龙岗花园的餐饮区和巴耶利峇的新兴商业中心，则是现代居民社交和生活的重要场所。这些从乡村到现代都市的变迁，构成了阿裕尼居民独特而深厚的社区归属感。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Aljunied Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Aljunied_Group_Representation_Constituency}
+  \item Wikipedia. 阿裕尼集选区. \url{https://zh.wikipedia.org/wiki/%E9%98%BF%E8%A3%95%E5%B0%BC%E9%9B%86%E9%80%89%E5%8C%BA}
+  \item National Library Board. Jalan Eunos. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=1d48db31-1bbc-42b0-91db-614c1e10515d}
+  \item Wikipedia. Kaki Bukit, Singapore. \url{https://en.wikipedia.org/wiki/Kaki_Bukit,_Singapore}
+  \item National Library Board. Bedok Reservoir. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=2c8faa03-699a-4ce0-884d-e0b63a6f62d6}
+  \item Wikipedia. 勿洛蓄水池. \url{https://zh.wikipedia.org/wiki/%E5%8B%BF%E6%B4%9B%E8%93%84%E6%B0%B4%E6%B1%A0}
+  \item Lianhe Zaobao. 勿洛蓄水池一道忘忧蓝色处方. \url{https://www.zaobao.com.sg/lifestyle/trending/story20260329-8775429}
+  \item Wikipedia. Eunos MRT station. \url{https://zh.wikipedia.org/wiki/%E5%8F%8B%E8%AF%BA%E5%A3%AB%E7%AB%99}
+  \item National Library Board. Paya Lebar. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=03b5dcfc-9629-4fa9-bd62-a3cd26704bff}
+  \item National Library Board. Serangoon Road. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=eabebefc-6697-49d1-9af9-721bd2171085}
+\end{enumerate}
+
+\chapter{蒙巴登单选区 (Mountbatten SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{mountbatten.jpg}
+  \caption{蒙巴登一带的历史建筑与现代发展}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+蒙巴登单选区的政治历史始于1957年，当时它被设立为蒙巴登选区，并在1959年的大选中首次进行角逐。在这次选举中，新加坡人民联盟（SPA）的萧碧莲（Seow Peck Leng）女士成功当选，这在当时由人民行动党（PAP）主导的政治格局中显得尤为突出。然而，在1963年的大选中，人民行动党通过黄耀宗（Ng Yeow Chong）的当选，成功掌控了该选区，黄耀宗一直担任议员直至1980年退休。1988年，随着集选区（GRC）制度的引入，蒙巴登选区被重新划定为蒙巴登单选区（SMC），以适应新的选举制度。在1997年的大选中，蒙巴登单选区被取消，并入马林百列集选区，成为其一个分区。这一调整反映了新加坡选举版图的动态变化。直到2011年大选前，蒙巴登单选区才从马林百列集选区中重新划分出来，恢复了其单选区的地位。自2011年以来，人民行动党的林谋权（Lim Biow Chuan）一直担任该选区的议员，并在2015年和2020年的大选中以显著优势击败对手。在2025年的大选中，林谋权宣布退休，人民行动党新面孔高诗琪（Gho Sze Kee）以63.82\%的得票率击败独立候选人陈伟扬（Jeremy Tan），成功当选蒙巴登单选区议员，延续了人民行动党在该选区的执政地位。
+
+\section{早期地貌与前城市化时期}
+蒙巴登单选区，位于新加坡中南部海岸地带，其早期历史可追溯至19世纪末20世纪初，当时该区域以其优美的海滨风光而闻名。在城市化进程之前，蒙巴登路（Mountbatten Road）的前身是格罗夫路（Grove Road），这一带曾是广阔的椰子种植园，一直延伸至旧海岸线。由于其得天独厚的地理位置，许多富裕的欧洲和本地商人选择在此建造度假屋和永久居所，形成了独特的“百万富翁平房”景观。这些单层高架式洋房，其设计灵感源自印度，通过地板下的通风系统有效应对热带气候，成为当时该区域的标志性建筑。1946年5月29日，为纪念东南亚盟军最高统帅路易斯·蒙巴顿勋爵（Lord Louis Mountbatten）在二战中的贡献，格罗夫路正式更名为蒙巴登路。这一更名不仅是对历史人物的致敬，也标志着该区域在战后重建与发展中的新篇章。盖朗河（Geylang River）流经蒙巴登区域，其河床早期由柔软的海相粘土构成，潮汐涨落时常导致周边地区发生洪涝，这在一定程度上影响了前城市化时期该区域的土地利用和聚落分布。
+
+\section{城市规划与建设进程}
+蒙巴登单选区的城市规划与建设进程反映了新加坡从殖民时期到独立后的发展轨迹。在20世纪初期，蒙巴登区域主要由富裕阶层拥有的私人洋房组成，这些被称为“百万富翁平房”的建筑，如蒙巴登路745号的Chansville，构成了该区域独特的住宅景观。这些建筑不仅是私人财富的象征，也体现了当时对热带气候适应性建筑设计的探索。随着新加坡在二战后进入快速城市化阶段，政府机构如新加坡改良信托局（SIT）和后来的建屋发展局（HDB）在全国范围内推动公共住房建设，但蒙巴登因其独特的历史背景和高价值私人地产，并未像其他区域那样大规模发展公共住房。然而，该区域的城市面貌并非一成不变。1991年，市区重建局（URA）将蒙巴登路沿线的15栋历史洋房列为受保护建筑，旨在平衡城市发展与文化遗产保护。1994年，环境部启动了为期四年的盖朗河治理项目，通过深化河床和升级泵站，将河流改造为U形钢筋混凝土运河，有效缓解了区域内的洪涝问题，并改善了河岸景观，使其成为重要的公共休闲空间。此外，拉萨尔艺术学院曾于1992年在蒙巴登路设立校区，虽然在2003年迁至市中心，但其存在为该区域增添了文化艺术氛围。近年来，随着《2025年发展总蓝图》的发布，蒙巴登区域被重新划定为住宅用途，预示着未来将有新的公共住房项目在此开发，这标志着蒙巴登城市化进程进入了一个新的阶段，将进一步丰富其住宅类型和社区构成。
+
+\section{重要地标与建筑}
+蒙巴登单选区内拥有多处重要的历史地标与现代建筑，共同构成了其独特的城市景观。其中，位于蒙巴登路733号的一栋建于1927年的早期风格平房，因其卓越的建筑价值，于2004年荣获市区重建局（URA）建筑遗产奖，并在2008年获得联合国教科文组织亚太文化遗产保护奖，成为该区域历史建筑保护的典范。蒙巴登路745号的“Chansville”曾是新加坡著名游泳健将陈氏兄妹的童年故居，现已修复并成为“蒙巴登五传奇”开发项目的一部分，延续了其历史文脉。商业设施方面，加东购物中心（Katong Shopping Centre）自1973年开业以来，一直是蒙巴登区域重要的商业地标，为居民提供购物和休闲服务。教育与文化设施包括中正中学（总校）和古德曼艺术中心（Goodman Arts Centre），后者曾是拉萨尔艺术学院的校址，现已成为重要的艺术创作与展示平台。此外，蒙巴登地铁站（Mountbatten MRT station）和达科塔地铁站（Dakota MRT station）作为环线上的重要交通枢纽，极大地提升了区域的通达性，也成为现代蒙巴登的显著标志。旧加冷机场控制塔和加冷河畔公园虽然位于蒙巴登边缘或邻近区域，但其历史意义和休闲功能也与蒙巴登社区生活紧密相关。
+
+\section{人口变迁与族群结构}
+蒙巴登单选区的人口结构展现出其作为新加坡成熟住宅区的特征。根据2024年估计数据，蒙巴登分区的人口约为10,100人，相较于2000年的8,999人和2010年的9,367人，呈现出温和的增长趋势。该选区所属的马林百列规划区在2024年总居民人口为46,690人，其中男性21,860人，女性24,830人，女性人口略多于男性。年龄结构方面，马林百列规划区65岁及以上的老年人口在2024年估计达到9,970人，占总人口的显著比例，这表明该区域的人口老龄化程度较高。族群构成方面，根据2020年的人口普查数据，马林百列规划区华人人口为35,050人，马来人3,120人，印度人5,510人，其他族群2,530人，显示出华人是该区域的主体族群，同时也有一定比例的少数族裔居民。这种多元但以华人为主的族群结构，在一定程度上反映了新加坡的整体人口构成，也影响了社区的文化面貌和社会互动模式。
+
+\section{近年发展与城市更新}
+蒙巴登单选区近年来经历了显著的城市发展与更新，旨在提升居民的生活品质并适应未来需求。根据市区重建局（URA）的《2025年发展总蓝图》，蒙巴登区域被重新规划为住宅用途，预示着未来将有新的公共住房项目在此落地。分析师估计，这片区域有望建造2,000至2,500个组屋单位，这将为更多居民提供住房选择，并可能带来人口结构的进一步变化。除了住宅开发，区域内的基础设施也在不断完善。例如，盖朗河在1994年完成了为期四年的深化河床和升级泵站工程，将其改造为U形钢筋混凝土运河，有效解决了长期困扰丹戎加东地区的洪涝问题，并改善了河岸环境，使其成为居民休闲散步的热门地点。此外，蒙巴登路沿线的历史建筑保护工作持续进行，1991年市区重建局将15栋具有维多利亚、装饰艺术和早期现代风格的洋房列为受保护建筑，确保了区域独特的历史风貌得以传承。社区设施方面，蒙巴登民众俱乐部等机构积极举办各类活动，增强社区凝聚力。这些发展项目和规划不仅提升了蒙巴登的宜居性，也反映了新加坡在城市发展中对历史保护与现代需求的平衡考量。
+
+\section{社区记忆与空间认同}
+蒙巴登单选区作为新加坡历史悠久的区域，其社区记忆与空间认同深受其独特发展历程的影响。早期，这里是富裕阶层青睐的海滨住宅区，拥有众多被称为“百万富翁平房”的独立式洋房，这些建筑不仅是其物质遗产，也承载着早期居民的社会地位与生活方式记忆。例如，位于蒙巴登路745号的“Chansville”曾是著名游泳运动员陈氏兄妹的童年故居，这类故事构成了社区集体记忆的重要组成部分。随着城市化进程，蒙巴登逐渐演变为一个融合了私人住宅与公共住房的多元社区，不同年龄层的居民对该区域有着各自的理解与情感联结。年轻一代可能更关注其现代化的交通便利性，如蒙巴登地铁站带来的便捷生活，而老一辈居民则可能对格罗夫路更名为蒙巴登路的历史事件、以及昔日海滩风光和盖朗河畔的童年记忆怀有更深的情感。社区活动，如蒙巴登民众俱乐部举办的各类文化节庆和社区项目，在维系居民间的社会联系、强化社区归属感方面发挥着关键作用，共同塑造了蒙巴登独特的空间认同。近年来的城市更新项目，如对老旧建筑的活化利用和新公共住房的规划，也引发了居民对社区未来发展方向的讨论与期待，这些讨论本身也成为社区记忆的一部分，反映了居民对保留历史风貌与追求现代生活的平衡考量。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Mountbatten, Singapore. \url{https://en.wikipedia.org/wiki/Mountbatten,_Singapore}
+  \item NLB. Mountbatten Estate. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=8cde6743-43c4-4d12-a776-a90d7cf6932f}
+  \item URA. Mountbatten Road - Conservation Portal. \url{https://www.ura.gov.sg/Conservation-Portal/Explore/History?bldgid=MTBRD}
+  \item Remember Singapore. The Old World Charm of Mountbatten. \url{https://remembersingapore.org/2016/09/06/mountbatten-road-old-bungalows/}
+  \item CityPopulation.de. Mountbatten (Subzone, Singapore) - Population Statistics, Charts, Map and Location. \url{https://www.citypopulation.de/en/singapore/admin/marine_parade/10905__mountbatten/}
+  \item CityPopulation.de. Marine Parade (Planning Area, Singapore) - Population Statistics, Charts, Map and Location. \url{https://www.citypopulation.de/en/singapore/admin/109__marine_parade/}
+  \item Wikipedia. Mountbatten Single Member Constituency. \url{https://en.wikipedia.org/wiki/Mountbatten_Single_Member_Constituency}
+  \item The Straits Times. Mountbatten SMC. \url{https://static1.straitstimes.com.sg/s3fs-public/attachments/2015/09/08/ST_20150908_MOUNTBATTEN_NEW_1668171.pdf}
+  \item AsiaOne. PAP's Gho Sze Kee wins Mountbatten SMC with 63.84\% of votes over independent Jeremy Tan. \url{https://www.asiaone.com/singapore/paps-gho-sze-kee-wins-mountbatten-smc-6384-votes-over-independent-jeremy-tan}
+  \item URA. Master Plan. \url{https://www.ura.gov.sg/Corporate/Planning/Master-Plan}
+  \item 8world. 政府公布2025年发展总蓝图草案市中心将新增住宅区. \url{https://www.8world.com/singapore/draft-masterplan-more-housing-estates-2828016}
+  \item Food from the Heart. Community Shop @ Mountbatten. \url{https://www.foodfromtheheart.sg/highlights/community-shop-mountbatten-46}
+  \item Facebook. Happenings at Mountbatten. \url{https://www.facebook.com/HappeningsatMountbatten/}
+  \item National Archives of Singapore. Oral History Interviews. \url{https://www.nas.gov.sg/archivesonline/oral_history_interviews}
+  \item NLB. Portraits of places : history, community and identity in Singapore. \url{https://www.nlb.gov.sg/main/book-detail?cmsuuid=0dbe842a-96eb-4db9-be8b-d69eb2d9119e}
+\end{enumerate}
+
+\chapter{白沙-樟宜集选区 (Pasir Ris-Changi GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{pasir_ris_changi.jpg}
+  \caption{白沙海滩与樟宜一带的自然景观}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+白沙-樟宜集选区在新加坡的政治地理版图中具有重要的战略意义，其选区划界与政治选举历史反映了新加坡政治格局的演变。该集选区于2025年大选前由原白沙-榜鹅集选区的部分白沙选区和东海岸集选区的樟宜部分合并而成，旨在更好地反映榜鹅地区日益增长的人口和独特的社区身份。新的选区包括白沙东、白沙中、白沙西以及樟宜，同时涵盖了新加坡东北部的岛屿，如乌敏岛和白礁。这一调整使得选区成为一个四人集选区，由人民行动党（PAP）的四名议员代表，包括英兰妮·拉惹、瓦莱丽·李、沙拉尔·塔哈和德斯蒙德·陈。
+
+在2025年大选中，人民行动党团队以67.66\%的得票率击败了新加坡民主联盟（SDA）的挑战，显示出该选区对执政党的持续支持。此次选举中，英兰妮·拉惹从丹戎巴葛集选区转战白沙-樟宜集选区，并带领团队取得胜利，这体现了人民行动党在选区重组后对该地区的高度重视和资源投入。樟宜地区在历史上曾是东海岸集选区的一部分，其并入白沙-樟宜集选区，也意味着该地区在政治版图上的重新定位。选区内的政治活动不仅关注国家层面的议题，也高度重视地方社区的发展和居民的福祉，例如人民行动党团队承诺延续国务资政张志贤团队所开展的发展计划，包括交通、城镇更新和活跃乐龄等方向，以回应居民的具体需求。
+
+\section{早期地貌与前城市化时期}
+白沙-樟宜集选区所涵盖的白沙地区，其早期地貌与前城市化时期呈现出显著的自然与乡村特征。在19世纪中叶，白沙被描绘为一片低洼、未开发的区域，遍布着茂密的红树林沼泽、池塘以及椰子和橡胶种植园。这片土地上散布着多个马来甘榜，如甘榜白沙、甘榜巴鲁和甘榜罗央峇鲁，以及沿伊莱亚斯路分布的华人村落。这些村落的居民主要以农业和渔业为生，例如马来村民会利用潮汐在双溪亚比亚比和双溪淡滨尼捕捞小虾制作峇拉煎。在1844年约翰·特恩布尔·汤姆森绘制的地图中，白沙地区被标记为“Passeir Rice”，其名称“Pasir Ris”在马来语中意为“白沙”，恰如其分地描述了该地区绵延的白色沙滩。
+
+殖民时期，白沙地区逐渐发展成为一个受欢迎的海滨度假胜地。1950年代，白沙海滩因水上滑雪活动而闻名。著名的白沙酒店，前身为富裕犹太企业家约瑟夫·亚伦·伊莱亚斯的私人海滨别墅，于1950年代被何孟奎接管后，成为举办派对和野餐的场所，直至1970年代初。1969年，金宫度假村在惹兰昂祥港开业，提供小木屋、餐厅和夜总会等设施，其池塘曾是一个沙石采石场，后被政府收购用于养鱼实验，现已成为白沙公园的一部分。1973年，人民协会假日公寓的启用，为普通工薪阶层提供了经济实惠的海滨度假选择，进一步巩固了白沙作为休闲目的地的地位。
+
+樟宜地区则拥有更为悠久的历史。在1604年葡萄牙传教士艾勒迪亚的地图中，樟宜被称为“Tanjong Rusa”。1828年富兰克林和菲利普·杰克逊绘制的地图中，马来半岛最南端被标记为“Tanjong Changi”。“Changi”一词的起源有多种说法，可能源于当地生长的攀援灌木“changi ular”或高大的“dhengai”树，亦或是用于建造房屋和家具的珍贵樟树“chengai”。在二战期间，樟宜因其作为日军战俘营的历史而闻名，樟宜监狱和塞拉郎军营曾囚禁数万名盟军战俘，这段历史为樟宜留下了深刻的印记。
+
+\section{城市规划与建设进程}
+白沙-樟宜集选区的城市规划与建设进程，是新加坡现代化发展的一个缩影，尤其体现在建屋发展局（HDB）的组屋项目和区域综合发展上。白沙新镇的开发始于1983年，旨在将这片原有的甘榜和种植园区域转型为现代化的住宅区。第一阶段的建设集中在伊莱亚斯路/白沙庄园，随后在1989年至1990年间完成了罗央N1和N2区，1992年至1993年完成了N4区，1995年和1997年分别完成了N5和N6与N7区。这些分阶段的开发确保了新镇的有序扩张，并为大量居民提供了经济适用房。白沙组屋的建筑设计独具匠心，其灵感来源于附近的海滩和海洋元素，例如灯塔状的塔楼、舷窗状的空地以及贝壳状的窗户，这些设计不仅美化了城市景观，也强化了社区的滨海特色。
+
+樟宜地区则在城市化进程中扮演了不同的角色，其发展主要围绕樟宜机场的建设和相关产业的布局。自1975年新加坡政府决定在樟宜建设新国际机场以来，该地区经历了大规模的填海造地和基础设施建设。樟宜机场不仅是东南亚最大的航空枢纽之一，其周边也发展了樟宜商业园等工业和商业设施，吸引了大量就业人口。近年来，樟宜东城市区（Changi East Urban District）的规划进一步推动了该地区的城市化，计划兴建办公室、智能工作中心、会议空间、酒店和商务住宅，旨在打造一个集工作、生活和休闲于一体的综合性区域。这些规划与建设不仅满足了新加坡不断增长的人口和经济发展需求，也通过精心设计和整合，提升了居民的生活品质和区域的整体吸引力。
+
+\section{重要地标与建筑}
+白沙-樟宜集选区内拥有众多重要地标与建筑，它们不仅是地理上的坐标，更是承载着历史记忆与社区活力的象征。在白沙地区，白沙公园是其最具代表性的自然地标之一，公园内拥有六公顷的红树林，是自然爱好者和观鸟者的天堂。公园内的咸水钓鱼池，前身为金宫度假村的池塘，延续了该地区作为休闲胜地的传统。市区东部（Downtown East）是该地区重要的商业和娱乐中心，内含D’Resort度假村、狂野湿乐园（Wild Wild Wet）以及E!Avenue和E!Hub等购物餐饮场所，是新加坡人休闲度假的热门选择。白沙购物中心（White Sands Shopping Mall）位于白沙地铁站旁，是居民日常购物和社交的重要场所，其名称也呼应了白沙的地理特征。此外，白沙组屋的建筑风格独特，其灯塔状的塔楼、舷窗状的空地和贝壳状的窗户设计，都融入了海滨元素，成为该地区一道亮丽的风景线。
+
+樟宜地区的地标则更具历史厚重感和国际影响力。樟宜机场作为新加坡的国际门户，不仅是重要的交通枢纽，其星耀樟宜（Jewel Changi Airport）更是集购物、餐饮、娱乐和自然景观于一体的综合性建筑，吸引了全球游客。樟宜监狱和樟宜礼拜堂与博物馆是二战历史的重要见证，它们提醒着人们那段艰难岁月，并作为纪念场所供后人缅怀。樟宜村则保留了独特的乡村风情，与现代化的机场形成鲜明对比，其海滨餐馆和渡轮码头是前往乌敏岛和德光岛的起点。这些地标共同构成了白沙-樟宜集选区多元而丰富的空间景观，反映了其从自然风光到历史沉淀，再到现代都市发展的演变历程。
+
+\section{人口变迁与族群结构}
+白沙-樟宜集选区的人口结构反映了新加坡多元种族的社会特征，同时展现出显著的人口变迁趋势。根据2015年的数据，白沙镇的组屋居民已达111,000人，显示出该地区作为新兴住宅区的快速发展。随着时间的推移，该选区吸引了来自不同族群的居民，其中华族、马来族和印度族是主要组成部分。早期，白沙地区以马来甘榜和华人村落为主，居民多从事农业和渔业活动，族群结构相对单一。然而，自1980年代白沙新镇的规划建设以来，大量组屋的落成吸引了年轻家庭和专业人士迁入，使得人口结构日益多元化。樟宜地区则因其机场和工业园区的存在，吸引了大量国内外劳动力，进一步丰富了该地区的人口构成。近年来，随着城市更新和新住宅项目的推出，如白沙8号综合项目，预计将有更多居民迁入，进一步改变人口的年龄分布和族群比例。选区内也存在着不同年龄阶层的居民，年轻家庭和老年居民共同构成了社区的活力，对公共设施和社区服务提出了多样化的需求。
+
+\section{近年发展与城市更新}
+白沙-樟宜集选区近年来经历了显著的城市更新与发展，旨在提升居民的生活品质并增强区域的活力。作为“重塑我们的家园”（Remaking Our Heartland, ROH）计划的一部分，白沙镇正被重新构想为“我们的城市绿洲”，未来五到十年内将重点关注城镇中心、公园空间、新建住宅以及改善步行和骑行体验。其中，一条长达1.2公里的“中央绿道”正在建设中，它将连接白沙公园、城镇中心，并延伸至淡滨尼高速公路末端的Costa Ris住宅区，其中约500米将采用高架设计，为行人和骑行者提供无缝连接。
+
+在住宅方面，建屋发展局计划在白沙公园附近开发2,000个公共住宅单位，首批1,070个单位已于2020年8月以“Costa Grove”项目推出。此外，白沙8号（Pasir Ris 8）是一个重要的综合开发项目，它将整合住宅、零售、餐饮以及新的白沙巴士转换站，并配备诊所和城镇广场，旨在打造一个充满活力的社区焦点。该项目由Allgreen Properties和Kerry Properties的合资企业负责开发，预计将进一步提升白沙中心的商业和社区功能。现有四个邻里中心的升级改造工作也在进行中，包括罗央坊、伊莱亚斯购物中心、白沙西广场和第四邻里中心，同时邻里公园也将增设新的游乐场、有盖走道和健身角等设施，以满足居民日益增长的需求。这些发展项目共同描绘了白沙-樟宜集选区作为现代化、宜居社区的未来图景。
+
+\section{社区记忆与空间认同}
+白沙-樟宜集选区居民的空间记忆与社区认同感，深受其独特的滨海环境与历史发展轨迹影响。对于早期居民而言，白沙海滩、甘榜生活以及种植园的记忆是其身份认同的重要组成部分。例如，在1950年代至1970年代，白沙酒店和金宫度假村是许多家庭和朋友聚会的重要场所，承载着一代人的休闲娱乐记忆。这些场所不仅是地理上的地标，更是情感上的锚点，维系着社区成员之间的联系。随着城市化进程的推进，特别是建屋发展局组屋的兴建，新一代居民对社区的认同更多地来源于现代化的公共设施和便利的生活环境，如白沙公园、市区东部和白沙购物中心。然而，通过社区活动和文化遗产项目，如白沙历史走道，不同年龄层的居民得以连接过去与现在，共同构建和传承对这片土地的集体记忆。樟宜地区居民的社区认同则与樟宜机场的国际门户地位、二战历史以及独特的乡村风情紧密相连。樟宜村、乌敏岛和白礁等地的自然风光和历史遗迹，为居民提供了独特的归属感和文化认同。樟宜礼拜堂与博物馆等场所，更是提醒着居民这片土地所经历的苦难与坚韧，强化了社区的凝聚力。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item 维基百科. Pasir Ris. \url{https://en.wikipedia.org/wiki/Pasir_Ris}
+  \item 维基百科. Pasir Ris–Changi Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Pasir_Ris%E2%80%93Changi_Group_Representation_Constituency}
+  \item Roots.sg. Pasir Ris: Written in the Sand. \url{https://www.roots.gov.sg/stories-landing/stories/pasir-ris-written-in-the-sand/story}
+  \item HDB. Our Towns and Estates: Pasir Ris. \url{https://www.hdb.gov.sg/about-us/our-towns-and-estates/pasir-ris}
+  \item 维基百科. 樟宜. \url{https://zh.wikipedia.org/wiki/%E6%A8%9F%E5%AE%9C}
+  \item BiblioAsia. Bridging Past and Present in Pasir Ris. \url{https://biblioasia.nlb.gov.sg/all-sections/vol-19-issue-2-jul-sep-2023-history-pasir-ris/}
+  \item 联合早报. 历史走道14公里七标记23景点三大主题路线悠游百年白沙. \url{https://www.zaobao.com.sg/news/singapore/story20191220-1014653}
+  \item 8world. 【GE2025】白沙-樟宜集选区：人民行动党胜出. \url{https://www.8world.com/singapore/ge2025-final-results-pasir-ris-changi-2778116}
+  \item 8world. 【GE2025】白沙—樟宜行动党团队承诺延续发展推动社区与国家稳定. \url{https://www.8world.com/singapore/ge2025-pap-pasir-ris-changi-2776171}
+\end{enumerate}
+
+\chapter{淡滨尼集选区 (Tampines GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{tampines.jpg}
+  \caption{淡滨尼新镇的组屋区全景}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+淡滨尼集选区（Tampines GRC）于1988年成立，是新加坡东部地区的一个五人集选区。从1988年到2020年，淡滨尼集选区在每次选举中都受到反对党的挑战，除了1997年大选，当时人民行动党（PAP）不战而胜。人民行动党在2015年和2020年大选中，其在淡滨尼集选区的得票率均高于全国平均水平，分别为72.06\%（全国69.9\%）和66.41\%（全国61.2\%）。在2025年大选前夕，预计人民行动党将面临工人党（WP）、国民团结党（NSP）和人民力量党（PPP）的四方竞争。选举分界委员会（EBRC）发布了2025年大选的分界线变化报告。淡滨尼樟宜（Tampines Changkat）分区被划出，形成一个独立的单选区（SMC），而勿洛水库（Bedok Reservoir）以东的阿裕尼集选区（Aljunied GRC）的投票区则被并入淡滨尼集选区。这些变化旨在保持淡滨尼集选区选民数量的一致性，同时仍选出五名国会议员。人民行动党最终在2025年以52\%的得票率保住了集选区，但得票率大幅下降超过14\%，是该次大选中集选区胜利幅度最小的一次。工人党获得了超过47\%的选票，而国民团结党和人民力量党合计得票率不足1\%。这是人民行动党自1988年成立以来在该选区面临的最艰难的竞争。2023年7月，时任淡滨尼东区国会议员程丽慧因婚外情辞去国会议员职务并退出人民行动党。马善高随后成为淡滨尼东区的基层顾问。
+
+\section{早期地貌与前城市化时期}
+“淡滨尼”这个名字被认为起源于菲利普·杰克逊1828年新加坡地图中提到的淡滨尼河（Tampenus River）。这条河的早期名称可能来源于该地区大量生长的“tampines”（也拼作“tempinis”）高大树木，这种树是廖内铁木树（streblus elongatus），以其木材而闻名。淡滨尼路，最初是一条马道，后来在1864年改建为车道，也因这条河而得名。在转型为现代新镇之前，淡滨尼主要是一个以农业和渔业为主的村庄。其地貌特征是椰子树、橡胶树和果树、溪流和池塘。居民从事小规模的牲畜和家禽养殖以及蔬菜种植。住房主要由锌板和亚答屋构成。直到20世纪70年代，沙石场是淡滨尼的一个重要特色，雇佣了大量的居民作为卡车司机、服务员和工人。
+
+\section{城市规划与建设进程}
+淡滨尼新镇的建设始于1979年，标志着其从乡村面貌向现代化卫星镇的重大转变。这项发展需要重新安置大约3,720名村民，以便进行基础设施建设。传统的亚答屋和锌板屋被低层公寓、休闲公园以及镇中心及其周边的零售商店所取代。淡滨尼在采用分区规划概念方面具有开创性，第一个住宅区建在淡滨尼第二邻里。镇中心以其独特的沙漏形设计而闻名。1984年的进一步发展阶段带来了改善的设施和升级的居住条件，并采用了新的公寓设计。这一阶段的一个重要方面是混合住宅单元的整合，其中75\%的组屋在一个单一的公寓楼中包含三房、四房和五房的混合单元。1992年10月，淡滨尼镇因其创新和成功的人类住区而荣获联合国世界人居奖。自20世纪90年代初以来，淡滨尼已被指定为区域中心，是当今新加坡东部地区最发达的区域中心之一。
+
+\section{重要地标与建筑}
+淡滨尼集选区拥有多个重要的商业、零售和社区地标。主要的零售目的地包括淡滨尼广场（Tampines Mall）和世纪广场（Century Square），它们共同构成了该地区作为热门零售和休闲中心的活力。一个重要的社区设施是淡滨尼天地（Our Tampines Hub），于2017年8月6日正式启用。这个综合社区和生活方式中心是新加坡首个此类设施，在一个屋檐下提供各种设施，包括体育设施、区域图书馆、小贩中心、公共服务中心和艺术剧院。淡滨尼天地的开发过程中广泛征求了居民的意见，体现了“由居民为居民服务”的愿景。在基础设施方面，淡滨尼集选区拥有完善的地铁站，如淡滨尼西（Tampines West）、淡滨尼（Tampines，也设有巴士转换站）和淡滨尼东（Tampines East），淡滨尼北站（Tampines North）目前正在建设中。
+
+\section{人口变迁与族群结构}
+淡滨尼是新加坡人口最多的规划区，截至2025年，其五个分区居住着290,090名居民。截至2024年，人口为284,560人，约占新加坡总人口的5\%。该区域主要特点是高密度公共住房开发和中等收入人口。虽然主要来源中没有立即提供具体的族裔构成细节，但新加坡组屋区的一般人口趋势表明，这里是一个多元族裔的混合人口，反映了国家更广泛的人口构成。持续的发展和扩张，特别是淡滨尼北部的开发，预示着该地区人口的持续增长和人口结构的变化。
+
+\section{近年发展与城市更新}
+淡滨尼已被规划在未来几年内进一步发展和增长，计划在淡滨尼北部建设新的住房、购物设施、更多公园绿地和其他便利设施。淡滨尼北部开发区于2013年作为建屋发展局（HDB）“未来家园，美好生活”计划的一部分启动。该倡议利用该地区现有的绿化和靠近淡滨尼区域中心的优势，为居民创造一个有吸引力的居住环境。2014年，建屋发展局在淡滨尼北部推出了淡滨尼绿脊（Tampines Green Ridges），包含1,900套组屋，预计将根据住房需求进一步开发。作为将淡滨尼打造成新加坡首个“生态城镇”的努力的一部分，2021年2月在淡滨尼天地（Our Tampines Hub）启动了一个户外线性花园。这个花园设有水景、播放鸟鸣声的扬声器，以及近40种花卉和草药，旨在作为治疗空间，特别是为患有痴呆症的老年居民提供服务。市区重建局（URA）的总体规划指导着新加坡的中期发展。淡滨尼是更广泛的区域规划的一部分，旨在通过新住宅、便利设施和增强的连通性来更新勿洛、淡滨尼和巴西立等地区。市区重建局旨在将包括淡滨尼在内的城镇中心振兴为拥有现代化设施的充满活力的枢纽。
+
+\section{社区记忆与空间认同}
+淡滨尼从一个农业村庄发展成为现代新镇，无疑塑造了不同年龄层居民的空间记忆和认同感。对于老一辈居民来说，记忆可能围绕着乡村风貌、沙石场的存在以及村庄的紧密社区。20世纪70年代末和80年代初的搬迁过程，对他们而言是一个重要的转折点，标志着从传统的锌板和亚答屋向组屋的过渡。对于在新镇快速城市化过程中成长起来的居民，他们的记忆将与新组屋区的出现、独特的沙漏形镇中心以及各项设施的逐步建立紧密相连。1992年获得联合国世界人居奖，很可能成为他们引以为傲的记忆点，增强了作为规划良好、备受认可城镇居民的认同感。近期发展，如淡滨尼天地（Our Tampines Hub），旨在培养强烈的社区意识和归属感。在构思过程中，与居民的广泛协商，旨在打造一个“由居民为居民服务”的中心，直接促进了集体记忆和归属感。这个集成的中心，凭借其多样化的设施，成为一个核心的聚集地，为当代居民创造了共享的体验和记忆。生态城镇倡议，包括治疗性线性花园，也旨在改善居住环境，创造新的积极空间体验。总的来说，淡滨尼的社区记忆很可能是一幅由其农业过去、规划的城市发展以及作为充满活力的区域中心的持续演变所编织而成的挂毯，每一代人都拥有独特而又相互关联的家园体验。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Tampines Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Tampines_Group_Representation_Constituency}
+  \item NLB. Tampines - Singapore. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=dae71f53-8054-422e-a118-a2d88f27cfef}
+  \item Sun, David; Hamzah, Aqil. Election spotlight: Race hots up in Tampines as multi-cornered fights loom. The Straits Times. \url{https://www.straitstimes.com/singapore/politics/election-spotlight-race-heats-up-in-tampines-as-possible-4-way-fight-looms}
+  \item CityPopulation.de. Tampines (Planning Area, Singapore) - Population Statistics, Charts .... \url{https://www.citypopulation.de/en/singapore/admin/207__tampines/}
+  \item Wong, Pei Ting. GE2025: PAP looks set to face 4-way fight for Tampines GRC against WP, NSP, PPP. The Straits Times. \url{https://www.straitstimes.com/singapore/politics/election-spotlight-race-heats-up-in-tampines-as-possible-4-way-fight-looms}
+  \item The Straits Times. 10 key takeaways from GE2025 boundaries report. \url{https://www.straitstimes.com/singapore/politics/election-spotlight-race-heats-up-in-tampines-as-possible-4-way-fight-looms}
+  \item CNA. GE2025: Six new SMCs created as the EBRC lays out changes to constituencies. \url{https://www.channelnewsasia.com/singapore/ge2025-ebrc-report-electoral-boundaries-new-smcs-grcs-3987096}
+  \item The Straits Times. 6 new SMCs for GE2025, five single seats gone. \url{https://www.straitstimes.com/singapore/politics/election-spotlight-race-heats-up-in-tampines-as-possible-4-way-fight-looms}
+  \item The Straits Times. GE2025: Stage set for four-way fight in Tampines GRC; PAP and WP go head-to-head in Tampines Changkat SMC. \url{https://www.straitstimes.com/singapore/politics/election-spotlight-race-heats-up-in-tampines-as-possible-4-way-fight-looms}
+  \item Hamzah, Aqil; Ang, Shermaine; Sun, David; Hadi, Eddino Abdul. GE2025: PAP retains Tampines GRC in 4-way fight, wins Tampines Changkat SMC. The Straits Times. \url{https://www.straitstimes.com/singapore/politics/election-spotlight-race-heats-up-in-tampines-as-possible-4-way-fight-looms}
+  \item CNA. Workers' Party's Andre Low and Eileen Chong to enter parliament as Non-Constituency MPs. \url{https://www.channelnewsasia.com/singapore/workers-party-andre-low-eileen-chong-ncmp-parliament-4351606}
+  \item URA. Master Plan - Singapore - Urban Redevelopment Authority (URA). \url{https://www.ura.gov.sg/Corporate/Planning/Master-Plan}
+  \item URA. Transforming Towns for Tomorrow | URA Master Plan. \url{https://www.uradraftmasterplan.gov.sg/regional-plans/east/transforming-towns-for-tomorrow/}
+  \item Facebook. In the Long-Term Plan Review unveiled by Urban Redevelopment .... \url{https://www.facebook.com/ilovetampines/posts/in-the-long-term-plan-review-unveiled-by-urban-redevelopment-authority-ura-recen/344742897830796/}
+  \item HDB. Tampines North. \url{https://www.hdb.gov.sg/cs/infoweb/about-us/our-history/hdb-towns-and-estates/tampines-north}
+  \item Our Tampines Hub. Our Tampines Hub. \url{https://www.ourTampineshub.sg/}
+  \item Yong, Charissa. PM Lee Opens Our Tampines Hub, Singapore’s First Integrated Community and Lifestyle Hub. Straits Times. \url{https://www.straitstimes.com/singapore/pm-lee-opens-our-tampines-hub-singapores-first-integrated-community-and-lifestyle-hub}
+  \item Wong, Cara. Tampines Launches Garden Designed to Stimulate 5 Senses. Straits Times. \url{https://www.straitstimes.com/singapore/tampines-launches-garden-designed-to-stimulate-5-senses}
+\end{enumerate}
+
+\chapter{淡滨尼尚育单选区 (Tampines Changkat SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{tampines_changkat.jpg}
+  \caption{淡滨尼尚育一带的住宅区景观}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+淡滨尼尚育单选区（Tampines Changkat SMC）是为2025年大选而设立的，主要由淡滨尼集选区（Tampines GRC）中的淡滨尼尚育分区以及东海岸集选区（East Coast GRC）的第42投票区组成，此举减少了淡滨尼集选区的选民数量。在2025年大选中，原淡滨尼尚育分区的现任议员马炎庆（Desmond Choo）代表人民行动党（PAP）参选，对阵工人党（WP）的Kenneth Foo。马炎庆最终以56.16\%的得票率赢得选举，成功当选为淡滨尼尚育单选区的国会议员。在选举前，曾发生一起与该选区相关的移民与关卡局（ICA）调查事件，涉及EC42投票区仅有一名注册选民，且该选民并未居住在注册地址。尽管如此，该选区仍按计划进行选举。
+
+\section{早期地貌与前城市化时期}
+淡滨尼的地名可追溯至1828年的富兰克林和杰克逊地图，该区域以流经其北部的双溪淡滨尼河（Sungei Tampines）命名。这条河流又得名于沿岸生长的“tempinis”树（马来语，学名为Streblus elongatus）。由于早期开发中不可持续的砍伐，tempinis树在新加坡几乎灭绝，但在1995年启动了重新种植计划，将其重新引入淡滨尼各地。“Tampines”这一拼写是殖民时期英语化的结果，对原始马来名称进行了修改。
+
+在城市化之前，淡滨尼地区曾被森林、沼泽和沙石场覆盖。1864年，淡滨尼路从一条马道发展为车道，沿线形成了多个早期聚落，包括甘榜德班（Kampong Teban）、德福村（Teck Hock Village）、洪杨村（Hun Yeang Village）和甘榜淡滨尼（Kampong Tampines），居民多居住在锌板和亚答屋中。20世纪初，淡滨尼成为重要的种植园区域，遍布椰子树、橡胶树和果树，其中Tempenis Para and Coconut Plantations Limited在1910年拥有超过3000英亩的土地。1932年的地图显示，该地区还分布着Yeo Tek Ho、Yap、Thai Hin、Hun Yeang和Loh Lam等种植园。此外，该区域在1987年之前曾是军事训练区。从1912年开始，沙石开采业兴起，并在1960年代因城市重建需求而达到顶峰，高峰期有20多个沙石场。然而，该行业对环境造成了严重破坏，导致水体污染、山体滑坡和洪水。新加坡政府于1981年开始规范采石作业，到1991年所有采石活动停止。一些废弃的采石场被改造成渔塘和休闲区，另一些则被填埋，成为淡滨尼新镇发展的一部分，其中一个成为了勿洛水库。
+
+\section{城市规划与建设进程}
+淡滨尼新镇于1978年成立，其建设始于1979年，是新加坡第一个基于邻里和社区规划概念开发的新镇。第一和第二邻里于1983年至1987年间完成，随后第八和第九邻里在1985年至1989年间建成。第五邻里和淡滨尼市镇中心于1989年竣工。由于快速发展，淡滨尼新镇被划分为淡滨尼东、淡滨尼西、淡滨尼北和淡滨尼尚育四个区域。新加坡建屋发展局（HDB）负责管理该镇的建设直至1991年，之后由淡滨尼市镇理事会接管。联合国建筑与社会住房基金会（BSHF）于1992年10月5日授予淡滨尼世界人居奖，以表彰其在人类住区和发展方面的杰出贡献。第三和第七邻里直到1997年才完全建成，选区也随之重组，纳入了新的淡滨尼中心区。
+
+\section{重要地标与建筑}
+淡滨尼地区拥有多个重要地标和设施。新加坡博览中心（Singapore Expo）是新加坡最大的会展中心，位于Xilin分区，该区域还拥有新加坡最大的高尔夫球场群。樟宜商业园（Changi Business Park）是新加坡最大的综合商业园，占地71,000平方米，吸引了摩根大通、瑞士信贷、IBM和渣打银行等众多跨国公司入驻。淡滨尼尚育社区中心（Tampines Changkat CC）是当地重要的社区设施。此外，淡滨尼市镇中心（Tampines Town Centre）被规划为独特的沙漏形城市设计。在住宅方面，淡滨尼拥有大量的HDB组屋，其中一些较老的组屋可追溯到1980年代初期。近年来的住宅项目包括The Premiere @ Tampines, Tampines GreenLeaf, Centrale 8, Tampines Trilliant, Citylife @ Tampines, Tampines GreenTerrace, Arc @ Tampines, Q Bay Residences 和 The Santorini。淡滨尼北新镇的第一个预购组屋（BTO）项目Tampines GreenRidges于2014年底推出。
+
+\section{人口变迁与族群结构}
+截至2025年，淡滨尼的总人口为290,090人，是新加坡人口最多的规划区。截至2024年，淡滨尼新镇的组屋居民为242,610人。该地区的人口结构显示，0-14岁人口占14.75\%，15-64岁人口占66.63\%，65岁及以上人口占18.61\%。目前没有找到关于淡滨尼尚育单选区或淡滨尼整体的详细族群构成信息，但可以推断其族群构成与新加坡整体多元种族的特点相符。
+
+\section{近年发展与城市更新}
+淡滨尼尚育单选区作为淡滨尼规划区的一部分，受益于整个淡滨尼地区的城市更新和发展项目。淡滨尼新镇自1978年成立以来，经历了持续的建设和扩展。在2010年代，淡滨尼中心的住宅项目持续发展，包括The Premiere @ Tampines、Tampines GreenLeaf、Centrale 8、Tampines Trilliant和Citylife @ Tampines等。此外，淡滨尼北新镇的建设也在进行中，首批预购组屋（BTO）Tampines GreenRidges于2014年底推出，标志着淡滨尼北新镇Park West区的第一阶段建设。淡滨尼市镇理事会负责管理该区域的市政服务，并积极推动社区发展项目，例如邻里更新计划（Neighbourhood Renewal Programme, NRP），旨在提升居民的生活环境。选区划分的调整也是近年来的重要变化之一，例如2025年大选前，淡滨尼尚育从集选区中独立出来，成为一个单选区，这反映了区域人口和规划的动态变化。
+
+\section{社区记忆与空间认同}
+淡滨尼地区的社区记忆与空间认同主要体现在居民对自身居住环境的参与和归属感上。以“Our Tampines Hub”（OTH）为例，这个新加坡首个综合社区与生活时尚中心在构思到建成的整个过程中，都积极听取并采纳了居民的意见。OTH被设想为“由居民为居民打造的中心”，这种深度参与感无疑增强了居民对社区的认同和空间记忆。例如，OTH内的户外线性花园，通过感官体验（水景、鸟鸣、花草）为老年痴呆症患者提供了治疗空间，这不仅是物理空间的建设，更是对居民情感和记忆的关怀。此外，淡滨尼市镇理事会通过邻里更新计划等项目，持续改善居民生活环境，这些举措都有助于居民形成积极的社区记忆和对居住空间的认同感。虽然没有直接找到关于不同年龄阶层居民具体空间记忆的详细描述，但从社区参与和设施建设的导向来看，淡滨尼致力于打造一个让所有居民都能共享和珍视的家园。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Tampines. \url{https://en.wikipedia.org/wiki/Tampines}
+  \item Wikipedia. Tampines Changkat Single Member Constituency. \url{https://en.wikipedia.org/wiki/Tampines_Changkat_Single_Member_Constituency}
+  \item National Library Board. Tampines. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=dae71f53-8054-422e-a118-a2d88f27cfef}
+\end{enumerate}
+
+
+\part{第三篇：北部}
+
+\chapter{三巴旺集选区 (Sembawang GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{sembawang.jpg}
+  \caption{三巴旺一带的海滨与住宅区}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+三巴旺集选区（Sembawang GRC）的政治历史与新加坡的选举制度演变紧密相连。该集选区于1988年成立，旨在确保国会中少数族裔的代表性，并促进政治稳定。自成立以来，三巴旺集选区一直由人民行动党（PAP）执政。在2006年大选中，由徐顺娟（Chee Siok Chin）领导的新加坡民主党（SDP）首次挑战人民行动党团队，但人民行动党以76.7\%的得票率获胜。2011年大选，人民行动党再次面对民主党的挑战，尽管得票率有所下降至63.9\%，但仍成功守住该选区。2015年大选，国民团结党（NSP）取代民主党参选，人民行动党以72.3\%的得票率再次获胜。这些选举结果表明，尽管存在反对党的竞争，人民行动党在三巴旺集选区一直保持着强大的支持基础。
+在历届大选中，三巴旺集选区的划界和内部组成也经历了一些调整。例如，在2025年大选前，为了减少集选区内的选民数量，三巴旺西区的大部分住宅区被划出，成立了新的三巴旺西单选区（Sembawang West SMC）。这一调整导致原三巴旺集选区的议员傅丽珊（Poh Li San）转战三巴旺西单选区。在2025年大选中，由卫生部长王乙康（Ong Ye Kung）率领的人民行动党团队，以67.75\%的得票率击败了民主党和国民团结党，再次赢得三巴旺集选区。该团队成员包括王乙康、林伟杰（Gabriel Lam）、玛丽亚姆·贾法尔（Mariam Jaafar）、黄诗璇（Ng Shi Xuan）和维凯·奈尔（Vikram Nair）。这些政治人物在三巴旺集选区的发展和治理中扮演了重要角色，他们的政策和行动直接影响着该地区居民的生活。
+
+\section{早期地貌与前城市化时期}
+在19世纪早期，三巴旺地区的地貌与今日截然不同，当时的新加坡岛北部仍覆盖着大片原始森林。根据詹姆斯·富兰克林和威廉·法夸尔在1822年进行的早期调查，以及威廉·马斯登在1829年出版的苏门答腊地图中的新加坡岛插图，该地区沿海地带遍布茂密的植被，其中包括淡水沼泽、红树林或沿海森林。英国殖民者于1819年抵达新加坡时，发现岛上人口稀少，但已有20个由来自廖内群岛的潮州种植者拥有的甘蜜和胡椒种植园。这些种植园最初位于新加坡河南部，但随着市中心和港口区域的发展，土地变得稀缺，种植者逐渐向北部内陆迁移。由于甘蜜和胡椒采用轮耕制，每15至20年就需要新的土地，这导致了三巴旺地区原始森林的逐步开垦。
+1828年，富兰克林与测量师菲利普·杰克逊合作绘制的《新加坡英属定居点规划图》首次准确描绘了新加坡岛的轮廓，并可能首次提及了三巴旺地区，图中北部标示有“R. Tambuwang”河流，这被认为是“Sembawang River”的早期拼写变体。1848年，海峡殖民地政府测量师约翰·特恩布尔·汤姆森在其报告中指出，三巴旺河在涨潮时可供炮艇航行，且该地区居住着华族甘蜜种植者，他们拥有一艘用于运输甘蜜的“pukat”船只。汤姆森的调查还记录了北部地区存在15个“港”（kang），即华族沿河聚落，由“港主”管理，这些港主通常是种植园主，负责管理劳工。其中，三巴旺河口的“烂土港”（Nám Tó Káng）在1855年的调查中显示拥有10个甘蜜和胡椒种植园，雇佣了137名劳工，同时还种植靛蓝作物。这些早期聚落和经济活动构成了三巴旺前城市化时期的主要特征，为后来的发展奠定了基础。
+
+\section{城市规划与建设进程}
+三巴旺的城市化进程与新加坡的殖民历史及独立后的发展紧密相连。在19世纪至20世纪初，该地区主要以甘蜜、胡椒和菠萝种植园为主，这些种植园从实里达河一直延伸至北部的三巴旺河。然而，随着英国殖民势力的扩张，三巴旺的战略地理位置使其成为重要的军事基地。1928年，英国在此启动了大型海军基地建设，并于1938年竣工，该基地不仅包含船坞、码头和维修车间，还配套建设了行政、住宅和商业设施，成为英国在远东地区的重要军事支点。这一时期，三巴旺的土地用途从农业转向军事，为该地区带来了初步的城市化特征。
+新加坡独立后，英国海军基地于1968年移交给新加坡政府，并于同年转型为商业船厂，即三巴旺船厂（现为新科海事SembCorp Marine的一部分），标志着该地区从军事重镇向工业中心的转变。1983年，新加坡海军基地的正式启用进一步推动了三巴旺的区域发展，周边兴建了空军基地和兵营等军事设施。进入1990年代中期，随着新加坡政府的城市发展规划，三巴旺新镇的建设于1996年启动，并伴随兀兰地铁延长线的开通，三巴旺地铁站也同步投入使用。新镇的加速发展在2004年基本完成，大量组屋（HDB flats）在三巴旺、堪培拉和甘巴士等分区拔地而起，为居民提供了现代化的居住环境。如今，三巴旺的许多道路仍以皇家海军船坞、军舰和海军上将命名，如威灵顿路、堪培拉路等，这些都深刻反映了其作为英国海军基地的历史遗产。
+展望未来，三巴旺正迎来新一轮的发展浪潮，其中三巴旺北部住宅区将是重点。该区域计划逐步推出约8,000套预购组屋（BTO flats），并建设“社区码头”网络，通过步行友好的连接方式将住宅区与主要设施和绿地相连。新住宅的设计灵感来源于三巴旺的航海历史，公共空间和建筑将融入航海主题元素，以唤起其沿海过去的记忆。这些发展项目是北部地区更广泛规划的一部分，旨在将其打造成为一个充满活力、可持续且互联互通的社区。
+
+\section{重要地标与建筑}
+三巴旺地区拥有众多承载历史记忆的重要地标与建筑，这些遗迹不仅见证了其从殖民时期到现代城市发展的变迁，也构成了独特的区域特色。其中，三巴旺公园（Sembawang Park）是该区的一大亮点，它不仅是新加坡少数拥有天然海滩的公园之一，也是露营和休闲的热门地点。公园内保存着建于1910年的比尤利屋（Beaulieu House），这座黑白洋房以其维多利亚风格的铁艺和新古典主义石膏细节而闻名，于2005年被市区重建局列为受保护建筑，曾是海军上将杰弗里·莱顿（Admiral Sir Geoffrey Layton）的住所。公园内还设有一个以战舰为主题的户外游乐场，以纪念该地区丰富的海军历史。此外，位于旧尼尔森路（Old Nelson Road）的前海军部大厦（Former Admiralty House）是一座酷似传统英式乡村别墅的建筑，二战期间曾被英军使用，并于2002年被列为国家古迹，是三巴旺殖民时期军事遗产的重要象征。
+除了历史建筑，三巴旺还拥有其他重要的商业和文化设施。三巴旺购物中心（Sembawang Shopping Centre）、堪培拉广场（Canberra Plaza）和太阳广场（Sun Plaza）是区内的主要商业中心，为居民提供购物和餐饮服务。其中，太阳广场紧邻三巴旺地铁站，交通便利。文化设施方面，三巴旺公共图书馆（Sembawang Public Library）位于太阳广场内，为社区提供阅读和学习空间。近年来，武吉堪培拉（Bukit Canberra）综合体育和社区中心的逐步开放，进一步丰富了区内的公共设施，该中心包含小贩中心、综合诊疗所、乐龄护理中心和托儿中心等，为不同年龄层的居民提供了全面的服务。这些地标和设施共同构筑了三巴旺的城市景观，反映了其多元的历史背景和现代发展。
+
+\section{人口变迁与族群结构}
+三巴旺地区的人口结构在过去几十年间经历了显著变迁，反映了新加坡整体的城市发展和人口增长趋势。根据2024年的估计数据，三巴旺的总人口达到110,090人。从年龄结构来看，0-14岁年龄段的人口为18,580人，15-64岁的工作年龄人口为79,210人，而65岁及以上的老年人口为12,290人。性别比例方面，男性人口为54,300人，女性人口为55,790人，显示出相对均衡的分布。在族群构成上，根据2020年的人口普查数据，华族人口占据主导地位，达到72,910人；马来族人口为16,680人；印度族人口为9,360人；其他族群人口为3,680人。这表明三巴旺是一个多民族融合的社区，但华族人口比例较高，与新加坡全国的族群分布大体一致。
+回顾历史，三巴旺在19世纪初期曾是华人甘蜜种植者和马来村落的所在地，人口稀少且以农业劳工为主。随着英国海军基地的建立和工业化进程的推进，该地区吸引了大量工人及其家属，人口规模逐步扩大。进入20世纪90年代，三巴旺新镇的开发进一步加速了人口的涌入，尤其是在堪培拉和三巴旺等分区，新建的组屋项目为大量居民提供了住房。从2000年到2024年，三巴旺的人口从31,418人增长到110,090人，增长了近三倍，这充分体现了该地区作为新兴住宅区的快速发展。人口的快速增长和结构变化，对三巴旺的社会服务、基础设施和社区发展提出了新的需求和挑战。
+
+\section{近年发展与城市更新}
+近年来，三巴旺地区持续经历着显著的城市更新与发展，旨在提升居民的生活品质并满足不断增长的人口需求。其中，武吉堪培拉（Bukit Canberra）综合体育和社区中心的逐步开放是近年来的一个重要里程碑。该中心自2022年7月起陆续启用，提供包括小贩中心、综合诊疗所、乐龄护理中心和托儿中心在内的多元化设施，极大地丰富了社区服务，为不同年龄层的居民提供了便利的休闲、医疗和教育资源。此外，三巴旺温泉公园（Sembawang Hot Spring Park）在2020年1月完成升级改造后重新开放，新增了层叠式温泉池和咖啡馆，成为吸引本地居民和游客的独特景点，进一步提升了社区的吸引力。
+在住房方面，三巴旺北部（Sembawang North）新住宅区的规划和建设是未来发展的重点。预计将逐步推出约8,000套预购组屋（BTO flats），以满足新加坡日益增长的住房需求。这些新住宅项目将融入航海主题的设计元素，并配套建设“社区码头”（Community Wharves），通过步行友好的连接方式将住宅与主要设施和绿地串联起来，旨在打造一个充满活力、可持续且互联互通的社区。此外，三巴旺船厂（Sembawang Shipyard）的未来发展也备受关注，城市重建局（URA）的总体规划旨在将其转型为一个独特的综合用途海滨区，在保留其海事历史特色的同时，引入新的住宅和创新中心。这些项目共同构成了三巴旺近年来的城市更新图景，预示着该地区将迎来更加繁荣的未来。
+
+\section{社区记忆与空间认同}
+三巴旺的社区记忆与空间认同是其历史和发展轨迹的深刻体现，尤其体现在不同年龄层居民对这片土地的情感联结与认知上。对于老一辈居民而言，三巴旺的记忆往往与英国海军基地的繁荣、甘蜜和胡椒种植园的景象以及早期村落的生活紧密相连。他们可能还记得在三巴旺河畔捕鱼、在天然海滩上野餐的时光，以及那些承载着殖民时期历史的黑白洋房和前海军部大厦。这些记忆构成了他们对三巴旺的早期空间认同，是一种对过去生活方式和历史地貌的深厚情感。
+随着城市化进程的推进和新镇的建设，年轻一代居民对三巴旺的记忆更多地与现代化的组屋、便利的商业中心（如太阳广场、堪培拉广场）以及综合社区设施（如武吉堪培拉）相关联。他们可能更熟悉三巴旺地铁站带来的便捷交通，以及温泉公园等休闲场所。然而，通过“三巴旺记忆项目”（Sembawang Memory Project）等倡议，不同年龄层的居民被鼓励分享他们的故事，讲述社区从甘榜到现代化城镇的变迁，这有助于弥合代际间的记忆鸿沟，共同构建对三巴旺的集体认同。该项目通过收集居民的亲身经历和照片，旨在出版一本名为《回忆录》（Chronicles of Remembrance）的书籍，由当时的总统陈庆炎博士作序，以此来记录和传承三巴旺独特的社区记忆和空间认同，强调其作为家园的深层意义。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Sembawang Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Sembawang_Group_Representation_Constituency}
+  \item Wikipedia. Sembawang. \url{https://en.wikipedia.org/wiki/Sembawang}
+  \item BiblioAsia. The Story of Sembawang from 19th-Century Singapore Maps. \url{https://biblioasia.nlb.gov.sg/all-sections/vol-20-issue-4-jan-mar-2025-sembawang-maps-singapore/}
+  \item HDB. Sembawang. \url{https://www.hdb.gov.sg/about-us/our-towns-and-estates/sembawang}
+  \item Roots.sg. Sembawang Heritage Trail - Historical Landmarks of Sembawang. \url{https://www.roots.gov.sg/places/places-landing/trails/Sembawang-Heritage-Trail---Historical-Landmarks-of-Sembawang}
+  \item City Population. Sembawang (Planning Area, Singapore). \url{https://www.citypopulation.de/en/singapore/admin/404__sembawang/}
+  \item FASS NEWS. Sembawang Memory Project – Invites to Participants. \url{https://blog.nus.edu.sg/fassnews/2013/05/03/sembawang-memory-project-invites-to-participants/}
+\end{enumerate}
+
+\chapter{三巴旺西单选区 (Sembawang West SMC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{sembawang_west.jpg}
+  \caption{三巴旺西一带的组屋社区}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+三巴旺地区的政治版图经历了多次演变，从早期的单选区到集选区，再到近期三巴旺西单选区的设立，都反映了新加坡政治地理的动态调整。三巴旺最初曾是名为实里达（Seletar）的选区，随后在1955年被划分为独立的三巴旺单选区，但其范围后来有所缩小，仅保留了北部区域。自成立以来，三巴旺选区一直由人民行动党（PAP）执政。随着时间的推移，三巴旺选区不断扩大，并吸纳了海军部（Admiralty）、坎贝拉（Canberra）和海军基地（Naval Base）等分区，最终演变为集选区（GRC）。
+
+在三巴旺集选区时期，多位杰出的政治人物曾在此服务。例如，新加坡前总统陈庆炎博士（Dr. Tony Tan Keng Yam）曾是三巴旺的国会议员，并领导该选区直至2006年。随后，丹戎巴葛集选区国会议员兼前交通部长许文远（Khaw Boon Wan）接任，成为该选区的领军部长，直至2020年。现任卫生部长王乙康（Ong Ye Kung）于2015年首次当选，并于2020年接替许文远成为三巴旺集选区的领军部长。这些政治人物的领导，对三巴旺地区的规划和发展产生了深远影响。
+
+值得注意的是，三巴旺集选区下属的一个分区，即由傅丽珊（Poh Li San）负责的三巴旺西区，于2025年被划分为独立的单选区，即三巴旺西单选区（Sembawang West SMC）。这一调整是由于三巴旺集选区人口的显著增长所致。在2025年的大选中，人民行动党的傅丽珊与新加坡民主党秘书长徐顺全（Dr. Chee Soon Juan）在该选区展开了激烈的竞争。最终，傅丽珊以53.19\%的得票率胜出，徐顺全的得票率为46.81\%。此次选举结果不仅决定了三巴旺西单选区的政治代表，也标志着该选区在新加坡政治版图中的新篇章。
+
+\section{早期地貌与前城市化时期}
+三巴旺地区的历史可追溯至19世纪，其地名“Sembawang”源自马来语中的“ pokok sembawang ”，即铁力木（Mesua ferruginea）。最早的文献记载出现于1830年富兰克林和杰克逊绘制的新加坡地图中，当时标注为“Tambuwang”河。在英国殖民时期早期，三巴旺大部分地区被茂密的原始森林覆盖。随着19世纪初期的经济发展，这些森林逐渐被开垦，用于种植经济作物，如胡椒、甘蜜、椰子和橡胶。这些种植园的兴起，吸引了潮州籍种植园主和劳工前来定居，形成了早期的华人聚落，即“港”或“港主制度”下的村落。
+
+19世纪中期，英国政府测量师约翰·特恩布尔·汤姆森（John Turnbull Thomson）对新加坡内陆进行了详细勘测，并记录了三巴旺河沿岸的“港”聚落。其中，位于三巴旺河口的“烂土港”（Nám Tó Káng）是一个重要的华人甘蜜种植园聚落，其港主为陈亚土。1855年的调查显示，烂土港拥有10个种植园，雇佣了137名劳工，除了胡椒和甘蜜，还种植了靛蓝。这些早期的农业活动深刻改变了三巴旺的自然地貌，将大片森林和沼泽地转化为农田和村庄，为后来的城市发展奠定了基础。
+
+20世纪初期，三巴旺地区的地貌再次发生重大转变。英国海军于1928年开始在此兴建大型海军基地，并于1938年竣工。这座海军基地不仅包括船坞、码头和维修厂，还配套建设了行政、住宅和商业区域，使得三巴旺从一个以农业为主的乡村地区，逐步发展成为一个具有战略意义的军事重镇。海军基地的建设也带动了周边基础设施的发展，例如三巴旺路（Sembawang Road）在1920年代作为连接基地与市中心的通道而修建，并于1938年正式命名。这一时期的发展为三巴旺的城市化进程埋下了伏笔，也塑造了其独特的历史底蕴。
+
+\section{城市规划与建设进程}
+三巴旺地区的城市化进程与新加坡的整体发展战略紧密相连，尤其是在英国海军基地移交新加坡政府后，其发展步伐显著加快。1968年，英国海军基地被移交给新加坡政府，并于同年转型为商业船厂，即三巴旺船厂（Sembawang Shipyard），隶属于新加坡交易所上市的新加坡海事公司（SembCorp Marine）。这一转型标志着三巴旺从军事重地向工业与商业中心的转变，为该地区的经济发展注入了新的活力。在1970年代至1990年代，随着新加坡建屋发展局（HDB）大规模新镇建设的推进，三巴旺地区原有的菜园、橡胶种植园和华人墓地逐渐被现代化的住宅区所取代，尤其是三巴旺新镇的规划与建设，彻底改变了该地区的面貌。
+
+三巴旺新镇的规划始于1996年，同年兀兰地铁延长线开通，三巴旺地铁站也同步投入使用。尽管当时该地区除了甘巴士路（Canberra Road）和正在开发中的三巴旺新镇外，大部分区域仍处于未开发状态，但地铁的开通为新镇的未来发展奠定了交通基础。1998年，随着三巴旺新镇建设的加速，这一状况得到了显著改善，新镇最终于2004年全面建成。这些由建屋发展局建造的组屋分布在三巴旺、坎贝拉和甘巴士等分区，为大量居民提供了现代化住房，也吸引了更多人口迁入。
+
+在城市规划方面，三巴旺新镇的建设不仅注重住宅功能，还整合了商业、教育、休闲等多种设施，旨在打造一个宜居、自给自足的社区。例如，2022年末，三巴旺迎来了首个小贩中心和综合诊疗所，这些设施位于武吉坎贝拉（Bukit Canberra）综合体育与社区中心内，自2022年7月起逐步开放。此外，三巴旺的交通网络也得到了持续完善，除了地铁系统，三巴旺巴士转换站于2005年11月20日建成并投入使用，取代了位于三巴旺路北端和海军部西路沿线的旧巴士总站，进一步提升了居民出行的便利性。这些规划与建设举措共同推动了三巴旺地区的全面城市化进程，使其从一个历史悠久的港口和军事基地，发展成为一个充满活力的现代新镇。
+
+\section{重要地标与建筑}
+三巴旺地区拥有众多承载历史记忆与现代生活的重要地标和建筑。其中，三巴旺公园（Sembawang Park）是该地区的一颗璀璨明珠，这个占地15公顷的宁静公园于1970年代开发，并由国家公园管理局维护。公园内拥有新加坡少数几个天然海滩之一的瓦卡桑海滩（Wak Hassan Beach），是露营者和家庭休闲的理想场所。公园内还有建于1910年的Beaulieu House，曾是英国远东舰队司令杰弗里·莱顿海军上将（Admiral Sir Geoffrey Layton）的住所，如今已成为一处餐饮场所，见证了三巴旺作为海军基地的辉煌历史。公园内的战舰主题户外游乐场，也巧妙地融入了该地区的海军历史元素。
+
+另一个独特的地标是三巴旺温泉公园（Sembawang Hot Spring Park），这是新加坡大陆上唯一的天然温泉公园。公园位于甘巴士大道（Gambas Avenue）与三巴旺路（Sembawang Road）交界处附近，经过升级改造后于2020年1月4日重新开放，现在设有梯级温泉池和咖啡馆，吸引着众多游客前来泡脚和煮温泉蛋。这些自然与历史的结合，为三巴旺增添了独特的魅力。在商业设施方面，三巴旺拥有三巴旺购物中心（Sembawang Shopping Centre）、坎贝拉广场（Canberra Plaza）和位于三巴旺地铁站旁的太阳广场（Sun Plaza）等购物中心，为居民提供了便捷的购物和休闲选择。
+
+此外，武吉坎贝拉（Bukit Canberra）作为一处综合性体育与社区中心，也是三巴旺近年来的重要发展项目。该中心集小贩中心、综合诊疗所、乐龄护理中心和托儿中心等多功能于一体，自2022年7月起分阶段开放，极大地提升了社区的公共服务水平。三巴旺公共图书馆（Sembawang Public Library）则位于太阳广场内，为居民提供了丰富的阅读资源和文化活动空间。这些地标和设施共同构成了三巴旺地区多元化的城市景观，既保留了历史的痕迹，又展现了现代化的活力。
+
+\section{人口变迁与族群结构}
+三巴旺地区的人口结构和族群历史反映了新加坡作为一个多元文化社会的缩影，同时也体现了该地区从早期农业聚落到现代新镇的演变。在19世纪，三巴旺的早期聚落主要由来自中国南方的潮州籍种植园主和劳工组成，他们在此开垦甘蜜和胡椒种植园。随着英国海军基地的建立，该地区吸引了来自英国、马来亚以及其他殖民地的人口，形成了更为多元的居民构成。海军基地的运作带来了大量的军事人员及其家属，以及为基地提供服务的劳工和商人，使得三巴旺的族群构成在20世纪中期呈现出显著的国际化特征。
+
+进入20世纪后期，随着新加坡政府大规模的公共住房计划和三巴旺新镇的开发，该地区的人口结构发生了根本性变化。原有的乡村聚落居民逐渐迁入现代化组屋，新的居民也从新加坡各地迁入。根据最新的资料，三巴旺北分区的人口构成中，华人约占17,670人，马来人约4,220人，印度人约2,510人，其他族群约1,150人，这显示了该地区以华人为主，同时拥有显著的马来族和印度族社群的多元族群特征。此外，有资料指出三巴旺西单选区的选民年龄结构偏向年轻化，以X世代和千禧一代为主，这表明该地区吸引了大量年轻家庭和劳动力，为社区带来了活力。这种人口变迁不仅是城市发展的结果，也塑造了三巴旺独特的社区面貌和文化融合。
+
+\section{近年发展与城市更新}
+近年来，三巴旺地区，特别是三巴旺西单选区所涵盖的范围，经历了显著的城市更新和发展项目，旨在提升居民的生活品质并满足不断增长的人口需求。其中最引人注目的项目之一是武吉坎贝拉（Bukit Canberra）综合体育与社区中心。该中心于2022年7月起分阶段开放，集成了小贩中心、综合诊疗所、乐龄护理中心、托儿中心以及多个公园和体育设施。武吉坎贝拉的建成，不仅为三巴旺居民提供了便捷的医疗、餐饮和休闲选择，也成为了社区活动的新枢纽，体现了新加坡在城市规划中对居民福祉的全面考量。
+
+除了武吉坎贝拉，三巴旺北（Sembawang North）区域的开发也是近年来的重点。该区域占地53公顷，规划将提供近1万个住宅单位，其中包括8000个预购组屋（BTO）单位和2000个私人住宅单位。首个预购组屋项目“Sembawang Beacon”已于2025年7月推出，预计等候时间约为三年。这些新住宅项目旨在缓解住房需求，并吸引更多年轻家庭和居民迁入。值得一提的是，“Sembawang Beacon”项目在设计上融合了三巴旺的海事和殖民地建筑元素，并结合了绿色生态理念，力求打造一个兼具历史韵味与可持续发展的新型宜居社区。
+
+此外，三巴旺船厂（Sembawang Shipyard）的未来转型也是该地区城市更新的重要组成部分。根据市区重建局（URA）的规划，三巴旺船厂将被重新规划为一个独特的滨水综合用途区，同时保留其海事特色。这一转型将为三巴旺带来新的商业和休闲机会，进一步丰富该地区的功能和活力。这些发展项目共同描绘了三巴旺地区持续进步的蓝图，使其在保留历史遗产的同时，不断适应现代城市发展的需求，为居民创造更加宜居和充满活力的生活环境。
+
+\section{社区记忆与空间认同}
+三巴旺地区的社区记忆与空间认同是其独特历史演变的重要体现，不同年龄阶层的居民对这片土地有着多元而丰富的感知。对于在此地生活较久的老一辈居民而言，三巴旺的记忆可能与早期的甘蜜胡椒种植园、繁忙的英国海军基地以及充满乡村气息的村落生活紧密相连。他们可能还记得三巴旺路沿线的村庄，如菜溪村、双溪实邦村、忠邦村等，以及这些村庄在1970年代至1990年代为新镇发展而逐渐消失的景象。这些记忆构成了他们对三巴旺深厚的历史情感和对过往生活方式的怀旧。
+
+随着三巴旺新镇的建成和发展，年轻一代居民的社区记忆更多地与现代化的组屋、购物中心、地铁站以及武吉坎贝拉等新型社区设施相关。他们可能对三巴旺公园的天然海滩、三巴旺温泉公园的独特体验，以及便利的公共交通和商业设施有着更直接的认同感。尽管生活环境发生了巨大变化，但三巴旺的许多地标，如三巴旺船厂、旧海军基地的一些殖民时期建筑，以及一些以英国海军舰船和地名命名的道路，仍然在无形中连接着新老居民，成为共同的空间记忆符号。
+
+社区的持续发展和城市更新项目，如三巴旺北新住宅区的建设，也在不断塑造着新的社区记忆和空间认同。例如，Sembawang Beacon项目在设计中融入了海事和殖民地建筑元素，这不仅是对历史的致敬，也旨在通过建筑语言将历史与现代生活融合，帮助新居民建立对社区的归属感。通过举办遗产径活动、社区文化节等，三巴旺的居民得以共同探索和传承这片土地的丰富历史，从而在多元的背景下形成更为凝聚和包容的社区认同。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Sembawang. \url{https://en.wikipedia.org/wiki/Sembawang}
+  \item Wikipedia. 三巴旺. \url{https://zh.wikipedia.org/wiki/%E4%B8%89%E5%B7%B4%E6%97%BA}
+  \item Makeswary Periasamy. The Story of Sembawang from 19th-Century Singapore Maps. \url{https://biblioasia.nlb.gov.sg/all-sections/vol-20-issue-4-jan-mar-2025-sembawang-maps-singapore/}
+  \item Roots.gov.sg. Sembawang Heritage Trail - Historical Landmarks of Sembawang. \url{https://www.roots.gov.sg/places/places-landing/trails/Sembawang-Heritage-Trail---Historical-Landmarks-of-Sembawang}
+  \item HDB. OUR TOWN, SEMBAWANG. \url{https://www.hdb.gov.sg/-/media/about-us/our-role/plan-and-design-towns/town-design-guides/Sembawang-Town-Design-Guide.pdf}
+  \item City Population. Sembawang North (Subzone, Singapore). \url{https://www.citypopulation.de/en/singapore/admin/sembawang/40404__sembawang_north/}
+  \item 8world. 【GE2025】三巴旺西单选区：人民行动党傅丽珊当选. \url{https://www.8world.com/singapore/ge2025-final-results-sembawang-west-smc-2778146}
+  \item Facebook. To meet strong housing demand and provide Singaporeans with a wider range of hou.... \url{https://www.facebook.com/SingaporeHDB/posts/to-meet-strong-housing-demand-and-provide-singaporeans-with-a-wider-range-of-hou/1445565837615785/}
+  \item PropertyNet.sg. Transformation of Canberra in 2026: How Sembawang North, New .... \url{https://propertynet.sg/transformation-of-canberra/}
+  \item URA Master Plan. Sembawang Shipyard. \url{https://www.uradraftmasterplan.gov.sg/regional-plans/north/sembawang-shipyard/}
+  \item Facebook. Sembawang has been a place of joy, with so much to discover .... \url{https://www.facebook.com/thelongnwindingroad/posts/sembawang-has-been-a-place-of-joy-with-so-much-to-discover-and-now-a-place-that-/1418322243672426/}
+  \item Facebook. What are perceptions of Sembawang\textbackslash\{\}'s history and heritage?. \url{https://www.facebook.com/groups/singaporeheritage/posts/24833338679600228/}
+\end{enumerate}
+
+\chapter{义顺集选区 (Nee Soon GRC)}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,height=0.35\textheight,keepaspectratio]{nee_soon.jpg}
+  \caption{义顺新镇的组屋与绿化环境}
+\end{figure}
+
+\section{选区划界与政治地理背景}
+义顺的政治选举历史经历了多次演变。最初，义顺是一个单选区（Nee Soon Constituency），在1959年大选中设立。1988年集选区制度引入后，义顺的部分区域被划入宏茂桥和三巴旺集选区。2011年大选时，正式成立了义顺集选区（Nee Soon GRC），由内政部长兼律政部长尚穆根（K. Shanmugam）领军的人民行动党（PAP）团队以58.40\%的得票率击败工人党。在随后的2015年和2020年大选中，人民行动党分别以66.83\%和61.90\%的得票率成功守住该选区。在最新的2025年大选中，尚穆根带领一支包含四名新人的全新团队，以73.81\%的高得票率击败红点同心党（RDU），继续执政。义顺集选区目前包括忠邦、义顺中、义顺东、义顺岭和义顺南五个分区。
+
+\section{早期地貌与前城市化时期}
+义顺（Yishun）的早期历史可以追溯到19世纪末至20世纪初。其名称“Yishun”是“Nee Soon”的华语拼音音译，得名于著名实业家林义顺（Lim Nee Soon）。林义顺是一位杰出的橡胶和黄梨种植园主，他在该地区拥有大片土地，并因其在黄梨产业的巨大投资而被称为“黄梨大王”。在城市化之前，义顺地区主要由乡村、农田和种植园组成。1905年起，林义顺开始在实里达河（Seletar River）周边收购土地，并建立了橡胶和黄梨种植园。他还与朋友合资在Jia Chui Kang（后改名为义顺村，Nee Soon Village）开设了Thong Aik商店，为种植园工人提供日常必需品。随着时间的推移，围绕这些种植园和商店，逐渐形成了一个繁荣的早期聚落。这些早期的农业和商业活动为义顺后来的发展奠定了基础，而林义顺对该地区的贡献也使其名字永远地留在了这片土地上。
+
+\section{城市规划与建设进程}
+义顺的城市化进程主要在建屋发展局（HDB）的规划下展开。在1980年代之前，义顺（当时称为Nee Soon）主要是一个由村庄、农田和种植园组成的乡村地区。随着新加坡人口的增长和对公共住房需求的增加，HDB开始将该地区规划并发展为一个现代化的新镇（New Town）。1980年代，义顺新镇的建设全面启动，原有的甘榜（Kampong）被逐步拆除，取而代之的是规划整齐的组屋区、完善的道路网络和配套的社区设施。1992年，纳福城（当时称为Northpoint Shopping Centre）的开业标志着义顺成为了新加坡首个拥有现代郊区购物中心的新镇。交通基础设施也随之完善，义顺地铁站（Yishun MRT）和卡迪地铁站（Khatib MRT）分别投入使用，极大地改善了该区的连通性。如今，义顺已经发展成为一个拥有超过5万套住宅单元、设施完备的成熟市镇。
+
+\section{重要地标与建筑}
+义顺区内拥有众多重要的地标和设施。商业设施方面，纳福城（Northpoint City）是北部最大的购物中心，集成了综合交通枢纽、公寓和公共图书馆；此外还有Junction Nine和Wisteria Mall等社区商场。医疗设施方面，邱德拔医院（Khoo Teck Puat Hospital）和义顺社区医院（Yishun Community Hospital）为居民提供全面的医疗服务。文化与宗教地标包括历史悠久的忠邦联合宫、斯里马哈马里安曼兴都庙（Sree Maha Mariamman Temple）以及阿末伊布拉欣回教堂（Masjid Ahmad Ibrahim）。休闲与自然景观方面，有义顺池塘公园（Yishun Pond Park）、实里达下段蓄水池公园（Lower Seletar Reservoir Park）以及即将建成的卡迪峰苏自然公园（Khatib Bongsu Nature Park），为居民提供了丰富的户外活动空间。
+
+\section{人口变迁与族群结构}
+义顺的人口构成随着其从乡村向现代市镇的转变而发生了显著变化。在早期，该地区主要由华人移民（特别是潮州人和福建人）组成，他们多从事橡胶和黄梨种植。随着1980年代建屋发展局（HDB）新镇的开发，大量来自新加坡各地的居民迁入，使得义顺的人口结构变得更加多元化，涵盖了华人、马来人、印度人及其他族群。目前，义顺的总人口约为229,520人，人口密度达到每平方公里5,300人。该区域不仅有大量的组屋居民，还包括居住在春叶（Springleaf）和义顺等私人住宅区的居民，形成了一个多层次、多族群和谐共处的现代社区。
+
+\section{近年发展与城市更新}
+近年来，义顺经历了显著的城市更新和规划发展。其中最引人注目的项目是纳福城（Northpoint City）的扩建与整合，它不仅成为了北部最大的购物中心，还包含了新加坡首个综合交通枢纽（ITH）、私人公寓和社区俱乐部。此外，拥有40年历史的忠邦城（Chong Pang City）也迎来了重大复兴计划，政府宣布将建设名为“Chill @ Chong Pang”的综合发展项目，预计2027年完工，该项目将整合游泳池、健身房、商业空间以及升级版的熟食中心和市场。在自然与休闲规划方面，政府于2020年宣布将占地40公顷的卡迪峰苏（Khatib Bongsu）开发为新的自然公园，以保护其丰富的红树林和泥滩生态，进一步提升了义顺作为宜居市镇的吸引力。
+
+\section{社区记忆与空间认同}
+义顺（Yishun）的社区记忆深受其从乡村到现代市镇转型的影响。对于年长的居民而言，义顺承载着浓厚的“甘榜（Kampong）”记忆。在口述历史和社区回忆中，许多老一辈居民回忆起义顺曾经是一个宁静、友好的村庄，孩子们在树上玩耍，村民们饲养羊和鸡等家禽。一些居民甚至记得部分区域曾是墓地或茂密的森林。这些早期记忆构成了他们对义顺深厚的情感认同。随着城市化的推进，虽然昔日的乡村风貌已被高楼大厦和繁忙的市场所取代，但新一代居民同样在这里建立了新的社区认同。新搬入的居民对义顺完善的便利设施和宜居环境表示赞赏，而各种社区活动、志愿服务以及如“Chill @ Chong Pang”等新社区中心的建设，也在不断塑造和强化着不同年龄阶层居民对义顺的现代空间认同与归属感。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Nee Soon Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Nee_Soon_Group_Representation_Constituency}
+  \item Wikipedia. Nee Soon Constituency. \url{https://en.wikipedia.org/wiki/Nee_Soon_Constituency}
+  \item Wikipedia. Yishun. \url{https://en.wikipedia.org/wiki/Yishun}
+  \item National Library Board. Lim Nee Soon. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=be69b0dd-c114-45cd-af32-e27e8f6a0050}
+  \item National Library Board. Stories of old Yishun. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=A-918319fb-f106-4643-be23-ca09575ab915}
+  \item 8world. 【GE2025】义顺集选区：人民行动党胜出. \url{https://www.8world.com/singapore/ge2025-final-results-nee-soon-grc-2778166}
+\end{enumerate}
+
+\chapter{马西岭-油池集选区 (Marsiling-Yew Tee GRC)}
+
+\section{选区划界与政治地理背景}
+马西岭-油池集选区于2015年成立，由蔡厝港集选区和三巴旺集选区的部分区域组成。自成立以来，该集选区一直由执政的人民行动党（PAP）赢得。该集选区目前由总理兼财政部长黄循财领导。在2015年大选中，由黄循财和哈莉玛·雅各布领导的人民行动党团队以68.73\%的得票率击败了新加坡民主党（SDP）。哈莉玛·雅各布于2017年8月7日辞职，竞选总统并成功当选。在她辞职后，当时蔡厝港集选区的议员扎吉哈接管了马西岭区的基层顾问工作，直至2020年大选。在2020年大选中，人民行动党团队以63.18\%的得票率击败了新加坡民主党。在2025年大选中，由黄循财领导的人民行动党团队以73.48\%的得票率再次当选，这是该集选区成立以来的最佳表现。在最新的选区划分审查中，马西岭-油池集选区是九个保持不变的选区之一，并首次成为“总理区”。
+
+\section{早期地貌与前城市化时期}
+马西岭（Marsiling）是新加坡北部的一个住宅区，其名称来源于中国潮州林氏家乡的马西村。该地区展现了新加坡较早期的生活模式，是一个相对宁静且人口密集的区域，毗邻兀兰关卡和马来西亚。油池（Yew Tee）最初是一个位于兀兰路附近、靠近今加利巴都车厂的村庄。在日据时期，该村庄曾用于储存石油，因此得名“油池”（在潮州话中意为“油池”）。该村庄曾居住着300多户家庭，主要以种植蔬菜和饲养鸭鸡为生。20世纪80年代，随着该地区的发展，这些村民被重新安置。油池地铁站的建设使该地区声名鹊起，该站位于原村庄所在地附近。林厝港（Lim Chu Kang）村由来自福建的华人移民Neo Ao Tiew（1884-1975）创立，他曾担任村长。该地区以其早期的胡椒和甘密种植园而闻名，后来被橡胶种植园取代。
+
+\section{城市规划与建设进程}
+马西岭在19世纪时，其周边地区以村落（kampongs）为主，主要覆盖着甘密和橡胶种植园。位于马西岭路西北部的Kampong Lorong Fatimah在1989年被兀兰关卡扩建项目取代。该村的大多数居民在附近的工厂工作，少数年轻居民则在市区的酒店和银行工作。马西岭路也曾是各种工业的所在地，例如马来亚金属盒公司（1949-1975年生产菠萝罐头）、刘长记饼家（新加坡机制月饼的先驱）以及精工仪器新加坡公司（自1984年起）。昇菘超市总部曾设在马西岭路3000号，直到2009年迁至万礼连路。油池地铁站于1990年代建成，旨在服务扩大后的蔡厝港镇北部地区，作为兀兰延长线的一部分。该站于1996年2月10日正式启用。市区重建局（URA）在地铁站启用后不久发布了发展指导计划，旨在将蔡厝港区改造为住宅区，包括建设私人和公共住房、公园、娱乐设施、购物场所、学校和社区设施。2000年，一个耗资5850万新元的体育中心建成，随后是一个包含日托教育中心和邻里警局的五层社区俱乐部。
+
+\section{重要地标与建筑}
+马西岭路以其军营而闻名，这得益于其丘陵地形以及靠近新加坡与马来西亚的北部边境。马西岭曾是1983年华语电视剧《新兵小传》的拍摄地之一。油池地铁站是该地区的重要地标，其设计具有甘榜风格的屋顶，并与周围环境融为一体。车站设施包括站控室、扩展呼叫区、42个自行车架、实时电子显示板、通往附近建筑的带顶走道、四个购物单元、便利的巴士站和出租车站。油池还有新的体育中心和五层社区俱乐部。林厝港地区则以其农业区和自然景观为主，包括克兰芝水库、双溪布洛湿地保护区和林厝港农场。
+
+\section{人口变迁与族群结构}
+油池的人口在过去几年中有所波动。2000年人口为23,934人，2010年显著增加到45,257人，随后在2015年略微下降到43,710人，2020年进一步下降到40,390人。2025年预计人口为39,100人。截至2020年人口普查，油池的族群构成以华人为主（29,390人），其次是马来人（6,080人）、印度人（3,540人和其他族群（1,380人）。林厝港是一个规划区，人口一直较低。2015年人口为90人，2020年增加到110人，2025年预计为30人。2020年族群构成以华人为主（100\%）。这些数据不包括非居民人口。
+
+\section{近年发展与城市更新}
+马西岭-油池集选区已被指定为“总理区”，由总理黄循财领导，预计将在未来的选举中受到更多关注。该集选区正积极推行心理健康倡议，社区领袖与居民，特别是马来回教社区，通过讲习班和宣传活动进行互动。目前计划在今年下半年为青少年提供更多心理健康支持。这些倡议由国防部兼永续发展与环境部高级政务部长扎吉哈在一个由黄循财总理出席的社区活动中宣布，强调了对社区福祉和参与的关注。马西岭民众俱乐部在服务社区40年后，即将被新的民众俱乐部取代，这标志着该地区城市更新的一部分。
+
+\section{社区记忆与空间认同}
+马西岭的社区记忆与其民众俱乐部紧密相连，该俱乐部在过去四十多年里一直是建立友谊、举办表演、组建社区团体和庆祝婚礼的中心。居民们回忆起旧时的甘榜和与该地区相关的童年记忆。即将落成的新马西岭民众俱乐部有望延续这一传统。油池的社区精神通过油池社区俱乐部开放日等活动得以培养，这些活动展示了各种摊位和引人入胜的表演。此外，还有卫生促进局的社区体育活动计划（CPAP）等举措，旨在支持老年人，这表明了对代际社区福祉的关注。林厝港则唤起了人们对旧路的回忆，特别是对骑自行车的人来说，这暗示了其与过去乡村景观的联系。尽管兀兰格罗夫的具体细节不易获得，但整个集选区各组成部分都强调了社区空间内的共享体验以及在发展中保护当地遗产的重要性。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Marsiling–Yew Tee Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Marsiling%E2%80%93Yew_Tee_Group_Representation_Constituency}
+  \item Wikipedia. Marsiling. \url{https://en.wikipedia.org/wiki/Marsiling}
+  \item Wikipedia. Yew Tee. \url{https://en.wikipedia.org/wiki/Yew_Tee}
+  \item Wikipedia. Lim Chu Kang. \url{https://en.wikipedia.org/wiki/Lim_Chu_Kang}
+  \item National Library Board. Marsiling Road. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=c1038476-dcd0-4899-9e48-5cd8ace3c166}
+  \item National Library Board. Yew Tee MRT station. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=ac5a0b03-f208-4304-8302-f666c19a3cb7}
+  \item City Population. Yew Tee (Subzone, Singapore) - Population Statistics, Charts, Map and Location. \url{https://www.citypopulation.de/en/singapore/admin/choa_chu_kang/50406__yew_tee/}
+  \item City Population. Lim Chu Kang (Planning Area, Singapore) - Population Statistics, Charts, Map and Location. \url{https://www.citypopulation.de/en/singapore/admin/402__lim_chu_kang/}
+  \item 8world. 马西岭-油池集选区计划实施措施 倡导心理健康重要性. \url{https://www.8world.com/singapore/wellness-resources-and-active-lifestyle-initiatives-marsiling-yew-tee-2831826}
+  \item 联合早报. 九选区保持不变 马西岭—油池集选区成“总理区”. \url{https://www.zaobao.com.sg/news/singapore/story20250312-6002271}
+\end{enumerate}
+
+\chapter{杨厝港单选区 (Yio Chu Kang SMC)}
+
+\section{选区划界与政治地理背景}
+杨厝港单选区在新加坡的政治版图中拥有独特的历史沿革。该选区最初于1980年设立，并在同年的大选中，人民行动党的刘炳森以87.53\%的高票率赢得选举，成为该选区的首位国会议员。刘炳森一直服务至1991年，随后杨厝港选区被废除，并入宏茂桥集选区。这一时期的划界调整反映了新加坡选举制度的演变，以及对集选区模式的探索。然而，杨厝港单选区并未就此消失。在2006年大选前，该选区再次从宏茂桥集选区中划出，重新设立为单选区。人民行动党的成汉通在2006年的选举中以68.28\%的得票率成功当选。尽管如此，该选区在仅一个任期后再次被废除，显示出其选举地位的波动性。直至2020年大选，杨厝港单选区再次重设，人民行动党的叶汉荣以60.82\%的得票率击败了前进党（Progress Singapore Party）的Kayla Low，成功进入国会。叶汉荣在2025年的大选中寻求连任，面对人民联盟（People's Alliance for Reform）的方爱民的挑战，最终以78.75\%的更高得票率成功守住了该席位。杨厝港单选区的多次设立与废除，以及不同时期主要政治人物的更迭，都反映了新加坡政治生态的动态变化，以及选区划界对选举结果和政治代表性的深远影响。
+
+\section{早期地貌与前城市化时期}
+杨厝港（Yio Chu Kang），位于新加坡东北部，其名称由两部分构成："杨"（Yio）为姓氏，指该地区早期的土地拥有者或宗族；"厝港"（Chu Kang，潮州话：cu3 gang2）则指河流偏远支流处用于转运农产品的内港聚落，与地名"后港"（Hougang）并无关联。类似的命名方式亦见于蔡厝港（Chua Chu Kang）和林厝港（Lim Chu Kang），均以宗族姓氏冠于"厝港"之前。这些"厝港"聚落在19世纪新加坡的康头（Kangchu）经济体系下兴起，作为附近种植园所产甘蜜（gambier）与胡椒的集散港口。历史记录显示，至1855年5月，杨厝港已是一个拥有161名苦力的定居点。殖民时期，该地区以种植园与甘榜（kampong）为主要地貌，甘蜜种植者中超过90\textbackslash\{\}\%为潮州籍华人，采用"刀耕火种"与游耕方式，导致大面积森林砍伐。19世纪90年代甘蜜产业衰退后，橡胶种植逐渐取而代之。
+
+\section{城市规划与建设进程}
+杨厝港地区城市化进程可追溯至新加坡早期殖民时期，其名称“杨厝港”源于潮州话“厝港”，意指河口港湾，这反映了该地在19世纪作为甘蜜和胡椒种植园农产品运输港口的经济历史。在新加坡改良信托局（SIT）时期，虽然杨厝港尚未进行大规模的公共住房建设，但SIT在1935年开始着手解决住房短缺问题，为后续的城市规划奠定了基础。1958年的总体规划（Master Plan）首次提出了通过分区、建设新镇和完善基础设施来解决住房不足、交通拥堵及土地利用不协调等问题，这为杨厝港地区未来纳入新镇发展框架提供了宏观指导。尽管当时杨厝港仍以乡村风貌为主，但其地理位置已为日后的城市扩张预留了空间。
+
+随着1960年建屋发展局（HDB）的成立，新加坡的公共住房建设进入了快速发展阶段。杨厝港地区作为宏茂桥规划区的一部分，其城市化进程与宏茂桥新镇的开发紧密相连。宏茂桥新镇作为新加坡第七个新镇，于1973年启动建设，并于1980年基本完成。在此期间，杨厝港的南部区域开始兴建高层公共组屋，逐步从低密度住宅区向高密度居住区转型。HDB在杨厝港规划了多个组屋项目，旨在为不断增长的人口提供可负担的住房。这些组屋的建设不仅改变了当地的景观，也带来了人口结构的显著变化，促进了社区的形成和发展。
+
+进入21世纪，杨厝港的城市化进程持续深化，并伴随着重要基础设施的升级和新组屋项目的推出。例如，杨厝港灯塔（Yio Chu Kang Beacon）组屋项目于2024年竣工，而杨厝港景（Yio Chu Kang Vista）的预计交房日期（EDPD）为2015年11月30日，这些项目进一步增加了该地区的住宅供应。在交通方面，南北线上的杨厝港地铁站（Yio Chu Kang MRT Station）自建成以来，极大地提升了该地区与新加坡中部地区的连接性，成为居民日常通勤的重要枢纽。此外，杨厝港体育中心等公共设施的建设，也为居民提供了休闲娱乐和体育活动的场所，完善了新镇的生活配套功能，使其成为一个宜居且功能齐全的次区域中心。
+
+\section{重要地标与建筑}
+杨厝港单选区内拥有多处重要地标与建筑，它们共同构成了该地区的历史与现代景观。其中，杨厝港体育中心是该区域重要的体育设施，为居民提供多样化的运动与休闲场所。该中心不仅是举办各类体育赛事的重要场地，也是社区居民日常健身和社交的中心。此外，矗立于此的聚圣庙（Chu Sheng Temple）是当地重要的宗教与文化地标，见证了社区的信仰传承与历史变迁。该庙宇不仅是信众的精神寄托，也是社区文化活动的聚集地，其建筑风格和历史故事反映了杨厝港多元的文化背景。另一处值得关注的地标是瑞高馆（Swee Kow Kuan），它在社区历史中扮演了重要角色，可能与早期的宗乡会馆或教育机构有关，承载着特定族群的集体记忆。杨厝港民众俱乐部（Yio Chu Kang Community Club）则是社区活动的枢纽，提供各类教育、文化和娱乐设施，促进居民之间的互动与交流。这些地标性建筑不仅具有功能性，更在杨厝港居民心中形成了独特的空间记忆与认同，是社区历史与文化的重要载体。
+
+\section{人口变迁与族群结构}
+根据2000年人口普查数据，杨厝港单选区的人口结构呈现出多元化特征。该选区总人口为29914人。其中，华族人口占据主导地位，为25195人，反映了新加坡社会整体的族群构成。马来族人口为2424人，印度族人口为2015人，其他族群人口为280人。这些数据表明，杨厝港在21世纪初已是一个多民族聚居的社区，各族群共同构成了其社会文化景观。人口的性别比例相对均衡，反映了新加坡城市化进程中人口分布的普遍趋势。随着时间的推移，杨厝港的人口结构也在不断演变，但其多民族的底色始终未变，为社区带来了丰富的文化多样性。
+
+\section{近年发展与城市更新}
+近年来，杨厝港地区积极推进城市更新与规划项目，旨在提升居民的生活品质和社区活力。其中，杨厝港体育中心的改造计划备受关注。根据市区重建局（URA）的规划，现有的杨厝港体育中心有望被重新开发，成为以杨厝港地铁站为核心的新目的地节点，集体育、康乐和医疗保健功能于一体。这一综合性发展项目将为居民提供更便捷的设施，并促进区域的整体发展。此外，杨厝港还积极响应新加坡建设综合社区枢纽的趋势。与盛港和兀兰北类似，杨厝港也规划建设集体育、医疗和社区空间于一体的综合社区枢纽，这些枢纽通常位于交通便利的节点，旨在为居民提供“一站式”的服务和设施。这些综合枢纽的建设不仅能满足居民多样化的需求，还能增强社区凝聚力，促进居民间的互动。在邻里层面，杨厝港也实施了邻里更新计划（Neighbourhood Renewal Programme, NRP）。例如，针对安茂桥大道5号的特定组屋区（如第442至445座、445A座、446座等），通过NRP项目，居民将享受到全新的健身设施、翻新的游乐场以及其他社区便利设施。这些微观层面的更新项目，旨在改善现有组屋区的居住环境，提升居民的归属感和满意度。杨厝港民众俱乐部也经历了重要的翻新工程，并于2025年11月16日重新开放。此次翻新不仅提升了设施的现代化水平，更融入了高龄友善设计理念，使其成为新加坡应对人口老龄化挑战的典范。这些城市更新和规划项目共同描绘了杨厝港作为宜居、充满活力的现代化社区的未来图景。
+
+\section{社区记忆与空间认同}
+杨厝港社区的记忆与空间认同，在近年来通过一系列创新举措得到了显著的增强与深化。其中，于2025年11月16日重新开放的杨厝港民众俱乐部，不仅是建筑上的更新，更成为新加坡应对人口老龄化挑战、构建高龄友善社区的典范。该民众俱乐部引入了先进的防痴呆症设计理念，其核心在于一套直观的寻路系统。例如，建筑的每一层都配有独特的颜色标识，这些颜色贯穿于电梯大堂、指示牌及设施标记，利用视觉和联想记忆优于语言和顺序记忆的原理，帮助认知障碍者轻松辨识方向。这种设计不仅简化了导航过程，更在居民心中建立了对社区环境的深层记忆与归属感。此外，民众俱乐部及周边社区还广泛采用了水果图标系统。杨厝港的十个区域各被赋予一个独特的水果图标和对应颜色，这些符号不仅出现在民众俱乐部内，也遍布于组屋楼栋外墙和寻路壁画上。这套系统构建了一种超越建筑物理边界的无缝导航语言，居民可以通过识别与自己住家楼栋相关联的“菠萝”图标，在社区内活动时保持方向感。例如，一位患有痴呆症的居民在活跃乐龄中心迷失方向后，能够回忆起她所在楼栋的颜色和水果图标，最终在邻居的帮助下安全返家。这充分体现了周到设计如何在保障弱势居民独立性和尊严的同时，为他们提供安全保障。民众俱乐部一楼的壁画则融合了方向箭头、设施图标和水果符号，提供多感官的指引，以适应不同认知水平和痴呆症进展阶段的需求。这些举措共同塑造了杨厝港独特的社区记忆和空间认同，使居民，特别是老年居民，能够更自信、更安全地融入社区生活，从而提升了整体的社区凝聚力与归属感。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Yio Chu Kang Single Member Constituency. \url{https://en.wikipedia.org/wiki/Yio_Chu_Kang_Single_Member_Constituency}
+  \item Wikipedia. Yio Chu Kang. \url{https://en.wikipedia.org/wiki/Yio_Chu_Kang}
+  \item Medium. Marshlands to Modenity: Life in Yio Chu Kang Village Through Mr. Lim’s Eyes. \url{https://medium.com/@brokenbarges/marshlands-to-modenity-life-in-yio-chu-kang-village-through-mr-lims-eyes-2b8c944aefeb}
+  \item EdgeProp.sg. Yio Chu Kang: A mix of exclusive and down-to-earth housing. \url{https://www.edgeprop.sg/property-news/yio-chu-kang-mix-exclusive-and-down-earth-housing}
+  \item 99.co. Yio Chu Kang Green. \url{https://www.99.co/singapore/hdb/yio-chu-kang-green-dejPJcCdj4uxRH7MNkeAoTbB}
+  \item Remember Singapore. From Villages to Flats (Part 2). \url{https://remembersingapore.org/2012/05/11/from-villages-to-flats-part-2/}
+  \item ActiveSG Circle. Yio Chu Kang Sport Centre. \url{https://www.activesgcircle.gov.sg/facilities/yio-chu-kang-sport-centre}
+  \item amktrail.blogspot.com. Chu Sheng Temple. \url{http://amktrail.blogspot.com/2017/06/chu-sheng-temple.html}
+  \item Roots.sg. Swee Kow Kuan. \url{https://www.roots.gov.sg/places/places-landing/Places/landmarks/ang-mo-kio-heritage-trail/swee-kow-kuan}
+  \item OnePA. Yio Chu Kang CC. \url{https://www.onepa.gov.sg/cc/yio-chu-kang-cc}
+  \item data.gov.sg. Resident Population by DGP Zone/Subzone, Ethnic Group and Sex (Census of Population 2000). \url{https://data.gov.sg/datasets/d_e2a04abbbedfaea6036e0d55a069d22e/view}
+  \item URA Master Plan. Livelier Neighbourhoods for All. \url{https://www.uradraftmasterplan.gov.sg/regional-plans/north-east/livelier-neighbourhoods-for-all/}
+  \item The Straits Times. Sengkang, Woodlands North and Yio Chu Kang to get integrated community hubs. \url{https://www.straitstimes.com/singapore/housing/sengkang-woodlands-north-and-yio-chu-kang-to-get-integrated-community-hubs}
+  \item blog.maxthon.com. Building for Memory: How Yio Chu Kang’s Dementia-Friendly Community Club Signals Singapore’s Future. \url{https://blog.maxthon.com/2025/11/16/building-for-memory-how-yio-chu-kangs-dementia-friendly-community-club-signals-singapores-future/}
+\end{enumerate}
+
+\chapter{惹兰加由单选区 (Jalan Kayu SMC)}
+
+\section{选区划界与政治地理背景}
+惹兰加由的政治历史可以追溯到新加坡独立前。在1951年选举后，现今惹兰加由选区的大部分区域曾属于实里达选区。1959年选举前，实里达选区被解散，从而产生了惹兰加由选区。该选区在1959年至1988年间作为单选区存在，其间经历了多次选举和政治变迁。例如，在1963年新加坡大选中，人民行动党的陈清栋（Tan Cheng Tong）成功连任，尽管其得票率有所下降。在1984年的选举中，人民行动党以微弱优势（571票）险胜，而工人党的马代·普坦·达莫达兰·奈尔（Madai Puthan Damodaran Nair）则获得了非选区议员（NCMP）的席位，但他最终拒绝了这一提议。
+
+1988年的政治改革中，惹兰加由选区被并入静山集选区（Cheng San GRC），暂时退出了历史舞台。然而，在2025年大选前，惹兰加由单选区再次设立，旨在减少宏茂桥集选区的选民数量。新设立的惹兰加由单选区在成立时拥有29,565名注册选民。在2025年的大选中，人民行动党的黄志明（Ng Chee Meng）与工人党的刘宇扬（Andre Low）展开激烈竞争，最终黄志明以51.47\%的得票率险胜，仅以809票的微弱优势赢得选举，这也是人民行动党在该次大选中最接近的胜利。刘宇扬作为表现最佳的落败反对党候选人，接受了非选区议员的席位。选举后，惹兰加由单选区还成立了自己的市镇理事会，这是自2011年波东巴西单选区以来首次出现的情况，标志着该选区在政治管理上的独立性。
+
+\section{早期地貌与前城市化时期}
+惹兰加由，位于新加坡东北部，其名称“Jalan Kayu”在马来语中意为“木材路”。这一名称的由来与该地区早期的历史发展紧密相关。一种说法认为，它可能源于该地区曾有大量木材堆放，或指代为建造实里达空军基地而砍伐的树木。更具考证的说法是，这条路是为了纪念1927年实里达空军基地建设的监督者、英国规划师C.E. Wood先生，他的姓氏“Wood”在英文中即为“木材”之意。1937年，新加坡乡村委员会正式将这条连接军事要塞的“空军基地路”（Air Base Road）更名为惹兰加由，以尊重当地马来族群的文化背景。
+
+在城市化进程之前，惹兰加由地区曾是一片广袤的乡村地貌，涵盖了今日实龙岗北、盛港西和芬维尔（Fernvale）的部分区域。早期的土地利用以农业为主，包括小规模的种植园和养猪场。根据口述历史，早在1950年代，惹兰加由的主要功能便是发展小型农业，其华人名称“柑仔园”也暗示了这片区域曾是果园。当时，华人、印度裔居民与马来族群和睦共处，共同构成了多元的早期聚落。英国军人及其家属也在此居住，尽管多数人选择住在实里达的黑白殖民地洋房，但也有部分居住在惹兰加由的排屋中。夜市、街头戏曲和小型电影院为早期居民提供了丰富的娱乐活动，其中惹兰加由甚至被认为是新加坡最早的路边夜市之一。
+
+\section{城市规划与建设进程}
+惹兰加由的城市规划与建设进程与实里达空军基地的发展息息相关。1928年，英国皇家空军在实里达建立其在亚洲的首个空军基地，惹兰加由作为连接该军事基地的主要通道而修建。这条双车道公路全长约1.2公里，连接了杨厝港路和实里达西农道。二战后，紧邻实里达基地的惹兰加由区域逐渐发展成为一个重要的商业和休闲区，为英国驻军提供餐饮、洗衣等服务。1950年代，地产开发商洪恩惠（Ang Oon Hue）在该地区进行了大规模开发，建造了数百栋排屋和双层店屋，其中同利路（Tong Lee Road）便是以他的公司“同利实业”命名。这些建筑至今仍是惹兰加由独特的历史风貌。
+
+随着新加坡的快速发展和城市化进程，惹兰加由地区经历了显著的转型。上世纪70至80年代，政府曾在此地推动农业现代化，发展养猪业，使其成为新加坡重要的生猪养殖基地。然而，由于环境污染问题（如养猪场排放物对水源的威胁）以及进口肉类成本的竞争优势，养猪业在1987年彻底退出历史舞台。这些被征用的土地随后被用于大规模的住宅项目，特别是宏茂桥和大巴窑等新镇的建设。进入21世纪，实里达东农道（Seletar East Farmway）的一部分被重新开发为芬维尔（Fernvale）新市镇，兴建了大量组屋，显著改变了该地区的人口结构和城市景观。例如，2013年建成的惹兰加由组屋区（如446A、446B座）提供了418个组屋单位，进一步推动了该区域的城市化进程。
+
+\section{重要地标与建筑}
+惹兰加由地区拥有多处重要的地标与建筑，它们共同构成了该区域独特的历史与文化景观。其中，沿街的旧店屋是惹兰加由最具代表性的地标之一。这些建于1950年代的两层混凝土店屋，由地产开发商洪恩惠建造，其设计融合了地下室、螺旋楼梯和金属大门等特色，散发着浓郁的怀旧气息。这些店屋至今仍保存完好，并被市区重建局列为保留区，成为惹兰加由的标志性建筑，其中最著名的当属以印度煎饼闻名的Thasevi Food。
+
+此外，惹兰加由的道路命名也极具特色，多条小巷以传统的印尼舞蹈命名，如碟子舞（Jalan Tari Piring）、蜡烛舞（Jalan Tari Lilin）、阳伞舞（Jalan Tari Payong）等，这些名称不仅赋予了街道独特的文化韵味，也反映了该地区多元的文化融合。在宗教建筑方面，二战后建立的新加坡长老会嘉恩堂（Abundant Grace Presbyterian Church）和显现堂（Church of the Epiphany）分别服务于华语和泰米尔语社区，见证了不同族群的信仰传承。2011年成立的惹兰加由联合庙则汇集了万国山忠义庙、包公庙、龙南殿和乌敏泰佛寺四座因城市发展而迁徙的庙宇，成为华人信仰的重要场所，其中包公庙的十殿阎罗更是独具匠心，警示世人行善积德。
+
+\section{人口变迁与族群结构}
+惹兰加由地区的人口结构与族群历史反映了新加坡多元文化的缩影及其在城市化进程中的变迁。在早期，该地区是多元族群的聚居地，华人、印度裔和马来族群在此和睦共处，共同从事农业生产和商业活动。英国皇家空军基地的存在也吸引了外籍军人及其家属在此居住，形成了独特的社群。随着时间的推移，特别是1970年代至1980年代养猪业的转型和新镇的建设，大量原住民被重新安置到宏茂桥和大巴窑等组屋区，导致了人口结构的显著变化。
+
+进入21世纪，随着芬维尔新市镇的开发和大量组屋的兴建，惹兰加由地区的人口密度大幅增加，成为盛港组屋区的重要组成部分。目前，整个盛港地区（包括惹兰加由）容纳了约20万居民。新迁入的居民多为年轻家庭和专业人士，他们带来了新的活力，也使得该地区的人口构成更加多样化。尽管经历了大规模的城市更新，惹兰加由依然保留了其多元文化的底蕴，不同族群和年龄阶层的居民共同生活，形成了独特的社区面貌。
+
+\section{近年发展与城市更新}
+近年来，惹兰加由地区经历了显著的城市更新与发展，尤其是在城市规划和基础设施建设方面。其中最引人注目的是实里达航空园（Seletar Aerospace Park）的建设。昔日的实里达空军基地已转型为亚洲航空业的重要维修枢纽，不仅创造了超过20万个就业机会，也巩固了新加坡在全球航空产业中的地位。航空园的建设带动了周边区域的经济发展和人口流入，为惹兰加由带来了新的发展机遇。
+
+在住宅方面，随着芬维尔（Fernvale）新市镇的开发，惹兰加由周边兴建了大量现代化组屋，如2013年建成的惹兰加由组屋区，提供了多样化的住房选择。这些新住宅区的建设伴随着完善的社区设施，包括学校（如芬维尔小学）、超市（如FairPrice）、公园（如惹兰加由公园）以及便捷的交通网络（如芬维尔轻轨站和盛港地铁站），极大地提升了居民的生活品质。此外，惹兰加由市镇理事会的成立，也进一步加强了对该地区的管理和服务，确保了社区的持续发展和居民需求的满足。这些发展项目共同推动了惹兰加由从传统乡村向现代化、宜居社区的转变。
+
+\section{社区记忆与空间认同}
+惹兰加由地区的社区记忆与空间认同是其历史变迁的生动体现。对于许多老一辈居民而言，惹兰加由承载着浓厚的乡村情怀和集体回忆。他们记忆中的惹兰加由，是充满生机的农田、养猪场，以及华人、印度裔和马来族群和睦共处的多元社区。路边摊贩、夜市的喧嚣、街头戏曲的表演，都构成了他们童年和青年时期不可磨灭的印记。尤其是那些建于1950年代的旧店屋，以及以印尼舞蹈命名的街道，都成为了居民心中独特的文化符号，代表着一种慢节奏、充满人情味的生活方式。
+
+然而，随着城市化进程的加速，特别是芬维尔新市镇的崛起和实里达航空园的建设，惹兰加由的物理景观发生了巨大变化。许多旧有的聚落和农场被拆除，取而代之的是现代化的组屋和工业园区。这种转型在一定程度上导致了老居民的“空间失落感”，他们曾经熟悉的家园和生活方式不复存在。尽管如此，一些标志性的元素，如著名的印度煎饼店Thasevi Food，以及被保留下来的旧店屋，仍然维系着社区的记忆和认同。新迁入的居民也在逐渐形成新的社区文化和记忆，他们享受着现代化的便利设施，同时也努力融入并传承这片土地独特的历史底蕴，共同构建着惹兰加由新的空间认同。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Jalan Kayu Single Member Constituency. \url{https://en.wikipedia.org/wiki/Jalan_Kayu_Single_Member_Constituency}
+  \item Wikipedia. Jalan Kayu Constituency. \url{https://en.wikipedia.org/wiki/Jalan_Kayu_Constituency}
+  \item Remember Singapore. A Walk Through The Old Neighbourhood – Jalan Kayu. \url{https://remembersingapore.org/2011/11/17/old-neighbourhood-jalan-kayu/}
+  \item ConnexionSG. A brief history of Jalan Kayu. \url{https://www.facebook.com/groups/2961522894103609/posts/3998974403691781/}
+  \item Broken Barges. The Old Man and the Pigs: Mr Liau, Jalan Kayu Pig Farms, and Singapore’s Lost Memories. \url{https://medium.com/@brokenbarges/the-old-man-and-the-pigs-mr-liau-jalan-kayu-pig-farms-and-singapores-lost-memories-fb2e78fa0171}
+  \item 新加坡宗乡会馆联合总会. 时代交织的音符：惹兰加由百年变迁剪影. \url{https://sfcca.sg/2025/11/09/%E6%97%B6%E4%BB%A3%E4%BA%A4%E7%BB%87%E7%9A%84%E9%9F%B3%E7%AC%A6%EF%BC%9A%E6%83%B9%E5%85%B0%E5%8A%A0%E7%94%B1%E7%99%BE%E5%B9%B4%E5%8F%98%E8%BF%81%E5%89%AA%E5%BD%B1/}
+  \item PropertyGuru. Jalan Kayu. \url{https://www.propertyguru.com.sg/singapore-property-listing/hdb/sengkang/jalan-kayu_144328}
+  \item co. BLK 446B Jalan Kayu. \url{https://www.99.co/singapore/hdb/446b-jalan-kayu-adRETq7gqwSsMxPo4zgTgtik}
+\end{enumerate}
+
+
+\part{第四篇：东北部}
+
+\chapter{宏茂桥集选区 (Ang Mo Kio GRC)}
+
+\section{选区划界与政治地理背景}
+宏茂桥集选区在新加坡的政治版图中占据着重要地位，其划界与政治选举历史反映了新加坡政治发展的脉络。该集选区于1991年首次设立，最初由四个单选区（宏茂桥、格鲁巴鲁、德义和杨厝港）合并而成，旨在确保少数族裔在国会中拥有代表。自成立以来，宏茂桥集选区一直是人民行动党（PAP）的坚固堡垒，尤其以李显龙总理（后为国务资政）长期担任该选区的领军人物而闻名。在历次大选中，人民行动党团队均在此取得了显著的胜利。例如，在2006年大选中，尽管面临工人党（WP）的挑战，人民行动党仍以66.14\%的得票率获胜。2011年大选，尽管全国范围内人民行动党得票率有所下降，宏茂桥集选区团队仍以69.33\%的得票率击败革新党（RP）。2020年大选，集选区规模调整为五名议员，人民行动党团队以71.91\%的得票率再次获胜。最近的2025年大选，宏茂桥集选区更是出现了人民行动党、人民力量党（PPP）和新加坡团结党（SUP）三方角逐的局面，最终人民行动党以近79\%的得票率赢得选举。这些选举结果不仅彰显了人民行动党在该选区的强大支持基础，也反映了选区划界对政治格局的深远影响。
+
+\section{早期地貌与前城市化时期}
+宏茂桥地区在19世纪大部分时间里人烟稀少，主要是一片未开发的森林保护区，其地貌特征以茂密的植被和起伏的丘陵为主。根据历史地图记载，这片区域曾被称为“宏茂桥森林保护区”，显示出其原始的自然风貌。直到19世纪末20世纪初，随着橡胶种植业的兴起，才吸引了大量移民前来定居。这些早期定居者，特别是福建籍华人，在此开辟了广阔的橡胶种植园，使得宏茂桥逐渐从原始森林转变为农业景观。当时，该地区还散布着一些小型村落，居民主要从事橡胶种植、割胶以及后来的养猪和市场园艺等农业活动。其中，约翰·特恩布尔·汤姆森（John Turnbull Thomson）在加冷河上修建的一座桥梁，被认为是“宏茂桥”这一名称的由来，意为“红毛人的桥”，反映了早期欧洲殖民者在此地的活动痕迹。第二次世界大战期间，随着日本占领新加坡，更多居民迁入宏茂桥，以农业为生，进一步巩固了其乡村聚落的形态。这些前城市化时期的土地利用方式和聚落形态，为宏茂桥后来的城市发展奠定了基础，也留下了丰富的历史文化印记。
+
+\section{城市规划与建设进程}
+宏茂桥地区在城市化进程启动之前，与新加坡其他多数乡村区域类似，主要为未开发的农业用地。新加坡改良信托局（SIT）在战后初期为解决住房短缺问题奠定了公共住房建设的基础，其经验为后续建屋发展局（HDB）的大规模新镇开发提供了宝贵借鉴。宏茂桥作为建屋发展局在1970年代重点规划的第三代卫星镇，其开发标志着新加坡城市发展进入了一个新阶段。1973年，建屋发展局正式决定将宏茂桥发展为一个拥有自给自足设施的新镇，成为新加坡第七个大型公共住房项目。同年，宏茂桥的首批组屋，即宏茂桥3道第213-216座组屋，便已竣工，开启了该区域的居住历史新篇章。
+
+宏茂桥新镇的规划理念强调综合性与社区功能，旨在为居民提供完善的生活配套。在1970年代中期，随着大规模公共住房建设的推进，宏茂桥的住宅组屋项目迅速展开。至1980年，宏茂桥镇中心正式建成并投入使用，其规模在当时位居新加坡之首，集商业、休闲、交通枢纽等多功能于一体，极大地提升了居民的生活便利性。重要的基础设施建设，如连接各区域的道路网络、公共交通系统以及社区设施，均在此阶段同步规划与实施，确保了新镇的整体功能性和宜居性。
+
+进入21世纪，宏茂桥的城市化进程并未止步，而是持续进行更新与优化。建屋发展局定期对现有组屋进行翻新和升级，并根据城市发展需求推出新的住宅项目，例如2020年竣工的宏茂桥苑（Ang Mo Kio Court）。此外，宏茂桥镇中心也经历了多次改造升级，以适应现代城市生活的需求，例如在2024年第二季度启动的镇中心升级计划。部分老旧组屋区也纳入选择性整体重建计划（SERS），例如宏茂桥的四座组屋预计于2027年第三季度完成重建，这体现了新加坡在城市规划中对可持续发展和社区活力的持续关注。
+
+\section{重要地标与建筑}
+宏茂桥集选区内拥有众多具有代表性的地标和建筑，它们不仅是居民日常生活的中心，也承载着丰富的历史与文化意义。其中，宏茂桥市镇中心是该地区的核心，自1970年代末建成以来，便以其独特的规划和功能性成为区域的商业与社交枢纽。这里汇集了各种商店、餐馆和公共服务设施，满足了居民的多元需求。另一个重要的地标是碧山-宏茂桥公园，它不仅是新加坡最受欢迎的邻里公园之一，更因其创新的水管理系统和自然化的加冷河段而闻名。该公园在2012年完成改造后，成为城市蓝绿基础设施的典范，为居民提供了广阔的休闲空间和生态体验。此外，宏茂桥还拥有一些具有历史意义的建筑，例如宏茂桥社区中心，它在早期作为居民的聚集点，举办了各种基层活动和社区课程，见证了社区的成长与发展。这些地标共同构成了宏茂桥独特的城市景观，也成为了居民集体记忆的重要组成部分。
+
+\section{人口变迁与族群结构}
+宏茂桥集选区的人口结构反映了新加坡多元种族社会的特点，但随着城市发展和人口流动，其族群构成和年龄分布也呈现出动态变化。根据2020年人口普查数据，宏茂桥的总人口约为162,280人，其中华族居民占据主导地位，但马来族、印度族及其他族群也在此和谐共处。早期，随着宏茂桥新镇的开发，大量年轻家庭迁入，使得该地区一度呈现出较为年轻化的人口结构。然而，经过数十年的发展，第一代居民逐渐步入老年，导致宏茂桥的人口老龄化趋势日益显著。与此同时，新的组屋项目和城市更新计划也吸引了年轻家庭的迁入，为社区注入了新的活力，使得宏茂桥的人口结构在保持多元化的基础上，呈现出新老居民共存的局面。这种人口变迁不仅影响了社区的服务需求，也为社区文化的传承与发展带来了新的挑战与机遇。
+
+\section{近年发展与城市更新}
+近年来，宏茂桥集选区积极推行城市更新和规划项目，旨在提升居民的生活品质并适应未来发展需求。其中，“重塑我们的家园”（Remaking Our Heartland）计划是宏茂桥城市更新的核心，该计划致力于将市镇中心改造为更具活力的社区枢纽，并加强邻里中心的设施。例如，宏茂桥市镇中心在2024年完成了改造，引入了新的社区空间和商业设施，旨在吸引更多居民参与社区活动。此外，一项名为“花园环路”（Garden Loop）的休闲步道项目正在建设中，该项目将连接宏茂桥的各个公园和绿地，为居民提供更多的户外活动空间。为了应对人口老龄化趋势，宏茂桥还特别关注为老年居民提供无障碍设施和更便捷的服务。例如，新的规划项目包括增加有遮蔽的步行道和无障碍坡道，以方便老年人出行。这些城市更新项目不仅改善了宏茂桥的物理环境，也致力于构建一个更具包容性和可持续发展的社区，以满足不同年龄层居民的需求。
+
+\section{社区记忆与空间认同}
+宏茂桥的社区记忆与空间认同，深植于其作为新加坡早期卫星镇的独特发展历程。对于在此成长起来的居民而言，宏茂桥不仅仅是居住地，更是承载着集体记忆与情感联结的家园。例如，宏茂桥市镇中心在1970年代末建成后，迅速成为居民日常生活的核心，其独特的建筑风格和功能布局，如早期的组屋设计，塑造了居民对公共空间的认知。许多居民至今仍对早期市镇中心的热闹景象记忆犹新，包括那些曾经是社区交流中心的传统咖啡店和巴刹。这些场所不仅提供了商品和服务，更是邻里互动、信息交流的重要节点，构成了居民早期社区生活的重要组成部分。随着时间的推移，宏茂桥的公园和绿地，如碧山-宏茂桥公园，也逐渐成为居民休闲娱乐、亲近自然的共享空间，进一步强化了居民对这片土地的归属感。这些共同的经历和对地标的认同，共同构建了宏茂桥居民独特的社区记忆和空间认同，使其在城市快速变迁中依然保持着强烈的社区凝聚力。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Ang Mo Kio Group Representation Constituency - Wikipedia. \url{https://en.wikipedia.org/wiki/Ang_Mo_Kio_Group_Representation_Constituency}
+  \item Ang Mo Kio - Singapore - NLB. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=af89bff4-ffa3-4786-967b-8b8719069624}
+  \item Ang Mo Kio | SG101. \url{https://www.sg101.gov.sg/resources/archives/ourneighbourhood-ang-mo-kio/}
+  \item Remaking Our Heartland: Ang Mo Kio | Housing \& Development Board. \url{https://www.linkedin.com/posts/singaporehdb_remaking-our-heartland-ang-mo-kio-activity-7114549590107815936-qabo}
+  \item Resident Population by Planning Area/Subzone of Residence, Ethnic Group and Sex (Census of Population 2020). \url{https://data.gov.sg/datasets/d_e7ae90176a68945837ad67892b898466/view}
+  \item Ang Mo Kio Town Council - Facebook. \url{https://www.facebook.com/amktc/posts/we-are-delighted-to-spend-this-sunday-afternoon-with-residents-as-we-celebrate-f/1399216635562952/}
+\end{enumerate}
+
+\chapter{盛港集选区 (Sengkang GRC)}
+
+\section{选区划界与政治地理背景}
+盛港集选区（Sengkang GRC）是新加坡东北部的一个四人集选区，其政治版图的形成与演变，反映了新加坡选举制度的特点和地方政治生态的变化。在2020年大选之前，盛港集选区的选区划界经历了重大调整，由原有的盛港西单选区（Sengkang West SMC）、榜鹅东单选区（Punggol East SMC）以及白沙-榜鹅集选区（Pasir Ris-Punggol GRC）的部分区域合并而成。这一划界调整在新加坡政治史上具有重要意义，因为它将多个不同政治背景的区域整合为一个新的集选区，为后续的选举竞争奠定了基础。
+
+盛港集选区在2020年大选中成为焦点，工人党（Workers' Party）在此次选举中以52.13\%的得票率击败了执政的人民行动党（People's Action Party），赢得了该选区的全部四个议席。工人党团队的成员包括何廷儒（He Ting Ru）、林哲威（Jamus Lim）、蔡庆豪（Louis Chua）和辣玉莎（Raeesah Khan）。这次胜利被视为新加坡反对党的一次重大突破，也是工人党继阿裕尼集选区（Aljunied GRC）之后，第二次赢得集选区。在2025年的大选中，工人党进一步巩固了其在盛港集选区的地位，以56.31\%的得票率再次获胜，显示出该选区选民对工人党的高度认可和支持。盛港集选区的选举结果不仅影响了当地的政治格局，也对新加坡全国的政治生态产生了深远的影响。
+
+\section{早期地貌与前城市化时期}
+盛港地区在城市化进程之前，曾是一个以渔业为主的村落，其历史可追溯至20世纪中叶。该地区原名“港脚”（Kangkar），在潮州话中意为“港口之脚”，这形象地描绘了其作为实龙岗河（Sungei Serangoon）沿岸渔港的地理位置。盛港的中文名称“盛港”则寓意“繁荣的港口”，反映了其早期作为贸易和渔业中心的潜力。在1994年建屋发展局（HDB）启动新镇规划之前，盛港的土地用途以农业为主，广阔的土地上曾种植着橡胶、胡椒和菠萝等经济作物，这些种植园构成了该地区前城市化时期重要的经济景观和地貌特征。
+
+港脚渔村曾是新加坡东北部重要的渔业集散地。根据历史记载，在1980年代初期，上实龙岗路（Upper Serangoon Road）的尽头，即实龙岗河与双溪槟榔（Sungei Pinang）交汇处，有一个繁忙的批发鱼市场。这个市场每天处理多达40吨的渔获，为新加坡各地的市场供应海产品。约90艘本地近海渔船和16家鱼商在此进行交易，形成了独特的渔村经济生态。渔民们在凌晨四点卸下渔获，鱼商则在此竞标，整个过程生动而繁忙，展现了盛港作为“渔人码头”的早期风貌。这些历史细节共同勾勒出盛港在城市发展浪潮到来之前，作为自然资源丰富、经济活动活跃的滨水社区的独特面貌。
+
+\section{城市规划与建设进程}
+盛港的城市化进程始于1994年，当时新加坡建屋发展局（HDB）组建了一个由十名城市设计师组成的团队，开始对盛港新镇进行概念规划。这项宏大的规划旨在将盛港从一个传统的渔村和种植园区域，转型为一个拥有95,000个公共和私人住宅单位的成熟住宅区。规划者为盛港设定了“航海者之城”的主题，以纪念其作为渔村的历史。新镇的四个邻里区域，即河谷（Rivervale）、康柏谷（Compassvale）、锚地（Anchorvale）和芬微（Fernvale），各自被赋予了与海洋历史或早期种植园相关的次主题和色彩方案。例如，住宅楼的设计采用了三层高架或高跷效果，以呼应渔村高脚屋和种植园树干的形态，体现了对历史文脉的尊重与传承。
+
+盛港的住宅建设进展迅速。1997年，位于河谷的首批公共公寓建成，标志着新镇城市化进程的重要里程碑。截至2001年9月13日，盛港已建成约33,700个住宅单位，而到2017年3月31日，建屋发展局在盛港的住宅单位数量已达到65,981个，显示出其快速的人口增长和城市扩张。为了确保新镇居民享有完善的配套设施，1999年10月成立了一个由时任静山集选区国会议员林炳敏（Michael Lim）担任主席的指导委员会，负责规划盛港新镇的各项便利设施。该委员会于2000年7月提交了报告，协调各机构增设了更多组屋底层商店、一座新购物中心和多家托儿所，以满足日益增长的社区需求，促进了盛港从单纯的居住区向功能完善的综合性城镇的转变。
+
+\section{重要地标与建筑}
+盛港作为新加坡东北部的重要城镇，拥有多个具有代表性的地标和建筑，这些设施共同构成了其独特的城市景观。其中，盛港中心（Sengkang Central）是一个集住宅、商业、交通枢纽于一体的综合发展项目，包括700套住宅公寓、小贩中心、民众俱乐部、托儿中心以及零售商店，并与武吉港地铁站和巴士转换站无缝连接，成为居民日常生活的核心。盛港大厦（Sengkang Grand Mall）作为该区域的主要商业设施，不仅提供购物和餐饮服务，其独特的设计理念和公共空间也使其成为社区居民重要的聚集场所。此外，盛港综合医院（Sengkang General Hospital）作为区域性医疗中心，为居民提供全面的医疗服务，其在安可谷街（Anchorvale Street）的设立进一步完善了区域内的公共服务体系。
+
+在文化和休闲设施方面，盛港河畔公园（Sengkang Riverside Park）是当地居民亲近自然的重要场所，提供丰富的户外休闲活动空间。该公园与榜鹅水道公园（Punggol Waterway Park）和科尼岛（Coney Island）通过实龙岗河公园连道（Sungei Serangoon Park Connector）相连，形成了一个广阔的绿色休闲网络。盛港雕塑公园（Sengkang Sculpture Park）则为社区增添了艺术气息。在教育领域，芬微小学（Fernvale Primary School）等学府为年轻一代提供了优质的教育资源。这些地标和设施不仅满足了居民的物质需求，也丰富了他们的精神文化生活，共同塑造了盛港宜居宜业的城市形象。
+
+\section{人口变迁与族群结构}
+盛港的人口结构展现出显著的年轻化特征，并且在族群构成上与新加坡的整体趋势保持一致，但也有其独特之处。根据2020年的统计数据，盛港的常住人口达到249,370人，使其成为新加坡东北部人口第二多的城镇。在族群分布上，盛港以华族居民为主，同时拥有相当比例的马来族和印度族居民，以及其他少数族群。这种多元的族群构成是新加坡社会的一个缩影，也反映了盛港作为新兴住宅区，吸引了来自不同背景的居民迁入。
+
+从人口变迁的角度来看，盛港经历了快速的人口增长。在建屋发展局的规划下，该地区从1990年代中期开始大规模发展，吸引了大量年轻家庭和新婚夫妇。这种人口流入导致了盛港居民年龄结构的年轻化，与新加坡整体人口老龄化的趋势形成对比。例如，2025年盛港的人口金字塔估计显示，0-9岁和10-19岁年龄段的人口数量庞大，这预示着该地区未来对教育和青年设施的需求将持续增长。这种人口动态不仅塑造了盛港的社会面貌，也对其社区服务和基础设施规划提出了持续的挑战与机遇。
+
+\section{近年发展与城市更新}
+盛港近年来持续进行城市更新与发展，旨在提升居民的生活品质并打造更具活力的社区。其中，盛港中央（Sengkang Central）项目是显著的例子，这是一个于2024年8月27日发布的综合性发展项目，融合了住宅、商业、小贩中心、民众俱乐部和托儿中心等多种功能，并与武吉港地铁站和巴士转换站紧密结合。该项目不仅提供了700套住宅公寓，更通过精心设计的公共空间和便利设施，使其成为居民日常社交和休闲的新焦点。例如，项目前方的公园空间与康柏谷安西拉公园（Compassvale Ancilla Park）相连，为居民提供了更多的绿色休闲区域，体现了城市规划中对宜居性和社区互动的重视。
+
+除了大型综合项目，盛港的城市更新也体现在对现有设施的改造和提升上。例如，工人党在2025年4月5日公布的盛港五年发展蓝图，其中包括对康柏谷中心一个有24年历史的公园进行大规模翻新，旨在为居民提供更优质的休闲环境。此外，盛港镇理事会（Sengkang Town Council）也推出了多项创新和未来就绪计划，如盛港雕塑公园的活化项目、蝴蝶保护区和水培花园、屋顶可食花园以及狗狗乐园等，这些项目都致力于丰富社区生活，增强居民的归属感。这些持续的城市更新和规划项目，共同推动盛港向一个更现代化、更具包容性和可持续性的综合城镇迈进。
+
+\section{社区记忆与空间认同}
+盛港的社区记忆与空间认同，是其从传统渔村向现代化新镇转型过程中，居民集体情感与地方依恋的体现。尽管城市面貌发生了巨大变化，但“航海者之城”的主题设计，以及对旧有地名如“港脚”的保留和文化元素的融入，都在潜移默化中维系着居民对这片土地的历史记忆。盛港民众俱乐部（Sengkang Community Club）等社区机构，通过举办各类活动，积极促进居民之间的互动与联系，旨在建立更强的社区凝聚力。这些活动不仅为不同年龄层的居民提供了交流平台，也帮助新迁入的居民融入社区，共同构建对盛港的归属感。
+
+对于盛港的居民而言，空间认同感并非一蹴而就，而是随着时间的推移和对居住环境的共同体验而逐渐形成的。例如，盛港中央青年网络（Sengkang Central Youth Network）致力于通过青年活动，激发年轻一代对社区的参与和共同创造未来的热情。同时，一些居民在社交媒体上表达了对盛港的深厚情感，认为这里是他们的家园，不愿迁离。这种情感的建立，得益于完善的公共设施、便捷的交通网络以及丰富的休闲空间，如盛港河畔公园，这些都为居民提供了高质量的生活体验，从而强化了他们对盛港的认同感。在城市更新的过程中，如何平衡现代化发展与社区记忆的传承，是盛港持续面临的重要课题，也是其未来发展中不可忽视的文化维度。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item National Library Board. Sengkang. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=d43d5dda-40eb-4d49-a913-0e8a5fb8a5b1}
+  \item Fandom. Sengkang. \url{https://singapore.fandom.com/wiki/Sengkang}
+  \item Urban Redevelopment Authority. Sengkang Central: Not your typical integrated development. \url{https://www.ura.gov.sg/Corporate/Resources/Ideas-and-Trends/Integrated-development-Sengkang-Central}
+  \item Housing \& Development Board. OUR TOWN, SENGKANG. \url{https://www.hdb.gov.sg/-/media/about-us/our-role/plan-and-design-towns/town-design-guides/Sengkang-Town-Design-Guide.pdf}
+  \item BiblioAsia. Sengkang: From Fisheries Port to Integrated Town. \url{https://biblioasia.nlb.gov.sg/all-sections/vol-22-issue-2-jul-sep-2026-sengkang-from-fisheries-port-to-integrated-town/}
+  \item Wikipedia. Sengkang Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Sengkang_Group_Representation_Constituency}
+  \item CityPopulation.de. Sengkang (Planning Area, Singapore) - Population Statistics, Charts.... \url{https://www.citypopulation.de/en/singapore/admin/305__sengkang/}
+  \item Scribd. Sengkang: History and Development. \url{https://www.scribd.com/document/933862641/Seng-Kang}
+  \item Facebook. Sengkang Community Club. \url{https://www.facebook.com/thesengkangcc/}
+  \item Instagram. Sengkang Central Youth Network. \url{https://www.instagram.com/skcyouthnetwork/?hl=en}
+  \item Straits Times. GE2025: WP wins in Sengkang GRC with 56.31\%, improving on.... \url{https://www.straitstimes.com/singapore/politics/ge2025-wp-wins-sengkang-grc-with-56-31-a-wider-margin-than-in-2020}
+  \item Straits Times. GE2025: Sengkang residents to get rejuvenated park under WP.... \url{https://www.straitstimes.com/singapore/politics/ge2025-sengkang-residents-to-get-rejuvenated-park-under-wps-5-year-plan-for-sengkang}
+  \item Wikipedia. Sengkang. \url{https://en.wikipedia.org/wiki/Sengkang}
+\end{enumerate}
+
+\chapter{榜鹅集选区 (Punggol GRC)}
+
+\section{选区划界与政治地理背景}
+榜鹅集选区（Punggol GRC）的政治历史与新加坡的选举制度演变紧密相关。该集选区最初于2001年成立，是白沙—榜鹅集选区的一部分，当时是一个五人集选区。随着榜鹅地区人口的快速增长，2006年该集选区增加了一个议席，成为六人集选区。在2020年全国大选前，由于选民人数大幅增加，选区范围重新划分，白沙—榜鹅集选区被拆分为榜鹅集选区和白沙—樟宜集选区，其中榜鹅集选区成为一个四人集选区，选民人数达到123,557人。
+
+在历次大选中，白沙—榜鹅集选区一直是人民行动党的重要阵地。自2001年成立以来，国务资政兼国家安全统筹部长张志贤一直担任该集选区的领军部长，带领人民行动党团队在多届大选中取得了显著胜利，得票率通常在64\%至73\%之间。在2025年的大选中，由副总理颜金勇领军的人民行动党团队在榜鹅集选区以55.17\%的得票率击败工人党，成功守土。这次选举结果显示，尽管工人党获得了44.83\%的选票，但人民行动党在该地区仍保持了主导地位。
+
+榜鹅集选区的划界变化也反映了新加坡城市发展的动态。选区范围检讨委员会指出，将榜鹅组屋区从白沙—榜鹅集选区划出，与榜鹅西区合并组成新的榜鹅集选区，旨在更好地反映榜鹅新镇的特色。政治观察家认为，榜鹅作为一个新兴集选区，其选民倾向在未来可能更难预测，类似于2020年大选前的盛港集选区。这种变化使得榜鹅的政治格局更具挑战性，也促使各政党更加关注该地区居民的需求和发展。
+
+\section{早期地貌与前城市化时期}
+榜鹅地区，又称榜鹅角或丹戎榜鹅，其历史可追溯至莱佛士于1819年建立新加坡之前约200年。1828年的富兰克林与杰克逊新加坡地图上，该半岛被标记为“Tanjong Rangon”。“Punggol”一词源自马来语，意为“用棍棒敲打果树枝使其掉落”，也可能指水果和森林产品批发集散地，暗示该地曾是水果种植区。另一说法认为其意为“树桩”，但马来语词源更为普遍接受。榜鹅是新加坡最古老的聚落之一，早期居民以马来族为主，形成了甘榜文化。
+
+从19世纪中叶起，华人移民陆续迁入榜鹅，主要从事橡胶种植。随着华人人口的增加，许多村民转而从事家禽、养猪或渔业，以及农产品生产。在城市化进程之前，榜鹅是一个以农场和乡村结构为主的地区，拥有广阔的椰子种植园。例如，Wak Sumang家族在丹戎榜鹅建立了甘榜Wak Sumang，即甘榜榜鹅，成为新加坡最早的渔村之一。该村落的起源可追溯至1850年代或1860年代，甚至有观点认为其历史长达300年。Wak Sumang的后代在此地居住直至1980年代，其名字至今仍被用于榜鹅地区的街道和轻轨站名。
+
+在第二次世界大战期间，榜鹅也留下了沉重的历史印记。1942年2月28日，日军在榜鹅角对约300至400名华族平民进行了大屠杀，该地点现已被列为国家遗产地，并设有纪念碑。战后，1960年代榜鹅开始引入自来水、电力等基本设施。1970年代，随着城市重建的启动，家禽和养猪业逐渐被淘汰，最后一批猪场于1990年关闭。此后，腾出的土地曾短期用于水培蔬菜和兰花种植，但最终都为盛港新镇和榜鹅新镇的高层组屋建设让路。
+
+\section{城市规划与建设进程}
+榜鹅的城市化进程始于1970年代，当时新加坡政府开始逐步淘汰该地区的家禽和养猪业，为大规模的城市发展腾出土地。在1980年代，政府启动了大规模的填海工程，1983年开始对榜鹅海岸线进行277公顷的填海，第一阶段历时三年完成，共使用了1440万立方米的土壤。1984年，东北海岸的填海计划获得批准，涉及从巴西立到榜鹅的685公顷土地，分四个阶段完成，其中前三个阶段于1990年完成。这些填海工程为榜鹅新镇的建设奠定了基础。
+
+1996年，时任总理吴作栋提出了“榜鹅21”计划，旨在将榜鹅打造成为21世纪的现代化新镇，其特点是混合私人住宅和高品质组屋，并规划了完善的社区绿地、轻轨系统、学校、图书馆和商业中心。然而，由于1997年亚洲金融危机和2003年建筑业的低迷，该计划的实施受到延误。到2007年，仅建成了约16,000套住宅单位，远低于原计划的80,000套。
+
+2007年，李显龙总理推出了“榜鹅21+”计划，对原计划进行了升级和振兴。新计划的核心是建设4.2公里长的榜鹅水道，通过筑坝将榜鹅河和实龙岗河改造为淡水水库，并沿水道建设休闲设施、公园、自行车道和餐饮区。此外，该计划还包括建设18,000套新的组屋和私人公寓，并规划了集商业、住宅、社区俱乐部、区域图书馆和小贩中心于一体的市镇中心。这些举措使得榜鹅的城市化进程加速，逐步实现了从农耕渔村到现代化智慧生态新镇的转型。
+
+\section{重要地标与建筑}
+榜鹅地区拥有众多重要地标和建筑，这些设施不仅满足了居民的日常生活需求，也反映了该地区独特的城市发展轨迹。其中，榜鹅水道是该地区最具标志性的景观之一，这条长达4.2公里的人工水道蜿蜒穿过新镇，连接了榜鹅河和实龙岗河，为居民提供了丰富的水上活动和休闲空间。水道两岸的榜鹅水道公园，结合了绿色画廊区、休闲娱乐区、遗产保护区和自然湾区，是居民亲近自然、进行户外活动的理想场所。
+
+在商业和文化设施方面，榜鹅广场是该地区最早的购物中心之一，为居民提供了购物和餐饮选择。随着榜鹅新镇的不断发展，水滨坊（Waterway Point）作为第二个大型购物中心于2016年开业，进一步丰富了居民的商业体验。此外，榜鹅区域图书馆不仅是知识的殿堂，更是社区记忆的载体，其内部的“榜鹅故事”展览和“记忆地图”互动装置，展示了榜鹅从渔村到现代化新镇的历史变迁，成为居民了解本地文化遗产的重要窗口。
+
+历史建筑方面，马蒂尔达别墅（Matilda House）是一座建于1902年的海滨别墅，曾是新加坡欧亚裔家族Cashins的居所，历经四代传承。该别墅在荒废数十年后，于2000年被市区重建局列为受保护建筑，并于2015年被改造为Treasure Trove公寓住户的会所，见证了榜鹅的历史变迁。这些地标和设施共同构成了榜鹅独特的城市风貌，既有现代化的商业中心和休闲设施，也保留了对历史的尊重和传承。
+
+\section{人口变迁与族群结构}
+榜鹅地区的人口结构在过去二十年间经历了显著增长和年轻化。根据新加坡统计局的数据，榜鹅的总人口从2000年的240人激增至2024年的199,400人，显示出其作为新兴住宅区的快速发展。在年龄分布上，榜鹅呈现出较为年轻的特征，其中35-39岁年龄段的居民占比最高，达到10.44\%，其次是40-44岁年龄段，占比10.81\%。0-14岁的青少年儿童占总人口的21.32\%，而65岁及以上的老年人口占比为9.46\%，这表明榜鹅是一个充满活力的年轻家庭社区。
+
+在族群结构方面，榜鹅与新加坡整体的多元文化特征保持一致。根据2020年的数据，华族居民占多数，达到131,940人，其次是马来族居民26,050人，印度族居民12,190人，其他族群居民4,270人。这种多元的族群构成，使得榜鹅在社区发展和文化融合方面具有独特的优势。随着新镇的不断建设和人口的持续涌入，榜鹅的人口规模和结构预计将继续演变，以适应其作为“智慧生态镇”的未来定位。
+
+\section{近年发展与城市更新}
+榜鹅地区近年来的发展以城市更新和智慧生态建设为核心，旨在将其打造成为21世纪的现代化海滨新镇。自1996年时任总理吴作栋提出“榜鹅21”计划以来，尽管经历了亚洲金融危机和建筑业低迷的挑战，但该地区的发展步伐从未停止。2007年，李显龙总理推出了“榜鹅21+”计划，进一步明确了榜鹅作为海滨新镇的愿景，并启动了一系列重大基础设施项目。
+
+其中，榜鹅水道的建设是近年城市更新的亮点。这条长达4.2公里的人工水道于2009年动工，2011年正式开放，不仅美化了城市景观，也为居民提供了丰富的水上休闲活动。水道两岸的公园、步道、屋顶花园和户外餐饮区，极大地提升了居民的生活品质。此外，榜鹅新镇的住宅建设也在持续推进，每年约有3,000套新的组屋和私人公寓建成，预计未来将达到96,000个住宅单位，以满足不断增长的人口需求。
+
+面向未来，榜鹅数字园区（Punggol Digital District, PDD）的建设是该地区最新的发展重点。该园区占地50公顷，旨在打造成为数字、网络安全和人工智能行业的中心，预计于2023年后逐步开放，将创造2.8万个数字经济岗位并吸引1.2万名大学生。榜鹅数字园区不仅是一个商业产业园区，更是一个集绿色生态、智慧出行和产学研协同创新于一体的未来城市典范。通过智能能源网络、区域性地下真空垃圾收集系统等创新技术，榜鹅致力于实现可持续发展，为居民提供更宜居、便利和智慧的生活环境。
+
+\section{社区记忆与空间认同}
+榜鹅地区的社区记忆与空间认同，在不同年龄层居民中呈现出多元而丰富的面貌。对于在此地成长，特别是曾居住在农场或甘榜的老一辈居民而言，榜鹅承载着深厚的乡村记忆。例如，纸艺家Esther Siah通过微缩纸雕作品，重现了她在程林农道猪场长大的童年记忆，这些作品不仅是对个人历史的纪念，也反映了榜鹅在城市化进程中失去的农耕文化景观。她与“榜鹅文化遗产激活节点”（Heritage Activation Node @ Punggol）合作，将这些个人记忆转化为社区共享的文化遗产，激发了居民对本地历史的重新审视与认同。
+
+榜鹅区域图书馆在塑造社区记忆和空间认同方面扮演着重要角色。其推出的“榜鹅故事”系列展览，通过“文字律动”、“文学之镜”和“新加坡故事馆”等互动展区，展示了榜鹅从早期甘榜、种植园到现代化海滨新镇的变迁。特别是“记忆地图”这一互动装置，汇集了社区居民贡献的关于榜鹅历史的记忆和故事，使得不同世代的居民能够在此交流，共同构建和传承对榜鹅的集体记忆。这些活动和设施，不仅帮助年轻一代了解榜鹅的过去，也让老一辈居民重温旧日时光，从而增强了社区的凝聚力和归属感。
+
+“榜鹅文化遗产激活节点”项目由国家文物局与OH! Open House合作发起，旨在鼓励社区参与，通过举办展览、艺术装置和文化遗产步道等活动，深入挖掘和呈现榜鹅的历史、记忆和日常生活。该项目强调遗产并非仅仅是过去，而是一个活生生的存在，通过社区的共同努力，可以不断地被构建和传承。例如，由泰国当代艺术家Mit Jai Inn创作的99件纸浆雕塑“标记事宜？标记榜鹅”，通过艺术形式鼓励居民参与社区服务，进一步强化了居民与社区之间的情感联结和空间认同。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item National Library Board. History of Punggol. \url{https://www.roots.gov.sg/han/Neighborhoods/Punggol/HAN-Resources-Folder/History-of-Punggol}
+  \item Centre for Liveable Cities Singapore. Punggol: From Farmland to Smart Eco-Town. \url{https://knowledgehub.clc.gov.sg/publications-library/punggol-from-farmland-to-smart-eco-town/}
+  \item Urban Redevelopment Authority. Landmark Punggol promenade to jazz up Punggol. \url{https://www.ura.gov.sg/Corporate/Media-Room/Media-Releases/pr09-51}
+  \item Wikipedia. Punggol. \url{https://en.wikipedia.org/wiki/Punggol}
+  \item 联合早报. 白沙—榜鹅一分为二形成榜鹅及白沙—樟宜四人集选区. \url{https://www.zaobao.com.sg/news/singapore/story20250311-6002004}
+  \item 8world. 【GE2025】榜鹅集选区：人民行动党当选. \url{https://www.8world.com/singapore/ge2025-final-results-punggol-grc-2778131}
+  \item 上海规划资源. 【研究】从“狮城威尼斯”到“新加坡硅谷”：榜鹅新镇发展之路. \url{https://sghexport.shobserver.com/html/baijiahao/2021/03/02/372605.html}
+  \item The Straits Times. New community-driven exhibits and programmes celebrate Punggol’s heritage. \url{https://www.straitstimes.com/singapore/community/new-community-driven-exhibits-and-programmes-celebrate-punggols-heritage}
+  \item National Library Board. Punggol Stories. \url{https://exhibitions.nlb.gov.sg/current/punggolstories/about/}
+\end{enumerate}
+
+\chapter{后港单选区 (Hougang SMC)}
+
+\section{选区划界与政治地理背景}
+后港单选区于1988年新加坡大选前设立，最初由执政党人民行动党赢得。然而，在1991年的大选中，工人党候选人刘程强以显著的优势击败人民行动党候选人，成功夺得该议席，自此后港成为工人党的坚固堡垒。刘程强在此后多次大选中成功连任，直至2011年他转战阿裕尼集选区。随后，工人党候选人饶欣龙在2011年大选中赢得后港议席，但在2012年因个人行为问题被工人党开除，导致补选。
+
+在2012年的补选中，工人党候选人方荣发再次为工人党守住后港议席，并在2015年大选中成功连任。2020年大选前，方荣发退休，工人党候选人陈立峰接棒，以61.21\%的得票率再次捍卫了后港议席。在2025年的大选中，尽管全国范围内人民行动党的得票率有所上升，陈立峰仍以62.15\%的得票率成功连任。自1991年以来，后港单选区一直由工人党掌控，被政治分析家普遍视为工人党的“铁票区”，其选举结果对新加坡的政治格局具有重要象征意义。
+
+\section{早期地貌与前城市化时期}
+后港，其名称源于福建和潮州方言中的“后港”（Au Kang），意为“河流的尽头”，特指实龙岗路上段第五英里与淡滨尼路交界处第七英里之间的区域。在城市化进程启动之前，这片区域主要由茂密的森林覆盖，并散布着一些养猪场。当时，后港的人口以潮州籍华人为主，他们在此地形成了早期的聚落。其中，一个名为“大井脚村”（Tua Jia Ka Village）的住宅区因村中一口著名的大井而得名，该村落也常被称为实龙岗索马帕村，是当时品尝街头美食、观赏华族戏曲（wayang）表演以及寻访中医师和说书人的热门去处。
+
+在20世纪初，实龙岗路上段的尽头曾是康卡鱼市的所在地，该鱼市最初由天主教传教团设立。这个鱼市在1983年因土地被征用以建设后港新镇的一部分而迁至榜鹅。这些早期的地貌特征和聚落形态，共同构成了后港前城市化时期的社会经济图景，展现了其作为新加坡东北部一个具有独特文化和生活方式的乡村区域的历史面貌。
+
+\section{城市规划与建设进程}
+后港地区的城市化进程可追溯至其作为榜鹅一部分的早期历史，彼时该地以农渔业为主，特别是养猪业和渔港活动。新加坡改良信托局（SIT）在战后时期为解决住房短缺问题奠定了基础，但其在后港的具体建设活动记录相对有限。随着1960年建屋发展局（HDB）的成立，新加坡的公共住房政策进入了新阶段，HDB接管了SIT未完成的项目，并开始大规模规划和建设新镇。后港的现代化城市发展始于1977年，以淡滨尼路（Tampines Way）的建设为开端，标志着该地区从乡村聚落向规划新镇的转型。HDB在后港的早期介入，为后续的组屋建设和社区发展奠定了坚实基础，逐步改变了该地区的社会经济面貌和居住环境。
+
+后港新镇的规划与建设在HDB的主导下分阶段进行，旨在提供全面的居住和生活设施。第一至第三邻里在1983年前完成，随后第四至第七邻里于1992年前竣工。作为新镇核心的第八邻里，即后港市中心，于1994年建成，集商业、交通和社区功能于一体。最新的第九邻里则在2000年完成，进一步完善了新镇的居住布局。在住宅建设方面，后港的HDB组屋以其独特的半圆形阳台设计而闻名，成为该地区公共住房的标志性特征。例如，2015年建成的后港角景（Hougang Capeview）项目，包含781个住宅单位，因其卓越的施工质量获得了建设局（BCA）颁发的CONQUAS Star认证，得分超过95分，远高于全国平均水平88.2分，体现了HDB在住房质量上的高标准。
+
+基础设施的完善是后港城市化进程中的关键组成部分。交通网络方面，后港中央巴士转换站于1994年启用，并计划在2030年之前进行现代化改造，以配合跨岛线（Cross Island Line）的开通，届时将成为一个综合交通枢纽。后港巴士车厂自1983年开始运营，为东北区域的巴士服务提供支持。地铁系统方面，东北线（North East Line）的后港地铁站和高文地铁站已投入使用，而大士地铁站（Tai Seng MRT station）则位于后港规划区的边界。未来，跨岛线还将增设德福地铁站（Defu MRT station）和实龙岗北地铁站（Serangoon North MRT station），进一步提升区域连通性。道路网络方面，上实龙岗路（Upper Serangoon Road）和榜鹅路（Punggol Road）作为历史悠久的主干道贯穿后港，并与杨厝港路（Yio Chu Kang Road）、淡滨尼路（Tampines Road）等主要道路相连，共同构成了高效的城市交通体系，支持了后港的持续发展和居民的日常出行需求。
+
+\section{重要地标与建筑}
+后港地区拥有多处具有历史和文化意义的地标与建筑。其中，位于后港21街第203座组屋旁的大井脚喷泉，是为了纪念曾经在此地作为大井脚村居民聚集点的一口古井而于1998年建造的。这口井承载着早期居民的集体记忆，是社区历史的重要象征。此外，圣母圣诞堂、后港斗母宫和哈芝尤索夫回教堂这三座宗教机构，在实龙岗路上段绵延3公里，拥有近四个世纪的悠久历史，其中圣母圣诞堂和斗母宫已被列为国家古迹，彰显了后港多元的宗教信仰和文化融合。
+
+在商业和文化设施方面，后港中央商业区在1997年迎来了后港购物中心的开业，这是全国职工总会开设的首个购物中心，极大地提升了区域的商业活力。购物中心内设有曾山公共图书馆（前身为曾山社区图书馆），该图书馆于1997年开放，以收藏和展示本地艺术家的作品而闻名。这些地标和设施不仅满足了居民的日常生活需求，也为社区提供了丰富的文化和休闲空间，成为后港城市景观中不可或缺的组成部分。
+
+\section{人口变迁与族群结构}
+后港地区的人口结构在城市化进程中经历了显著变迁。早期，该地区主要由潮州籍华人居住，他们多从事农业和养猪业。随着1979年建屋发展局启动新镇建设，大量来自新加坡各地的居民迁入，使得人口构成趋于多元化。截至2015年，后港新镇拥有51,646个组屋单位，居住人口约179,800人，成为新加坡陆地面积最大的组屋新镇。虽然早期潮州文化印记深厚，但随着城市发展和人口流动，后港已演变为一个多民族、多文化融合的现代社区。然而，潮州文化的影响仍可在一些历史地标和宗教场所中体现，例如圣母圣诞堂至今仍提供潮州语礼拜服务，反映了早期移民的文化传承。
+
+\section{近年发展与城市更新}
+近年来，后港地区持续进行城市更新与规划项目，旨在提升居民的生活品质和社区活力。2007年，建屋发展局为优化土地利用和振兴老旧社区，拆除了后港3道和7道的部分组屋及一个小贩中心，为未来的私人住宅开发腾出空间。这些举措反映了政府对旧有基础设施进行现代化改造的决心。
+
+在交通基础设施方面，后港和高文地铁站于2003年作为东北线的一部分投入运营，极大地改善了该地区的公共交通连接性，方便了居民的出行。2013年，后港广场被拆除，取而代之的是一个名为“The MidTown”的住宅与零售综合项目，这标志着后港商业中心的现代化转型。2026年1月，凯德集团及其财团获得了后港中央地段的开发权，计划建设一个拥有约30万平方英尺零售和生活空间的大型综合体，这将成为后港最大的购物中心，进一步提升该地区的商业吸引力。这些发展项目共同塑造了后港的现代城市面貌，并为居民提供了更完善的设施和更便捷的生活。
+
+\section{社区记忆与空间认同}
+后港的社区记忆与空间认同深受其独特的历史与政治遗产影响。作为工人党长期执政的选区，后港居民对社区的归属感不仅来源于其作为居住地的功能，更深植于其作为反对党堡垒的政治身份。这种身份认同在历次选举中得到强化，形成了独特的“后港精神”。居民对老街区、传统建筑和公共空间的记忆，如旧时的康卡鱼市、大井脚村的古井，以及后来建设的组屋区，共同构成了他们对后港的集体记忆。这些记忆通过口述历史、社区活动和文化遗产径等方式得以传承和活化，例如国家文物局推出的后港文化遗产径，通过居民的贡献和故事，使历史不再是冰冷的文字，而是鲜活的社区体验。不同年龄层的居民通过参与遗产径活动，重新发现和连接社区的历史，从而增强了对后港的认同感和归属感，使社区成为一个充满活力的生活共同体。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item National Library Board. Hougang. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=3035caa9-02a5-48c1-9f19-b987ab7760c1}
+  \item Wikipedia. Hougang Single Member Constituency. \url{https://en.wikipedia.org/wiki/Hougang_Single_Member_Constituency}
+  \item The Straits Times. New Hougang Heritage Trail places spotlight on historic heartland gems. \url{https://www.straitstimes.com/singapore/new-hougang-heritage-trail-places-spotlight-on-historic-heartland-gems}
+  \item CityPopulation.de. Hougang (Planning Area, Singapore) - Population Statistics, Charts. \url{https://www.citypopulation.de/en/singapore/admin/302__hougang/}
+  \item Urban Redevelopment Authority (URA). Master Plan. \url{https://www.ura.gov.sg/Corporate/Planning/Master-Plan}
+  \item CapitaLand. CICT and Consortium awarded Hougang Central site. \url{https://www.capitaland.com/en/about-capitaland/newsroom/news-releases/international/2026/january/CICT-and-consortium-awarded-hougang-central-site.html}
+  \item 8world. 【GE2025】后港单选区：工人党陈立峰当选. \url{https://www.8world.com/singapore/ge2025-final-results-hougang-smc-2778156}
+  \item Workers' Party. History of the Workers' Party. \url{https://www.wp.sg/history}
+  \item CEIC Data. Singapore Resident Population: HDB Flats: Hougang. \url{https://www.ceicdata.com/en/singapore/public-housing-statistics/resident-population-hdb-flats-hougang}
+\end{enumerate}
+
+
+\part{第五篇：西部}
+
+\chapter{荷兰-武吉知马集选区 (Holland-Bukit Timah GRC)}
+
+\section{选区划界与政治地理背景}
+荷兰-武吉知马集选区在新加坡的政治版图中扮演着重要角色，其政治选举历史反映了该区域的选民倾向和政党竞争。该集选区最初被称为荷兰-武吉班让集选区，于2006年更名为荷兰-武吉知马集选区，这是因为武吉班让选区被划出成立单选区，而武吉知马单选区则被并入。在2011年之前，波那维斯塔分区曾是该集选区的一部分，但后来因人口结构变化被划入丹戎巴葛集选区，而茂明分区则被划入茂明-加冷集选区。最近的一次选区划分调整发生在2025年，武吉知马山庄园从裕廊东-武吉巴督集选区划入荷兰-武吉知马集选区，而第10道交界处则划入蔡厝港集选区。自2006年成立以来，荷兰-武吉知马集选区一直是人民行动党（PAP）的坚固堡垒，在历次选举中均取得胜利。新加坡民主党（SDP）曾分别在2011年、2015年和2020年挑战该集选区，但从未获得超过40\%的选票。在2025年的大选中，红点同心党（RDU）参与了竞争，但由维文医生领导的人民行动党团队最终以约79.25\%的得票率成功卫冕，再次彰显了人民行动党在该区域的强大支持基础。
+
+\section{早期地貌与前城市化时期}
+荷兰-武吉知马集选区所涵盖的区域拥有丰富的早期历史。其中，武吉知马地区在1827年6月28日由约翰·普林斯首次勘探，旨在修建道路。当时，该地是一片虎患严重的茂密丛林。1843年3月，通往武吉知马山顶的道路竣工，并于1845年延伸至克兰芝，成为连接新加坡南北的重要通道之一。武吉知马的地名可能源于马来语“Bukit Temak”（意为“天马树之山”），因英国人的误读而演变为“Bukit Timah”。“Bukit”意为山丘，“Timah”意为锡，这导致了该地区曾被误认为富含锡矿。到了20世纪初，尽管该地区已得到清理，但仍保留着乡村风貌，散布着旧时的甘榜（村庄）房屋。此后，武吉知马逐渐发展成为重要的工业区，拥有冷藏公司奶牛场、福特汽车装配厂和永备电池厂等大型企业，同时也是多所著名学府的所在地。在第二次世界大战期间，武吉知马是日军入侵新加坡的关键战场，最终武吉知马山沦陷于日军之手。而乌鲁班丹地区在早期则主要是一片沼泽地，居住着以捕鱼为生的马来渔民，其历史可追溯到1920年代，当时该地以捕捞虾蟹为生。
+
+\section{城市规划与建设进程}
+荷兰-武吉知马集选区经历了显著的城市化进程。在20世纪60年代初期，公共工程部将武吉知马路改建为双向车道，随后武吉知马路和杜尼安路都得到了拓宽，并在重要的交通枢纽（如亚当路/花拉路、牛顿圆环和惠德里路）修建了立交桥，极大地改善了区域交通。1933年启用的武吉知马赛马场，在运营至1999年后，其土地被重新开发为“大看台”（The Grandstand），现已成为一个集餐饮、儿童保育服务和超市于一体的综合生活中心。值得注意的是，武吉知马地区在1960年代和1970年代曾是新加坡主要的工业区之一，但随着城市发展，这些工业建筑逐渐被高档别墅、排屋和私人公寓取代，使武吉知马转型为新加坡最豪华的住宅区之一。此外，曾是日占时期游乐园的“美世界”（Beauty World），在1947年更名为“美世界”并重新开放为市场。在1970年代经历多次火灾后，该地块被政府收购并重新开发为购物中心，于1984年开业。乌鲁班丹地区，从最初的沼泽地，也随着城市发展而不断演变，乌鲁班丹公园连道等基础设施的建设，将其与周边区域紧密连接起来，提升了居民的生活品质和便利性。
+
+\section{重要地标与建筑}
+荷兰-武吉知马集选区内拥有众多重要的地标和建筑，这些地标不仅承载着历史记忆，也反映了区域的多元发展。其中，武吉知马山是新加坡的最高自然点，也是武吉知马自然保护区所在地，这片原始雨林是新加坡重要的生态宝库。武吉知马火车站，作为曾经的铁路枢纽，如今已转型为铁路走廊的一部分，成为一个供社区休闲的公共空间。昔日的武吉知马赛马场（1933年至1999年运营），现已华丽转身为“大看台”（The Grandstand），集餐饮、儿童保育服务和大型超市于一体，成为居民生活的重要场所。美世界（Beauty World）的历史也颇为曲折，从日占时期的游乐园，到战后的市场，再到1984年开业的购物中心，见证了区域的商业变迁。此外，该区域还以其卓越的教育机构而闻名，包括新加坡国立大学（前身为新加坡大学）、华侨中学、新加坡女子学校和英华学校等一流学府。中央集水区和步枪靶场自然公园则为该集选区增添了宝贵的绿色空间和自然风貌。荷兰村（Holland Village）作为集选区的一部分，以其独特的餐饮和生活方式而闻名，是当地居民和外籍人士喜爱的聚集地。
+
+\section{人口变迁与族群结构}
+荷兰-武吉知马集选区的人口结构和族群历史也颇具特色。该区域以其高档住宅区而闻名，拥有新加坡最密集的豪华公寓和有地私宅，公共组屋数量相对较少，因此被认为是新加坡最富裕的选区之一。由于其优越的地理位置和高品质的生活环境，该地区吸引了大量外籍人士和富裕的新加坡居民在此居住，这也促成了众多国际学校的设立。在19世纪，武吉知马地区主要由华人定居者居住，他们在此开辟了甘蜜和胡椒种植园，为该地的早期经济发展奠定了基础。随着时间的推移，人口构成也逐渐多元化，但其高端住宅区的特点一直延续至今，形成了独特的社会经济面貌。
+
+\section{近年发展与城市更新}
+荷兰-武吉知马集选区在近年也经历了持续的城市更新和发展项目。其中，乌鲁班丹地区是近期发展的一个重点，部分多佛森林（Dover Forest）被划拨用于公共住房建设，预计将有3000套新的组屋在三个项目中建成，这标志着乌鲁班丹地区正在摆脱其“偏远”的旧有印象，迎来更多居民。此外，乌鲁班丹地区还将新建两个绿色社区公园，分别位于锡奈山（Mount Sinai）和国王路/皇后路（King's Rd / Queens Rd），旨在将自然环境与城市生活更好地融合。这些规划项目不仅将提升居民的生活品质，也将为该区域带来新的活力。在选区划分方面，2025年，武吉知马山庄园从裕廊东-武吉巴督集选区划入荷兰-武吉知马集选区，而第10道交界处则划入蔡厝港集选区，这些调整反映了区域人口和发展格局的变化。
+
+\section{社区记忆与空间认同}
+荷兰-武吉知马集选区作为一个拥有丰富历史和独特地理环境的区域，其居民对该地的空间记忆与认同是多元且深刻的。对于长期居住在此的老一辈居民而言，武吉知马可能承载着二战时期的历史记忆，以及早期甘榜生活和工业发展的印记。他们可能记得武吉知马路从泥泞小径到双向车道的变迁，以及赛马场昔日的辉煌。对于中生代居民，该区域的高端住宅属性、优质教育资源以及与自然保护区的紧密联系，构成了他们对该地的主要认知和认同。他们可能对在武吉知马自然保护区徒步、在荷兰村享受美食，或是在区域内知名学府求学的经历记忆犹新。年轻一代的居民，则可能更多地关注乌鲁班丹等区域的城市更新项目，以及新开发的绿色社区空间。他们对该地的认同可能与现代化的生活设施、便捷的交通以及社区活动紧密相关。尽管缺乏直接的口述历史资料，但从该区域的历史发展、地标建筑和人口构成来看，不同年龄阶层居民对荷兰-武吉知马集选区的空间记忆，无疑是围绕着其独特的自然风光、教育优势、高品质生活环境以及不断演进的城市面貌而形成的。例如，武吉知马火车站的改造，让老一辈居民得以重温历史，也为年轻一代提供了新的休闲空间，成为连接过去与现在的记忆载体。此外，社区活动和基层组织（如Facebook页面所示）也为居民提供了共同参与和塑造社区记忆的平台。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Holland–Bukit Timah Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Holland%E2%80%93Bukit_Timah_Group_Representation_Constituency}
+  \item Wikipedia. Bukit Timah. \url{https://en.wikipedia.org/wiki/Bukit_Timah}
+  \item NLB. Bukit Timah. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=114e5035-19ff-443f-91f9-9142ca42d9ba}
+  \item 8world. 【GE2025】荷兰-武吉知马集选区：人民行动党当选. \url{https://www.8world.com/singapore/ge2025-final-results-holland-bukit-timah-grc-2778091}
+  \item Zaobao. 人民行动党荷兰—武吉知马集选区获得近80\%的高得票率。外交部长维文医生说，这体现了民众对新总理黄循财的信心，也反映选民对充满变数的世界局势十分关切. \url{https://www.facebook.com/zaobaosg/videos/%E8%8D%B7%E5%85%B0%E6%AD%A6%E5%90%89%E7%9F%A5%E9%A9%AC%E5%9B%A2%E9%98%9F%E5%BC%BA%E5%8A%9B%E5%A7%94%E6%89%98%E5%8F%8D%E6%98%A0%E5%AF%B9%E5%B1%80%E5%8A%BF%E9%AB%98%E5%BA%A6%E5%85%B3%E6%B3%A8/9796157280474018/}
+  \item Facebook. Exploring Bukit Timah's History and Development in Singapore. \url{https://www.facebook.com/groups/2961522894103609/posts/3724617047794186/}
+  \item Facebook. 武吉知马与武吉巴督历史走廊Bukit Timah \& Bukit Batok Heritage Trail. \url{https://www.facebook.com/media/set/?vanity=fungkoon.foo&set=a.10217049242405442}
+  \item PropertyGuru. Ulu Pandan is not as remote as its name implies. \url{https://www.propertyguru.com.sg/property-guides/ulu-pandan-singapore-13574}
+  \item Nava Groves. Nava Grove’s Backdrop: The Colourful History of Ulu Pandan. \url{https://navagroves.sg/nava-groves-backdrop-the-colourful-history-of-ulu-pandan/}
+  \item YouTube. Ulu Pandan plans: Part of Dover Forest set aside for public housing. \url{https://www.youtube.com/watch?v=gd1FTqqC8U0}
+  \item Facebook. The Ulu Pandan development features numerous designs to integrate nature with the. \url{https://www.facebook.com/MothershipSG/posts/the-ulu-pandan-development-features-numerous-designs-to-integrate-nature-with-th/5953544651351804/}
+  \item Yahoo Finance. 3 things to know about the latest Ulu Pandan BTO flats. \url{https://sg.finance.yahoo.com/news/3-things-know-latest-ulu-075239356.html}
+  \item Reddit. Plans for Ulu Pandan revised: A third of Dover Forest set aside for public housing, nature park to be established. \url{https://www.reddit.com/r/singapore/comments/ou9dvg/plans_for_ulu-pandan-revised-a-third-of-dover/}
+\end{enumerate}
+
+\chapter{裕廊东-武吉巴督集选区 (Jurong East-Bukit Batok GRC)}
+
+\section{选区划界与政治地理背景}
+裕廊东-武吉巴督集选区于2025年成立，由原有的丰加北单选区、裕廊集选区部分区域，以及整个武吉巴督单选区和裕华单选区的大部分合并而成。在2025年大选中，人民行动党（PAP）团队由永续发展与环境部长傅海燕领军，成员包括穆仁理、拉哈尤·玛赞、李宏壮和许德财。该团队以76.66\%的得票率战胜了红点同心党（RDU），赢得了该集选区的五个议席。武吉巴督单选区在1991年之前曾是独立的单选区，后并入裕廊集选区，2015年再次划出成为单选区，2025年又重新并入集选区。武吉甘柏曾是蔡厝港集选区的一部分，2025年再次成为单选区。该区域的政治版图变化反映了新加坡选区划分的动态调整，以适应人口结构和地理分布的变化。
+
+\section{早期地貌与前城市化时期}
+武吉巴督（Bukit Batok）在1940年代之前，曾是橡胶和菠萝种植园的集中地。随着1940年代初工业化的萌芽，该地区在第二次世界大战期间成为盟军和轴心国的重要战场，特别是武吉知马战役和英军在福特汽车厂的投降。日本占领期间，武吉巴督山上曾修建昭南忠灵塔。战后，英国恢复了工业化计划，武吉巴督也因其丰富的花岗岩资源而成为重要的采石区，其中Poh Kim采石场是代表之一。裕廊（Jurong）地区在城市化之前，则是一片广阔的红树林沼泽，点缀着种植园、鱼虾养殖池，河流中鳄鱼出没。大部分农村土地为国有，仅少数居民拥有私人地块。地名“Jurong”源自马来语“jerong”，意为“鲨鱼”，也有指代贪婪之人的含义。
+
+\section{城市规划与建设进程}
+武吉巴督新镇的开发始于1975年12月，在十年内将一个旧村庄转变为一个现代化的新镇。在城市化进程中，该地区保留了许多独特的辉长岩地貌和山脊，这些在武吉巴督自然公园和武吉巴督市镇公园中依然可见，成为该镇的特色。裕廊地区的城市化进程则更为宏大，始于1961年荷兰经济学家阿尔伯特·温塞米乌斯（Albert Winsemius）启动的工业化计划。69平方公里的土地被选定用于工业开发，通过平整低矮山丘和填埋沼泽地来为工业、住宅和休闲设施建设做准备。1962年，新加坡第一个工业区——裕廊工业区项目启动，国家钢铁厂（National Iron \& Steel Mills）奠基。早期工业包括木材、锯木、石油钻井平台制造、造船和维修。到1976年，已有650家工厂投入运营，超过2万套公寓被居民入住。从1970年代到1990年代，裕廊镇管理局（JTC）为吸引工人和促进工业区发展，建设了大量住宅和休闲设施。到2000年，随着私人住宅开发与公共住房并存，裕廊地区开始经历士绅化。2006年，裕廊市镇理事会启动了一项为期五年的总体规划，旨在升级裕廊地区，包括扩建游乐区、增设老年健身角、无障碍坡道、有盖走道、重新粉刷、重新布线工程和社区花园等改进措施。
+
+\section{重要地标与建筑}
+裕廊东-武吉巴督集选区内拥有众多重要地标和设施。武吉巴督的主要地标包括武吉巴督市镇公园、武吉巴督自然公园、旧福特汽车厂、千禧学院、武吉巴督地铁站、武吉巴督巴士转换站、武吉巴督民众俱乐部、武吉巴督公共图书馆、West Mall购物中心、武吉巴督综合诊疗所、武吉景中学、克明小学、灵虹堂、武吉巴督联合庙、福通庙、天仙府、Ar-Raudhah回教堂、武吉巴督游泳中心、武吉巴督巴士车厂、武吉巴督中学、伊丽莎白公主小学、桂林联合庙、Sattha Puchaniyaram佛教寺庙、武吉巴督长老会教堂、武吉甘柏地铁站、武吉甘柏体育场、山景中学、莲花小学、山景地铁站、武吉巴督驾驶中心、丰加北民众俱乐部、瑞士村中学、德能中学、圣安东尼小学、祖林寺、大忠小学、CDANS武吉巴督乡村俱乐部和公务员俱乐部武吉巴督会所。裕廊东的重要地标则有裕华园、裕廊区域图书馆、裕廊镇大会堂（2015年列为国家古迹）、新加坡科学馆、裕廊东中心、裕廊港、裕廊工业区、裕廊飞禽公园、黄廷方综合医院、裕廊社区医院、裕廊坊购物中心、国际商业园（IBP）、裕廊东体育休闲中心、裕廊湖公园、班丹花园公园连道、裕廊公园连道、大士邻里公园、班丹花园休闲公园、班丹蓄水池健身角、丰加东邻里公园、裕华村邻里公园、裕廊云顶酒店、IMM奥特莱斯、Westgate购物中心、Jem购物中心和IMAX全天域影院。
+
+\section{人口变迁与族群结构}
+裕廊东-武吉巴督集选区的人口构成多元，与新加坡整体情况相似，华族人口占多数。根据2020年数据，武吉巴督的华族人口占71.80\%，马来族25,240人，印度族14,950人，其他族群4,380人。裕廊东的华族人口占70.53\%，马来族12,700人，印度族8,610人，其他族群1,850人。两个区域的人口结构均显示出老龄化趋势，裕廊东尤为显著，65岁以上老年人口占23.72\%，是0-14岁儿童人口的两倍多。武吉巴督的人口分布相对均衡，30-34岁年龄组人口比例最高。两个区域的居民主要居住在组屋（HDB flats），武吉巴督有78.6\%的居民居住在组屋，裕廊东则高达90.4\%。
+
+\section{近年发展与城市更新}
+裕廊东-武吉巴督集选区近年来经历了显著的城市更新和规划项目。裕廊东被定位为新加坡的“第二中央商务区”（Second CBD），裕廊湖区项目（Jurong Lake District Project）于2008年启动，预计2040年完成，旨在创造20万个就业机会和2万套住宅。该项目包括裕廊湖、裕廊门户、国际商业园和裕廊东的南部区域，将成为西部地区重要的商业中心。交通方面，裕廊东的地铁网络正在大规模扩建，裕廊区域线和跨岛线预计分别于2028年和2032年完工，将新增五个地铁站。裕廊综合交通枢纽的建设也正在进行中。武吉巴督的裕廊综合诊疗所将于2025年迁至新址，容量扩大2.5倍，并新建一所700床位的疗养院以应对老龄化人口。裕廊镇大会堂巴士转换站已于2023年11月26日启用，进一步提升了区域的公共交通能力。
+
+\section{社区记忆与空间认同}
+裕廊东-武吉巴督集选区内的居民对该区域有着多层次的空间记忆与认同。对于年长一代的武吉巴督居民而言，他们可能还记得昔日橡胶园、菠萝园的景象，以及二战时期作为重要战略要地的历史，特别是福特汽车厂的战役和日本战俘修建的昭南忠灵塔。采石业的兴盛与衰落，以及武吉巴督新镇从村庄到成熟住宅区的转变，也是他们重要的集体记忆。对于裕廊东的居民来说，他们可能见证了裕廊从沼泽地到工业重镇的巨变，以及后来向第二中央商务区转型的过程。裕廊工业区、裕廊港的建设，以及裕廊湖区的发展，都深刻影响了居民的生活和工作。不同年龄层的居民对区域内的地标，如裕廊湖公园、科学馆、IMM、Jem等购物中心，以及武吉巴督自然公园和市镇公园，都有着各自的记忆和情感联结。这些地标不仅是日常生活的场所，也承载着社区的共同经历和认同感。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item 维基百科. Jurong East–Bukit Batok Group Representation Constituency. \url{https://en.wikipedia.org/wiki/Jurong_East%E2%80%93Bukit_Batok_Group_Representation_Constituency}
+  \item 维基百科. 裕廊东－武吉巴督集选区. \url{https://zh.wikipedia.org/zh-hans/%E8%A3%95%E5%BB%8A%E6%9D%B1%EF%BC%8D%E6%AD%A6%E5%90%89%E5%B7%B4%E7%9D%A3%E9%9B%86%E9%81%B8%E5%8D%80}
+  \item 维基百科. Bukit Batok. \url{https://en.wikipedia.org/wiki/Bukit_Batok}
+  \item 维基百科. Jurong East. \url{https://en.wikipedia.org/wiki/Jurong_East}
+  \item National Library Board. Jurong. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=1521df3a-7b37-4440-be44-9ca1f03c538f}
+\end{enumerate}
+
+\chapter{西海岸-裕廊西集选区 (West Coast-Jurong West GRC)}
+
+\section{选区划界与政治地理背景}
+西海岸-裕廊西集选区（West Coast-Jurong West GRC）是为2025年大选新设立的五人集选区。它由原西海岸集选区吸收了原裕廊集选区的裕廊春（Jurong Spring）和大巴窑（Taman Jurong）部分区域合并而成。该选区目前由人民行动党（PAP）控制，国会议员包括李智陞（Desmond Lee）、Cassandra Lee、Ang Wei Neng、Hamid Razak和Shawn Huang。在2025年大选中，由李智陞领军的人民行动党团队以60.01\%的得票率击败了由陈清木（Tan Cheng Bock）领导的新加坡前进党（PSP）团队。历史上，亚逸拉惹曾是单选区（1980-2006），由陈清木（当时代表PAP）长期担任议员，后并入西海岸集选区。
+
+\section{早期地貌与前城市化时期}
+在城市化之前，西海岸与裕廊西地区（包括亚逸拉惹、文礼、南洋、裕廊春、格巴、大巴窑等）主要由红树林沼泽、种植园、鱼虾池和河流组成。该地区的历史可以追溯到19世纪甚至更早。例如，“Jurong”一词可能源自马来语“Jerung”（鲨鱼）或“Jurang”（峡谷），也可能来自“Penjuru”（角落）。在1828年Philip Jackson的地图上，已经标注了Sungei Jurong和Sungei Pandan这两条河流。文礼（Boon Lay）得名于19世纪末至20世纪初的著名商人周文礼（Chew Boon Lay），他在该地区拥有大片土地。1940年代，殖民政府征用了部分土地，促成了文礼村（Boon Lay Village）的发展。亚逸拉惹（Ayer Rajah）的名字源于马来语，意为“水之王”，得名于一条排干Bukit Rajah周围积水的大溪流。西海岸地区在1950年代被称为西海岸马来定居点（West Coast Malay Settlement），直到1960年代初，这里仍有许多马来渔村。
+
+\section{城市规划与建设进程}
+1961年，在荷兰经济学家Albert Winsemius的倡导下，新加坡开始了工业化进程，裕廊被选为工业发展的核心区域。为了建设裕廊工业区，政府夷平了低矮的山丘，填平了沼泽地。1962年，国家钢铁厂（National Iron \& Steel Mills）的奠基标志着新加坡第一个工业区的诞生。随着工业区的发展，裕廊镇管理局（JTC）在1970年代至1990年代期间建设了大量的住宅和娱乐设施，以吸引工人居住。文礼的HDB组屋始建于1974年。大巴窑（Taman Jurong）建于1964年，是为工业区工人提供的早期住宅区。西海岸地区则在1970年代末通过填海造地形成，主要用于制造业和住宅。这些地区逐渐发展成为拥有完善交通网络（如MRT和公交）、学校、市场、诊所和社区中心的自给自足的市镇。
+
+\section{重要地标与建筑}
+该选区内拥有众多重要地标。裕廊工业区和裕廊港（Jurong Port，1965年启用）是新加坡经济的重要支柱。裕廊镇大会堂（Jurong Town Hall）建于1974年，曾是JTC的总部，并于2015年被列为国家古迹。在教育方面，南洋理工大学（NTU）的前身南洋大学（Nanyang University）于1955年在此建立，是海外第一所也是唯一一所中文大学，其旧图书馆和行政楼现为华裔馆（Chinese Heritage Centre）。休闲与自然地标包括裕廊飞禽公园（Jurong Bird Park）、新加坡科学中心（Science Centre Singapore）、星和园（Chinese Garden）和裕华园（Japanese Garden）。西海岸公园（West Coast Park）建于1977年，是西部居民重要的户外活动场所。此外，黄廷方综合医院（Ng Teng Fong General Hospital）和裕廊社区医院于2015年启用，为居民提供医疗服务。
+
+\section{人口变迁与族群结构}
+西海岸-裕廊西集选区的人口结构反映了新加坡整体的多元种族特征。在早期，这里有马来渔村（如西海岸马来定居点）和华人种植园主（如周文礼）。随着工业化和HDB组屋的建设，大量来自不同背景的工人及其家庭迁入该地区。如今，该地区的人口由华人、马来人、印度人和其他族群组成。例如，文礼区在2024年的人口约为29,510人。随着南洋理工大学等教育机构的发展，该地区也吸引了大量的学生和教职员工，增加了人口的多样性。近年来的城市更新和私人住宅（如共管公寓）的建设，也使得居民的社会经济背景更加多元化。
+
+\section{近年发展与城市更新}
+近年来，该地区经历了显著的城市更新。2006年，裕廊市镇理事会推出了五年总体规划，对游乐场、无障碍设施和社区花园进行了升级。2008年，市区重建局（URA）公布了裕廊湖区（Jurong Lake District）的蓝图，旨在将其打造为新加坡的第二个中央商务区（CBD）和水上运动中心。交通基础设施也在不断完善。裕廊区域线（JRL）正在建设中，其中包括计划于2028年开通的格巴（Gek Poh）地铁站，以及拟议中的西海岸延长线，这将进一步加强该地区的连通性。此外，裕廊坊（Jurong Point）等商业设施的扩建，以及黄廷方综合医院的落成，极大地提升了居民的生活质量。
+
+\section{社区记忆与空间认同}
+不同年龄阶层的居民对西海岸-裕廊西集选区有着深厚的空间记忆。对于老一辈居民来说，他们可能还记得前工业化时期的红树林、甘榜（如西海岸马来定居点）以及早期的南洋大学。大巴窑（Taman Jurong）作为最早的工业镇住宅区，承载了早期工业先驱们的奋斗记忆。对于年轻一代，西海岸公园（West Coast Park）的游乐设施、裕廊坊（Jurong Point）的繁华、以及在南洋理工大学的求学经历，构成了他们对该地区的认同。社区活动，如在亚逸拉惹民众俱乐部（Ayer Rajah CC）庆祝屠妖节，以及西海岸-裕廊西集选区举办的家庭日和社区学习中心，不断强化着居民之间的联系和对社区的归属感。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. West Coast–Jurong West Group Representation Constituency. \url{https://en.wikipedia.org/wiki/West_Coast%E2%80%93Jurong_West_Group_Representation_Constituency}
+  \item Wikipedia. Ayer Rajah Single Member Constituency. \url{https://en.wikipedia.org/wiki/Ayer_Rajah_Single_Member_Constituency}
+  \item Wikipedia. Boon Lay. \url{https://en.wikipedia.org/wiki/Boon_Lay}
+  \item Wikipedia. Nanyang University. \url{https://en.wikipedia.org/wiki/Nanyang_University}
+  \item NLB. Jurong. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=1521df3a-7b37-4440-be44-9ca1f03c538f}
+  \item Wikipedia. Jurong. \url{https://en.wikipedia.org/wiki/Jurong}
+  \item URA. Pasir Panjang Road No. 222 to 240. \url{https://www.ura.gov.sg/Conservation-Portal/Explore/History?bldgid=PPJG01}
+  \item Orang Laut SG. The significance of West Coast Park. \url{https://oranglautsg.substack.com/p/the-significance-of-west-coast-park}
+  \item CNA. GE2025: PAP wins West Coast-Jurong West GRC with 60.01\% of votes. \url{https://www.channelnewsasia.com/singapore/ge2025-pap-west-coast-jurong-west-psp-tan-cheng-bock-5107061}
+  \item 联合早报. 西海岸与裕廊西合并成新五人集选区. \url{https://www.zaobao.com.sg/news/singapore/story20250312-6002180}
+\end{enumerate}
+
+\chapter{蔡厝港集选区 (Chua Chu Kang GRC)}
+
+\section{选区划界与政治地理背景}
+蔡厝港集选区在新加坡的政治版图中扮演着重要角色，其选区划界和政治选举历史反映了新加坡政治格局的演变。蔡厝港集选区由人民行动党（PAP）长期执政，其政治领导团队在历次大选中均致力于服务社区和推动发展。随着蔡厝港新镇的不断发展，其政治分区也随之调整。例如，在1988年和1991年，蔡厝港的居民委员会进行了扩充，部分蔡厝港选区在后续的选举中被划分为油池（Yew Tee）和吉宝宏（Keat Hong）等独立选区，以更好地管理日益增长的人口和社区需求。
+
+在最近的2025年大选中，蔡厝港集选区的人民行动党团队由人力部长陈诗龙医生领衔，成员包括周凯年、萧振祥和朱佩玲。该团队以63.59\%的得票率击败了新加坡前进党（PSP）的挑战，成功守住了四个议席。此次选举结果显示，人民行动党在蔡厝港集选区获得了显著的民意支持，相比上届大选的58.64\%得票率有所提升。这表明选民对执政党在社区发展和居民福祉方面的努力给予了肯定。蔡厝港集选区的政治生态相对稳定，人民行动党在地方治理中发挥着主导作用，并通过各种社区项目和发展计划，积极回应居民的诉求。
+
+\section{早期地貌与前城市化时期}
+蔡厝港地区在19世纪初期，是新加坡西北部重要的农业拓殖区。其地名“蔡厝港”源于潮州话“厝港”，意指“港脚”或“河口”，而“蔡”则代表了早期港主蔡合的姓氏。当时，潮州籍先民沿着秉祥河（Peng Siang River）开辟了大量的甘蜜和胡椒种植园，形成了独特的“港主制度”。这些种植园不仅是经济活动中心，也是早期华人社群的聚居地。随着土地肥力下降，部分种植园主转向柔佛发展，但仍有福建籍移民在19世纪末迁入，继续开垦土地，种植菠萝、橡胶和椰子，并发展蔬菜和家禽养殖业。该地区曾是野生动物的栖息地，甚至有老虎出没，新加坡的最后一头野生老虎便是在1930年代于蔡厝港村被猎杀。
+
+在城市化进程启动之前，蔡厝港保留着浓厚的乡村风貌，散布着如甘榜勿林明（Kampong Belimbing）、蔡厝港村和甘榜贝里（Kampong Berih）等传统甘榜。居民的出行主要依赖船只或牛车。这些村落是不同籍贯和族群和谐共处的地方，形成了多元的社会结构。例如，位于登加河（Tengah River）和秉祥河交汇处的东成村，是现代蔡厝港的重要发源地之一，南安籍移民在此开垦，并建立了蔡厝港斗母宫，成为当地重要的信仰中心。早期蔡厝港的工业发展也初具规模，上世纪50年代，黄种行在此创建了亚洲砖厂，为新加坡独立后的组屋建设提供了大量砖块，见证了国家建设的早期阶段。
+
+\section{城市规划与建设进程}
+蔡厝港的城市化进程始于1970年代末，随着新加坡政府大规模推行公共住房计划，该地区从传统的甘榜和农业区逐步转型为现代化的住宅新镇。1977年，德惠（Teck Whye）地区建成了蔡厝港的首批组屋，标志着新镇时代的开启。此后，在新加坡建屋发展局（HDB）的规划下，蔡厝港新镇迅速扩展。到1992年，新镇已发展出四个主要社区，蔡厝港路也进行了截弯取直以适应新的城市布局。1997年，位于克兰芝高速公路以北的油池（Yew Tee）地区被开发为蔡厝港的北部社区，进一步扩大了新镇的范围。
+
+进入21世纪，蔡厝港的城市化步伐持续加快。2015年，吉宝宏（Keat Hong）社区在碧林路（Brickland Road）以南建成，成为蔡厝港的第八个社区，提供了更多现代化的住宅选择。截至2024年，蔡厝港约有160,900名组屋居民，居住在41,257个组屋单位中，其中四房式组屋是居民最常见的选择。该地区的组屋居民比例高达85.8\%，高于全国平均水平的76.3\%，显示出公共住房在蔡厝港的显著地位。此外，蔡厝港的房屋自有率在2020年达到92.9\%，远高于全国平均的87.9\%，位居新加坡所有规划区中的第三高，体现了居民对拥有自己家园的强烈认同感和稳定性。
+
+\section{重要地标与建筑}
+蔡厝港地区拥有多处重要的地标、商业和文化设施，共同构成了其独特的城市景观。其中，乐福坊购物中心（Lot One Shoppers' Mall）是蔡厝港新镇的核心商业枢纽，自1996年开业以来，便成为居民购物、餐饮和娱乐的主要场所。该购物中心地理位置优越，与蔡厝港地铁站和巴士转换站紧密相连，极大地便利了居民的日常生活。购物中心内还设有蔡厝港公共图书馆，该图书馆于1997年成立，并在2008年和2019年经过翻修，于2021年重新开放，为社区提供了重要的文化和教育资源。
+
+在文化和宗教设施方面，蔡厝港也展现出其多元性。海印寺（Hai Inn Temple）位于南山学校一带，其历史可追溯至约一个世纪前，最初是专为女性佛教徒提供学佛场所，二战期间曾是当地居民的避难所，并收藏有著名画家徐悲鸿的墨宝。此外，武林山附近的马来回教堂Masjid Al’Firdaus，以及新马铁路绿色廊道旁的斯里兰卡风格兴都庙Sri Arasakesari Sivan Temple，都反映了该地区多民族、多宗教和谐共处的社会面貌。蔡厝港体育场则是重要的体育设施，曾是新加坡勇士足球队的主场，为居民提供了运动和休闲的场所。
+
+\section{人口变迁与族群结构}
+蔡厝港的人口结构呈现出多元化和相对年轻化的特点。截至2024年，该地区总人口约为190,180人。在族群构成上，2020年的数据显示，华族居民占69.52\%，马来族居民占18.48\%，印度族居民占9.38\%，其他族群占2.62\%。与全国平均水平相比，蔡厝港的华族比例略低，而马来族比例则相对较高，这使得该地区在族群多样性方面更为突出。在年龄分布上，蔡厝港的人口结构相对均衡，0-14岁的儿童和65岁以上的老年居民数量大致相当，但年轻和中年群体的人口密度更高，其中25-29岁年龄段的男性和女性人口比例均达到峰值。
+
+值得注意的是，蔡厝港的老年居民比例相对较低，2024年65岁以上居民的比例为13.98\%，显著低于全国平均水平的18.03\%。这表明蔡厝港是一个充满活力的社区，拥有较为年轻的劳动力和家庭结构。在教育水平方面，2020年数据显示，15岁以上人口的识字率为96.9\%，与全国平均水平相近。尽管拥有大学学历的居民比例（27.6\%）略低于全国平均（32.1\%），但没有教育资格的居民比例（9.5\%）也低于全国平均（10.6\%），这反映了蔡厝港居民整体受教育程度较高。在语言使用上，以英语为最常用语言的居民比例为45.41\%，略低于全国平均水平，而泰米尔语在印度族群中占据主导地位。
+
+\section{近年发展与城市更新}
+蔡厝港集选区近年来积极推动城市更新和发展项目，旨在提升居民的生活品质和社区的宜居性。根据2025-2030年的新总体规划，蔡厝港市镇理事会（Chua Chu Kang Town Council）计划投入超过2亿新元，用于改善社区基础设施和增设新设施。其中一项重要举措是加强公共交通的可达性，包括建设有盖连道和自行车道，以鼓励居民采用更环保的出行方式。此外，蔡厝港公园正在进行升级改造，将增设自然游乐花园和更多景观空间，为居民提供亲近自然的休闲场所。
+
+在商业和休闲设施方面，蔡厝港也迎来了新的发展。SAFRA俱乐部计划于2022年在蔡厝港公园开设新的会所，为军人家庭和社区居民提供多样化的娱乐和健身设施。交通网络的完善是蔡厝港近期发展的另一大亮点。蔡厝港地铁站将连接新的裕廊区域线（Jurong Region Line），预计于2026年开通，这将显著提升蔡厝港与西部工业区和商业中心（如裕廊创新区和裕廊湖区）的连通性，为居民带来更多就业和发展机会。此外，蔡厝港市镇中心也获得了建设局（BCA）的绿色标志金奖，体现了其在可持续发展方面的努力。然而，邻近登加新镇的大规模开发，预计将提供3万个组屋单位和1.2万个私人住宅单位，这可能会对蔡厝港的房地产市场价格产生一定影响。
+
+\section{社区记忆与空间认同}
+蔡厝港的社区记忆与空间认同深植于其独特的历史变迁和居民的共同经历之中。对于老一辈居民而言，蔡厝港承载着甘榜生活的淳朴记忆，他们曾居住在木板锌板屋中，屋前空地是鸡寮和晾衣场，屋后则有自建的粪坑，这些场景构成了他们对家园的最初印象。他们记忆中的蔡厝港是农业的乐土，有甘蜜园、橡胶林，以及与野生动物共存的岁月。新马铁路的自动闸门、沿途的杂货店，以及军训时期与阿兵哥的互动，都成为他们口耳相传的生动故事，塑造了独特的在地文化。
+
+随着城市化进程的推进，蔡厝港的物理空间发生了巨大变化，但社区认同并未因此消逝。例如，吉宝宏社区的游乐场设计融入了军事遗产元素，以此向曾经的军营致敬，唤起居民对地区历史的集体记忆。蔡厝港坟场作为新加坡唯一允许土葬的坟场，其迁葬作业也成为一种独特的社区记忆载体，通过对先人的怀念和骨骸的重新安置，维系着家族和社区的纽带。不同年龄阶层的居民通过参与社区活动、共享公共空间，如蔡厝港公园和乐福坊购物中心，共同构建着新的社区认同。这些记忆和认同不仅体现在物质空间上，更通过口述历史、文化传承和社区活动，在蔡厝港居民心中世代相传，使这个现代化新镇依然保留着朴素的乡野角落，串联着古今。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Choa Chu Kang. \url{https://en.wikipedia.org/wiki/Choa_Chu_Kang}
+  \item National Library Board. Choa Chu Kang And Lim Chu Kang. \url{https://curiocity.nlb.gov.sg/resource-room/story-maps/choa-chu-kang-lim-chu-kang/}
+  \item 新加坡宗乡会馆联合总会. 蔡厝港：采菊东篱下 悠然见南山. \url{https://sfcca.sg/2022/04/28/%E8%94%A1%E5%8E%9D%E6%B8%AF%EF%BC%9A%E9%87%87%E8%8F%8A%E4%B8%9C%E7%AF%B1%E4%B8%8B-%E6%82%A0%E7%84%B6%E8%A7%81%E5%8D%97%E5%B1%B1/}
+  \item HDB. OUR TOWN, CHOA CHU KANG: Town Design Guide. \url{https://www.hdb.gov.sg/-/media/about-us/our-role/plan-and-design-towns/town-design-guides/Choa-Chu-Kang-Town-Design-Guide.pdf}
+  \item Yahoo Finance. From Pepper Kingdom to modern-day Choa Chu Kang. \url{https://sg.finance.yahoo.com/news/pepper-kingdom-modern-day-choa-073000241.html}
+  \item SRX Property. Choa Chu Kang, HDB Estate in Singapore. \url{https://www.srx.com.sg/hdb/choa-chu-kang}
+  \item Tripadvisor. 新加坡(蔡厝港) 5 大景点玩乐. \url{https://cn.tripadvisor.com/Attractions-g294265-Activities-zfn15622337-Singapore.html}
+  \item CapitaLand Malls. Lot One. \url{https://www.capitaland.com/sg/malls/lotone/en.html}
+  \item 蔡厝港市镇理事会. Together a Better Home: New 2025–2030 Master Plan. \url{https://www.ccktc.org.sg/together-a-better-home-new-2025-2030-master-plan/}
+  \item Channel News Asia. GE2025: S\$212m rejuvenation plan for Chua Chu Kang Town. \url{https://www.channelnewsasia.com/singapore/ge2025-chua-chu-kang-town-rejuvenation-jeffrey-siow-gan-kim-yong-choo-pei-ling-pap-mps-5046521}
+  \item 联合早报. 【GE2025】空降蔡厝港集选区陈诗龙带队成功守土. \url{https://www.zaobao.com.sg/news/singapore/story20250504-6287674}
+  \item 8world. 蔡厝港集选区议员当选满100天推出多个项目改善居民生活. \url{https://www.8world.com/singapore/cck-grc-lift-renovation-and-update-2872751}
+  \item Instagram. Don't “chu” sleep on these Choa Chu Kang gems! Learn. \url{https://www.instagram.com/reel/DXkyfarzFBL/}
+\end{enumerate}
+
+\chapter{武吉甘柏单选区 (Bukit Gombak SMC)}
+
+\section{选区划界与政治地理背景}
+武吉甘柏单选区（Bukit Gombak SMC）于1988年首次设立，由武吉巴督单选区的一部分划分而来。在1988年的大选中，人民行动党（PAP）候选人Seet Ai Mee以53.46\%的得票率击败新加坡民主党（SDP）的Ling How Doong。1991年大选，Ling How Doong再次挑战Seet Ai Mee，并以51.39\%的得票率获胜，使SDP从PAP手中夺得该选区。1997年大选，人民行动党的Ang Mong Seng以65.14\%的得票率击败Ling How Doong，PAP重新夺回该选区。2001年，武吉甘柏单选区被并入宏茂桥集选区（Hong Kah GRC），直至2025年因蔡厝港集选区（Chua Chu Kang GRC）人口增长而重新设立。在2025年的大选中，人民行动党的Low Yen Ling以75.81\%的得票率击败新加坡前进党（PSP）的Harish Pillay，成功捍卫了新设立的武吉甘柏单选区。
+
+\section{早期地貌与前城市化时期}
+武吉甘柏是新加坡西部的一个区域，其历史与广阔的武吉巴督地区紧密相连。在1898年的“新加坡岛及其属地地图”中，武吉甘柏首次出现在地图上，当时被称为“武吉甘柏一号”，是新加坡第二高的山丘，与武吉班让共享一条与武吉知马路上段平行的山脊。该地区在城市化之前是一个沉睡的乡村腹地，拥有未开发的农田、村庄、花岗岩采石场、森林保护区和工厂。武吉巴督（Bukit Batok）这个名字的起源有多种说法，其中最普遍的解释是马来语中“Bukit”意为“山丘”，“Batok”意为“咳嗽”，可能源于该地区采石场爆破时发出的声音，如同山丘在“咳嗽”。其他说法包括该地区寒冷的气候导致咳嗽，或爪哇语中“batok”指椰子，因山丘上长有椰子树。武吉甘柏地区的花岗岩采石活动历史悠久，其岩石（Norite）估计有5亿年历史，比武吉知马的花岗岩更古老。在二战期间，武吉巴督山曾是日军建造Syonan Chureito神道教神社和英军纪念碑的地点，这些纪念碑在1945年被日军拆除，如今只剩下两根不起眼的柱子。1950年代，该地区有Hume Industries和Ford Motor Works Factory等著名工厂，并被用作军事训练场和花岗岩采石场。1989年，新加坡国防部迁至武吉班让/甘柏山脊，此后武吉甘柏的大部分地区成为公共禁区。
+
+\section{城市规划与建设进程}
+武吉甘柏的城市化进程与新加坡的公共住房发展历史紧密相连。在1960年代，武吉甘柏地区人口稀少，主要由棚户区和临时建筑组成。1970年代，该地区开始向现代化卫星镇转型，首批1,872套公寓计划于1978年完成，以容纳约10,000名居民。随后，在建屋发展局（HDB）1981-1985年的五年计划下，武吉巴督新镇（包括武吉甘柏）的公共住房建设全面展开。这个新镇总面积达750公顷，规划建设四个社区，共计26,000套公寓，旨在容纳约130,000人。HDB的建设旨在解决新加坡的住房短缺问题，提供高层、高密度的低成本公寓。武吉甘柏的HDB组屋建设也整合了山景（Hillview）地区。除了公共住房，该地区还受益于1979年的全国排水计划，该计划耗资3100万新元，用于拓宽和加深Pang Sua河，以缓解低洼地区的洪水问题。如今，武吉甘柏已发展成为一个拥有购物中心、自然公园、俱乐部和工业园区的自给自足的新镇，体现了新加坡城市规划的成功。HDB在1980年代初开始在武吉巴督/甘柏地区进行新镇建设，旨在将这些区域从乡村腹地转变为现代化的住宅区，提供完善的设施和便利的交通。
+
+\section{重要地标与建筑}
+武吉甘柏及其周边地区拥有多个重要地标和设施。其中最著名的是“小桂林”（Little Guilin），它是由一个废弃的花岗岩采石场改造而成的风景区，因其酷似中国桂林山水而得名，是武吉巴督镇公园的一部分。武吉甘柏地铁站（Bukit Gombak MRT station）是该区域重要的交通枢纽。此外，武吉甘柏山本身也是一个显著的地理特征，尽管其大部分区域因军事用途而限制公众进入。历史地标还包括武吉巴督自然公园（Bukit Batok Nature Reserve），这里曾是二战时期日军Syonan Chureito神社和英军纪念碑的所在地，如今仍保留着通往纪念碑遗址的125级台阶。福特汽车厂旧址（former Ford Factory）虽然不在武吉甘柏SMC内，但作为武吉巴督地区的重要历史建筑，见证了1942年英军向日军投降的历史时刻。武吉甘柏体育馆（Bukit Gombak Sports Hall）也是该区域重要的社区设施。
+
+\section{人口变迁与族群结构}
+武吉甘柏作为武吉巴督规划区的一部分，其人口结构与族群历史与武吉巴督的整体发展密切相关。在1960年代之前，该地区人口稀少，主要由居住在棚户区和临时建筑中的居民组成。随着1970年代和1980年代HDB新镇的建设，大量居民迁入，形成了多元化的族群构成。虽然具体到武吉甘柏单选区的人口普查数据未直接提供，但可以推断其人口构成与新加坡的整体族群分布相似，以华族、马来族、印度族及其他少数族裔为主。城市化进程带来了人口的快速增长和结构变化，从早期的乡村聚落转变为现代化的住宅区，吸引了不同背景的居民。新加坡的公共住房政策旨在促进种族和谐与融合，因此武吉甘柏的居民也反映了这种多元共存的社会特征。
+
+\section{近年发展与城市更新}
+武吉甘柏地区近年来经历了显著的城市更新和规划项目。2025年，武吉甘柏单选区在被并入集选区24年后重新设立，这主要是由于蔡厝港集选区Tengah地区的人口增长，以及为了保持集选区规模适中。新的规划包括在武吉甘柏和山景（Hillview）地区开设新的公共和私人住宅区，并配备高质量的社区设施和医疗服务。武吉甘柏公园（Bukit Gombak Park）的建设是近期发展的一个亮点，该公园位于武吉巴督西五道，提供多样化的自然景观和休闲设施。这些发展旨在提升居民的生活质量，满足不断增长的人口需求，并优化区域的城市功能。此外，该地区持续的城市发展也包括交通基础设施的完善，例如武吉甘柏地铁站的持续运营和周边巴士服务的优化。
+
+\section{社区记忆与空间认同}
+关于武吉甘柏居民的空间记忆与认同的直接信息在现有资料中较为有限。然而，从其作为武吉巴督次分区的发展历程来看，居民的记忆可能与该区域从乡村到卫星镇的转变紧密相关。早期居民可能对花岗岩采石场、橡胶园、军事训练场以及二战时期的历史事件（如Syonan Chureito纪念碑）有深刻记忆。随着HDB组屋的建设，新一代居民的记忆可能更多地围绕着组屋生活、社区设施、以及“小桂林”等自然景观。不同年龄层的居民可能对该区域的自然环境（如武吉甘柏山、武吉巴督自然公园）有共同的认同感，但对历史事件和城市化进程的体验会有所不同。例如，老一辈居民可能记得以前的甘榜生活和采石场的轰鸣声，而年轻一代则更熟悉现代化的组屋区和公园设施。这种记忆的差异性构成了武吉甘柏社区认同的复杂性。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Bukit Gombak Single Member Constituency. \url{https://en.wikipedia.org/wiki/Bukit_Gombak_Single_Member_Constituency}
+  \item Google Sites. The Bukits of Singapore - Bukit Gombak. \url{https://sites.google.com/view/sgbukits/bukit-gombak}
+  \item National Library Board. Bukit Batok. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=d9c33942-5232-4219-bc1c-be4846c8f94f}
+  \item Singapore Public Housing Wiki. History of hdb. \url{https://singaporepublichousing.fandom.com/wiki/History_of_hdb}
+\end{enumerate}
+
+\chapter{武吉班让单选区 (Bukit Panjang SMC)}
+
+\section{选区划界与政治地理背景}
+武吉班让选区的政治历史可以追溯到1955年的立法议会大选，当时武吉班让选区首次设立。在这次选举中，进步党的吴东亮击败了劳工阵线的林维土，成为该选区的首位议员。随后的1959年大选中，人民行动党的李光耀以58.31\%的得票率在四方竞争中胜出，对手包括自由社会主义党、新加坡人民联盟和马来亚印度国大党。然而，在1963年的大选中，人民行动党失去了该席位，由由人民行动党左翼派系成立的社会主义阵线的王连登当选。王连登是未来人民行动党部长王乙康的父亲。1967年，在社会主义阵线所有议员因抵制政府合法性而辞职后，人民行动党在一次补选中不战而胜，重新夺回了该席位。此后，人民行动党继续掌控该选区，P. Selvadurai一直担任议员直至1972年大选。随后，李玉成接替P. Selvadurai，并在1972年大选中以67.65\%的得票率击败工人党候选人唐松强和联合国民阵线候选人Leyu Tan Jib，成功当选。1988年大选引入集选区制度后，武吉班让选区被正式指定为武吉班让单选区。李玉成继续担任议员，直到1991年大选该选区被废除并并入三巴旺集选区。
+
+武吉班让单选区在1991年至2006年期间曾一度消失。在2006年大选前的选区划界审查中，该选区得以恢复。重新设立的武吉班让单选区由原荷兰-武吉班让集选区的一部分组成，该集选区在2001年大选中吸收了武吉班让地区。与此同时，荷兰-武吉班让集选区被解散，取而代之的是荷兰-武吉知马集选区。在2020年大选前，时任人民行动党议员张俰宾宣布从政坛退休。人民行动党提名了当时荷兰-武吉知马集选区振华分区议员连荣华参选。新加坡民主党则推举传染病专家保罗·淡马亚作为其候选人。连荣华最终以53.74\%的得票率击败淡马亚，领先2,509票。2025年3月，双方确认将在2025年大选中再次对决。连荣华以61.41\%的更高得票率再次当选，这与人民行动党在全国范围内获得的更广泛支持趋势相符。
+
+在政治区划上，武吉班让地区被划分为两个主要选区：武吉班让单选区和荷兰-武吉知马集选区中的Cashew和Zhenghua分区。武吉班让单选区主要涵盖Pending、Bangkit和Fajar区域，其国会议员为连荣华。而Senja、Segar和Jelapang区域则属于荷兰-武吉知马集选区的Zhenghua分区，其国会议员为Edward Chia。Petir、Gangsa和Chestnut区域则隶属于荷兰-武吉知马集选区的Cashew分区，其国会议员为维文医生（Vivian Balakrishnan）。整个武吉班让地区由荷兰-武吉班让市镇理事会行政管理，负责管理和维护该地区的众多组屋和商业单位。自2020年大选以来，连荣华一直担任该市镇理事会的国会议员。
+
+\section{早期地貌与前城市化时期}
+武吉班让这一地名源自马来语“Bukit Panjang”，意为“长山”，华人则以闽南方言音译。在早期的新加坡地图中，“Bukit Panjang”并非特指单一山丘，而是指一片绵延的山脊地带。这片区域从武吉知马路8英里处一直延伸至10英里，全长约两英里，因此得名“长山”。直到1898年的新加坡地图上，这段原本被视为一体的山脉才被细分为武吉班让山、武吉甘柏山和武吉巴督山，但“武吉班让”这一名称仍保留了其作为“长山”的地理记忆。这片区域的平均海拔约为36米，地势起伏，构成了其独特的自然地貌。在城市化进程之前，武吉班让地区主要由乡村聚落和农业用地构成，其中不乏甘蜜和胡椒种植园。早在1845年，新加坡总测量师约翰·特恩普尔·汤申在勘测并修建通往武吉班让的道路时，便已发现有华人在此从事甘蜜和胡椒的种植活动。1852年的地图上，武吉班让被标记为“Bukit Pan jallang”，其周边区域明确标注为“甘蜜和胡椒园丘”，这表明该地区在19世纪中期已是重要的农业生产基地。随着国际市场需求的变化，甘蜜种植逐渐减少，取而代之的是黄梨和椰树的种植，19世纪末期，橡胶树也被引入该地区进行大规模种植，标志着当地农业经济的转型。武吉班让的早期聚落居民多为潮州籍天主教徒。1846年，法国传教士孟肋在兀兰路11英里处设立了一所小教堂，后于1853年迁至武吉知马路9英里的圣若瑟堂。孟肋神父不仅传教，还积极从事慈善活动，免费施诊并设立华文义学，吸引了大量潮州人皈依天主教。物种学家华莱士在1854年曾寄居于圣若瑟天主教堂，他在其著作《马来群岛》中提及，当时有300多名天主教徒居住在教堂附近的简陋寮棚中，这便是武吉班让村落的雏形。1903年，新加坡的火车铁道从武吉知马7英里延伸至兀兰，并在武吉知马路与蔡厝港路交界处设立了武吉班让火车站。火车站的建成极大地促进了当地的发展，使得“椰山尾”这一村落得以形成并具备一定的人口规模。椰山尾位于武吉知马路上段10英里处，因早期是一片椰园而得名，华人称椰园为“椰芭”或“椰山”，村落位于椰园边缘，故称“椰山尾”。该地俗称“十个石”，并有一个热闹的巴刹市集，被称为“港脚”，这些地名都反映了当地多元的语言和文化背景。
+
+\section{城市规划与建设进程}
+武吉班让的城市化进程始于20世纪80年代，标志着其从农业和工业区域向现代化、自给自足城镇的转型。最初，该新镇曾计划命名为“振华新镇”，此名称源自当地的振华路，并符合政府推广华语地名的政策。然而，考虑到公众对“武吉班让”这一名称的熟悉度及其对地理位置的直观指示，建屋发展局（HDB）于1987年决定将其更名为武吉班让新镇。尽管如此，“振华”之名仍通过振华高架桥、振华公园以及振华中学和小学等设施得以保留，成为该地区历史演变的一个印记。新镇的开发和前期土方工程于1981年6月15日正式启动，耗资9600万新元用于拓宽运河以应对低洼地区的洪涝问题。到1985年5月20日，首批建屋发展局组屋（1xx和2xx座）已拔地而起，为居民提供了现代化的居住空间。随后，第四邻里于1989年建成并投入使用，而第五和第六邻里则自1995年起陆续发展完善，逐步形成了今日武吉班让的城市格局。在城市规划方面，建屋发展局的建筑师们为武吉班让新镇设计了独特的建筑特色，以赋予其区别于其他城镇的鲜明身份。其中包括H形25层高的组屋楼，其中两座作为从武吉知马高速公路进入城镇的门户，具有显著的标志性。此外，该地区还引入了“阶梯式”组屋设计，这些组屋的高度每四到六层便有所变化，其外观酷似巴厘岛的梯田景观。这种设计理念在榜鹅水道（Pang Sua Pond，原武吉班让雨水池）旁的Saujana路和武吉班让环路沿线的组屋中尤为突出，Jelapang路的组屋甚至采用了亮蓝色消防逃生栏杆来强调这种梯田效果。据建屋发展局执行建筑师Chong Fook Loong介绍，这种独特的设计灵感正是来源于武吉班让地区多山起伏的地形，旨在将自然地貌融入城市建筑之中，创造出一种和谐共生的居住环境。
+
+\section{重要地标与建筑}
+武吉班让地区拥有众多重要的地标和设施，共同构成了其现代化的城市景观。其中，武吉班让广场（Bukit Panjang Plaza）是该地区知名的商业中心之一，于1998年建成，占地247,545平方英尺，共四层。该广场位于惹兰如路（Jelebu Road），毗邻武吉班让轻轨站、武吉班让地铁站和武吉班让巴士转换站，是该地区居民重要的购物和休闲场所。为满足不断增长的需求，武吉班让广场曾进行两次扩建，并于2014年末增设了一个两层楼的餐饮区，引入了包括日式自助餐在内的八家新餐饮选择。2016年初，该商场还进行了耗资3270万新元的翻新工程，升级了主入口和三楼，并将屋顶花园迁至四楼，以腾出空间设立新的托儿中心，同时扩建了武吉班让公共图书馆。另一个重要的商业地标是星狮广场（Hillion Mall），它于2017年2月24日正式开业，位于武吉班让综合交通枢纽（Integrated Transport Hub）内，通过地下通道和高架连廊直接连接武吉班让地铁/轻轨站和巴士转换站，极大地提升了居民出行的便利性。除了大型购物中心，武吉班让还分布着多个社区商业设施，如位于兀兰路（Woodlands Road）的Junction 10、法嘉路（Fajar Road）的Fajar购物中心、惹兰巴路（Jelapang Road）的Greenridge购物中心以及榜吉路（Bangkit Road）的武吉班让邻里中心，这些设施提供了满足居民日常需求的基本服务。在餐饮方面，武吉班让拥有两个熟食中心：武吉班让熟食中心与巴刹（Bukit Panjang Hawker Centre and Market）于2015年开业，而盛港熟食中心（Senja Hawker Centre）则于2022年投入运营，为居民提供了多样化的本地美食选择。医疗设施方面，位于盛港路（Senja Road）的医疗中心于2021年10月2日启用，内设武吉班让综合诊疗所（Bukit Panjang Polyclinic）和盛港护理之家（Senja Care Home），为社区居民提供全面的医疗和护理服务。此外，武吉班让地区还拥有丰富的社区和休闲设施，包括武吉班让民众俱乐部、振华民众俱乐部和盛港-金文泰民众俱乐部，这些机构为居民提供了娱乐、休闲和教育活动的空间。自然景观方面，武吉班让地区拥有两个主要公园：武吉班让第五邻里公园和振华公园。武吉班让第五邻里公园毗邻盛港-金文泰民众俱乐部，环绕着榜鹅水道（Pang Sua Pond），是一个人造浮动湿地。振华公园则位于武吉班让东部，占地13.5公顷，于2002年建成，园内设有健身区、凉亭、游乐场以及一条2.5公里长的自行车道和慢跑道，与武吉知马高速公路平行，为居民提供了亲近自然的场所。
+
+\section{人口变迁与族群结构}
+武吉班让地区的人口结构和变迁反映了新加坡整体社会发展的趋势，并呈现出其独特的区域特征。根据2025年的数据，武吉班让的总人口为136,360人。从人口年龄结构来看，该地区呈现出老龄化趋势，中老年群体的人口密度较高，其中60-64岁年龄段的人口比例最高，男性占3.80\%，女性占4.08\%。紧随其后的是30-34岁年龄段，男性占3.76\%，女性占3.77\%。截至2025年，居住在建屋发展局（HDB）组屋的居民达到112,590人，占总人口的82.6\%，这一比例高于全国平均水平的75.8\%，显示出公共住房在该地区的普及性。其中，四房式组屋是最常见的住宅类型，居住着52,680名居民，占总人口的38.6\%。此外，有20,050名居民（14.7\%）居住在公寓及其他住宅中，而3,150名居民（2.3\%）则居住在有地私宅。2020年数据显示，武吉班让的平均家庭规模为3.40人，四人家庭最为普遍，占家庭总数的23.3\%。同时，该地区的房屋拥有率高达92.8\%，高于全国平均水平的87.9\%，在新加坡所有规划区中位居第四，这表明武吉班让的居民拥有较高的房屋自有率。在族群构成方面，武吉班让与新加坡其他地区相似，拥有多元的族群，其中华族人口占多数，截至2020年为74.35\%（102,800人），与全国比例持平。马来族人口比例为15.69\%（21,690人），略高于全国平均的13.49\%。印度族人口为10,340人，其他族群为3,450人。宗教信仰方面，佛教是该地区最大的宗教，有37,693名信徒，占31.38\%。无宗教信仰者位居第二，有22,937人，占19.10\%。伊斯兰教信徒有20,325人，占16.92\%。基督教信徒有19,792人，占16.48\%，其中天主教徒有7,077人，占5.89\%。道教及其他华人宗教信徒有13,519人，占11.26\%，显著高于全国平均水平的8.79\%。印度教信徒有5,239人，占4.36\%，锡克教信徒有365人，占0.30\%。教育水平方面，截至2020年，15岁以上人口的识字率为97.1\%，与全国水平一致。67.2\%的居民能够使用两种语言，其中英语和华语是最常见的组合（47.5\%）。有5.7\%的居民掌握三种或以上语言。拥有大学学历的居民占28.8\%（30,829人），略低于全国平均的32.1\%。同时，有10.7\%（11,486人）的居民没有受过任何教育。语言使用方面，以英语为最常用语言的居民比例为45.9\%，低于全国平均的48.3\%。此外，有2,781名泰米尔语使用者，占该地区印度语使用者总数的82.4\%。就业与收入方面，根据2020年人口普查，15岁及以上居民的就业率为94.6\%（劳动力人口81,951人中有77,492人就业），略高于全国平均的94.2\%。在职居民中，月总收入介于3,000至3,999新元的人数最多，占13.6\%。其次是月收入介于1,000至1,999新元的人群，占13.4\%。月收入低于1,000新元的占7.1\%，而月收入超过15,000新元的占5.6\%。在家庭月收入方面，月收入达到20,000新元及以上的家庭最多，占所有家庭的12.3\%。没有就业人员的家庭占10.1\%。
+
+\section{近年发展与城市更新}
+武吉班让地区近年来经历了显著的城市更新和发展，旨在提升居民的生活品质和社区宜居性。自2000年以来，该镇议会积极引入环保技术，例如在87座组屋中安装节能灯，取代了传统的荧光灯，以提高能源效率。2004年，一项智能照明和控制监控系统（LMS）的试点项目在金文泰的两个组屋区成功进行，随后在武吉班让的15座组屋中推广实施。该系统能够优化能源使用，例如为视力较差的老年居民区域提供可定制的照明强度，并自动检测故障灯具，从而实现更高效的能源管理。这些举措体现了武吉班让在可持续发展和智慧城市建设方面的努力。
+
+在交通基础设施方面，武吉班让也取得了长足进步。星狮广场（Hillion Mall）于2017年2月24日正式开业，作为武吉班让综合交通枢纽（Integrated Transport Hub）的一部分，它通过地下通道和高架连廊直接连接武吉班让地铁站和巴士转换站，极大地提升了区域的交通便利性和商业活力。武吉班让轻轨线（BPLRT）于1999年6月11日建成，耗资2.85亿新元，旨在为日益发展的城镇提供更便捷的交通。该轻轨线的一个独特之处在于其车窗玻璃面板采用了液晶薄膜技术，当列车经过组屋附近时会自动变为不透明，以保护居民的隐私。值得一提的是，武吉班让轻轨系统预计将在2026年完成一项重大升级计划，包括引入新的信号系统、改进状况监测、更新电力轨道系统以及新增19辆轻轨列车，以进一步提升服务质量和可靠性。
+
+此外，武吉班让在推广积极出行方面也取得了进展。作为陆路交通管理局“步行-骑行-乘车”倡议的一部分，武吉班让共建成了8.5公里长的自行车道网络，以促进居民的活跃出行。首批自行车道于2018年沿Petir路建成，此后网络已扩展至Fajar、Bangkit、Jelapang和Senja等区域。这些自行车道与榜鹅水道公园连道、武吉班让公园连道以及武吉班让（兀兰路至KJE）公园连道共同构成了该镇16公里自行车网络的主干，为居民提供了安全便捷的绿色出行选择。医疗设施方面，位于盛港路（Senja Road）的医疗中心于2021年10月2日启用，内设武吉班让综合诊疗所和盛港护理之家，为社区居民提供全面的医疗和护理服务。在休闲和绿化方面，武吉班让熟食中心与巴刹于2015年开业，而盛港熟食中心则于2022年投入运营，丰富了居民的餐饮选择。振华公园于2002年建成，占地13.5公顷，并于2015年扩建了3.8公顷，增设了多功能活动草坪、儿童游乐区、健身站等设施，同时作为中央集水区自然保护区的绿色缓冲带和生态连接通道。
+
+\section{社区记忆与空间认同}
+武吉班让地区的社区记忆与空间认同，随着其从乡村聚落向现代化城镇的演变，呈现出多层次的特征。对于在该地区成长起来的老一辈居民而言，武吉班让的记忆深植于其前城市化时期的面貌，例如“椰山尾”这一充满乡土气息的旧称，以及围绕着甘蜜、胡椒、黄梨和橡胶种植园的生活图景。他们可能还记得1903年武吉班让火车站的设立如何促进了村落的形成，以及潮州天主教徒社群在法国传教士孟肋影响下形成的独特文化。这些早期记忆构成了他们对武吉班让深厚的地域情感和身份认同的基础，尽管许多物理地标已不复存在，但口述历史和家族传承依然维系着这份集体记忆。随着城市化进程的推进，特别是自1980年代以来大规模的建屋发展局（HDB）组屋建设，新一代居民对武吉班让的认同更多地与现代化的基础设施和便利的生活设施紧密相连。他们所记忆的武吉班让，是拥有武吉班让广场、星狮广场等购物中心，以及武吉班让轻轨线和地铁线构成的便捷交通网络的现代宜居城镇。社区俱乐部、熟食中心和公园等公共空间，成为他们日常生活中重要的社交和休闲场所，也塑造了他们对社区的归属感。例如，武吉班让民众俱乐部、振华民众俱乐部和盛港-金文泰民众俱乐部，为不同年龄层的居民提供了丰富的活动，促进了社区凝聚力。尽管新旧记忆之间存在差异，但武吉班让的居民通过共同参与社区活动、共享公共空间以及对地区发展的持续关注，共同构建着对这片土地的认同。例如，武吉班让熟食中心与巴刹和盛港熟食中心不仅是满足口腹之欲的场所，更是居民日常交流、维系邻里关系的社交中心。此外，振华公园和武吉班让第五邻里公园等绿色空间，为居民提供了亲近自然、休闲放松的场所，也成为不同年龄层居民共同体验和创造新记忆的载体。这种新旧记忆的交织与融合，使得武吉班让的社区认同既保留了历史的根基，又充满了现代的活力。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item 维基百科. Bukit Panjang Single Member Constituency. \url{https://en.wikipedia.org/wiki/Bukit_Panjang_Single_Member_Constituency}
+  \item 维基百科. Bukit Panjang. \url{https://en.wikipedia.org/wiki/Bukit_Panjang}
+  \item 新加坡国家图书馆管理局. Bukit Panjang. \url{https://www.nlb.gov.sg/main/article-detail?cmsuuid=c9c49d16-8259-4ddd-866d-f04745650cf5}
+  \item 联合早报. 从“长山”到“椰山尾” 武吉班让的前世今生. \url{https://www.zaobao.com.sg/lifestyle/history-heritage/story20251218-7966850}
+  \item 联合早报. 回望武吉班让前世——椰山尾. \url{https://www.zaobao.com.sg/lifestyle/history-heritage/story20240919-4709301}
+\end{enumerate}
+
+\chapter{裕廊中单选区 (Jurong Central SMC)}
+
+\section{选区划界与政治地理背景}
+裕廊中单选区（Jurong Central SMC）是在2025年大选前新设立的单选区。它是由原裕廊集选区（Jurong GRC）的裕廊中分区和裕华单选区（Yuhua SMC）的部分区域划分出来的。这一划分是为了配合西部选区的重新规划，特别是为了确保新成立的裕廊东-武吉巴督集选区（Jurong East-Bukit Batok GRC）保持为五人集选区。
+
+在2025年大选中，人民行动党（PAP）派出了原裕廊集选区裕廊中分区的议员谢曜全（Xie Yao Quan）出战该单选区。他的对手是来自红点同心党（Red Dot United, RDU）的Kala Manickam。最终，谢曜全以80.51\%的高得票率（21,947票）赢得了选举，成为裕廊中单选区的首任国会议员。
+
+\section{早期地貌与前城市化时期}
+裕廊（Jurong）一词的来源有多种说法，最普遍的观点认为它源自马来语。可能源自“Jerung”（意为贪婪的鲨鱼），或“Jurang”（意为峡谷），也可能源自“Penjuru”（意为角落），指代位于裕廊河（Sungei Jurong）和班丹河（Sungei Pandan）之间的半岛（Tanjong Penjuru）。在1819年英国人到来之前，裕廊沿海地区已经有原住民（Orang Laut）以及来自马来亚和荷属东印度的移民居住。1828年，英国测量师Philip Jackson的地图上首次明确标注了裕廊河和班丹河。
+
+前城市化时期，裕廊主要是一片红树林沼泽，内陆有低矮的丘陵和龙脑香科森林。19世纪中叶，这里开始出现农业活动，主要是种植甘蜜（Gambier）、胡椒、肉豆蔻和菠萝。甘蜜是当时的主要出口经济作物。到了20世纪上半叶，橡胶种植逐渐取代了甘蜜，著名华人企业家周文瑞（Chew Boon Lay）在这里拥有大片橡胶园，现在的“文礼”（Boon Lay）即得名于他。除了农业，沿海和河畔的马来人及原住民主要以捕鱼和养虾为生。在工业化之前，裕廊也存在一些早期的制造业，如1930年代建立的裕廊砖厂（Jurong Brickworks）和1940年代建立的陶窑（如Thow Kwang Dragon Kiln）。
+
+\section{城市规划与建设进程}
+裕廊的城市化进程始于1960年代。1959年新加坡取得自治后，面临严重的失业和经济问题。时任财政部长吴庆瑞（Goh Keng Swee）提出在裕廊建设大型工业镇的计划。1960年7月，立法议会正式宣布了这一计划。1961年，经济发展局（EDB）成立，开始在裕廊进行土方工程。1962年，国家钢铁厂（National Iron and Steel Mills）奠基，成为裕廊工业区的第一家工厂。1968年，裕廊镇管理局（Jurong Town Corporation, JTC）成立，专门负责裕廊的开发和管理。
+
+随着工业区的发展，建屋发展局（HDB）开始在裕廊建设公共住房，以安置被重新安置的村民和吸引工人居住。1963年至1964年间，最早的低层组屋在达曼裕廊（Taman Jurong）建成。1970年代，文礼（Boon Lay）、武吉巴督（Bukit Batok）、丰加（Hong Kah）等住宅区相继开发。1979年，裕廊东和裕廊西新镇开始建设。裕廊中区域作为连接裕廊东西和工业区的重要枢纽，其城市规划注重工业、商业和住宅的平衡发展，逐步形成了今天高度城市化的面貌。
+
+\section{重要地标与建筑}
+裕廊中选区及周边区域拥有多个重要地标。商业设施方面，裕廊东区域（Jurong Gateway）是新加坡最大的郊区商业中心之一，拥有Jem、Westgate、IMM（新加坡最大的奥特莱斯购物中心）等大型商场。文礼区域的裕廊坊（Jurong Point）也是西部重要的购物中心。
+
+文化与休闲设施方面，裕廊湖花园（Jurong Lake Gardens）是国家级花园，提供广阔的绿地和水上活动空间。科学中心（Science Centre Singapore）和雪城（Snow City）是重要的科普和娱乐场所。此外，裕廊飞禽公园（Jurong Bird Park）曾是该区域的标志性景点（已于2023年搬迁至万礼）。交通枢纽方面，裕廊东地铁站（Jurong East MRT）是东西线和南北线的转换站，也是未来裕廊区域线（JRL）和跨岛线（CRL）的重要节点。
+
+\section{人口变迁与族群结构}
+裕廊早期的人口主要由马来人、原住民（Orang Laut）和华人移民组成。华人移民中，福建安溪人居多，也有部分潮州人居住在裕廊西部。随着1960年代工业化和组屋建设的推进，大量来自新加坡其他地区的居民被重新安置到裕廊，人口结构变得更加多元化，涵盖了华人、马来人、印度人等各个族群。
+
+如今，裕廊中选区是一个人口密集的成熟住宅区。居民涵盖了各个年龄层，既有早期搬迁至此的建国一代，也有被该区域完善的设施和就业机会吸引而来的年轻家庭。人口的增长也推动了该区域教育、医疗和商业设施的不断完善。
+
+\section{近年发展与城市更新}
+近年来，裕廊区域迎来了重大的城市更新和规划项目，其中最核心的是“裕廊湖区”（Jurong Lake District, JLD）的发展计划。市区重建局（URA）将裕廊湖区定位为新加坡的第二个中央商务区（CBD），旨在将商业、休闲和自然环境完美结合。
+
+该计划包括建设更多的办公楼、酒店、零售设施以及高密度的住宅。交通基础设施也在大幅升级，包括正在建设中的裕廊区域线（Jurong Region Line, 预计2029年完工）和跨岛线（Cross Island Line, 预计2032年完工），这将极大提升裕廊中选区与新加坡其他地区的连通性。此外，裕廊湖花园的持续改造和周边环境的提升，也为居民提供了更高质量的生活空间。
+
+\section{社区记忆与空间认同}
+对于不同年龄阶层的居民来说，裕廊承载着不同的空间记忆。对于年长的居民（建国一代和立国一代），他们的记忆可能停留在早期的甘榜（村落）、橡胶园、砖厂，以及1960年代工业化初期的艰苦岁月。达曼裕廊早期的低层组屋和裕廊河的变迁是他们共同的记忆。
+
+对于中年居民，他们的记忆更多与裕廊新镇的建设、裕廊飞禽公园的游玩经历，以及早期购物中心（如早期的IMM）相关。而对于年轻一代，裕廊是充满活力的商业中心（Jem, Westgate）、现代化的裕廊湖花园，以及未来充满机遇的第二个CBD。尽管记忆不同，但居民们对裕廊从“偏远沼泽”到“西部重镇”的蜕变都抱有强烈的自豪感和空间认同感。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Jurong Central Single Member Constituency. \url{https://en.wikipedia.org/wiki/Jurong_Central_Single_Member_Constituency}
+  \item Wikipedia. Jurong. \url{https://en.wikipedia.org/wiki/Jurong}
+  \item Channel NewsAsia. GE2025: New Jurong Central SMC sees straight fight between PAP's Xie Yao Quan and RDU's Kala Manickam. \url{https://www.channelnewsasia.com/singapore/ge2025-jurong-central-pap-rdu-xie-yao-quan-kala-manickam-5078551}
+  \item 联合早报. 裕廊集选区一部分划出成立裕廊中单选区. \url{https://www.zaobao.com.sg/news/singapore/story20250311-6001518}
+  \item Urban Redevelopment Authority (URA). Jurong Lake District. \url{https://www.ura.gov.sg/Corporate/Guidelines/Urban-Design/Jurong-Lake-District}
+\end{enumerate}
+
+\chapter{先驱单选区 (Pioneer SMC)}
+
+\section{选区划界与政治地理背景}
+先驱单选区（Pioneer Single Member Constituency）是新加坡西部的一个单选区，其政治历史与新加坡的选举制度演变紧密相关。该选区于2011年新加坡大选前从西海岸集选区（West Coast GRC）中划出，并吸纳了丰加集选区（Hong Kah GRC）的部分区域而成立。自成立以来，先驱单选区一直由执政党人民行动党（People's Action Party, PAP）的候选人赢得，显示出该选区在政治版图上的稳定性。
+
+在2011年大选中，人民行动党的符致镜（Cedric Foo）以60.73\%的得票率击败了国民团结党（National Solidarity Party, NSP）的谢镜丰（Steve Chia），成为先驱单选区的首位国会议员。2015年大选，符致镜再次参选，并以更高的76.35\%得票率击败国民团结党的王明顺（Elvin Ong），成功连任。这反映了人民行动党在该选区拥有较强的支持基础。然而，选区划界并非一成不变，每次大选前，选举局都会根据人口变迁和城市发展对选区进行调整，这可能对选情产生一定影响。
+
+2020年大选前，符致镜宣布退休，人民行动党调派原西海岸集选区文礼分区议员郑德源（Patrick Tay）出征先驱单选区。此次选举出现了三角战，郑德源以62\%的得票率击败了新加坡前进党（Progress Singapore Party, PSP）的林志鸿（Lim Cher Hong）和独立候选人张炳华（Cheang Peng Wah），成功为人民行动党守住该议席。在2025年大选中，郑德源再次寻求连任，并以65.45\%的得票率击败新加坡前进党的新人陈芬妮（Stephanie Tan），再次赢得先驱单选区。这些选举结果不仅体现了选区居民的政治倾向，也反映了新加坡政党竞争格局的变化。
+
+\section{早期地貌与前城市化时期}
+先驱单选区所处的裕廊地区，在新加坡城市化进程启动之前，曾是一片广袤的原始沼泽地，其间河道纵横，生态环境复杂，甚至有鳄鱼出没的记载。这片区域在二十世纪中叶以前，主要以自然地貌为主，人烟稀少，土地利用形式多为零星的农业活动或渔业捕捞，尚未形成大规模的人类聚落。其地理位置毗邻海岸，拥有丰富的潮汐沼泽生态系统，为早期的自然资源利用者提供了生存条件，但同时也限制了大规模开发的可能性。这片土地的原始状态，与后来新加坡独立后所面临的经济发展需求形成了鲜明对比，为后续的城市规划与工业化进程奠定了独特的地理背景。
+
+在新加坡独立初期，国家面临严峻的失业问题，据1959年的统计，全国约有20万人失业，占总人口的14\%。为了应对这一挑战，并摆脱对转口贸易的过度依赖，新加坡政府决定推行工业化战略。在此背景下，荷兰经济学家阿尔伯特·温塞米乌斯与时任财政部长吴庆瑞博士共同倡导，将裕廊这片看似荒芜的沼泽地改造为工业区。这一宏伟计划旨在通过吸引外资、发展制造业来创造就业机会，从而实现经济转型与增长。尽管初期面临诸多质疑，甚至被批评者戏称为“吴庆瑞的愚蠢计划”，但政府仍坚定推进，投入巨资进行填海造地和基础设施建设，为裕廊地区的工业化奠定了基础。
+
+裕廊工业区的建设始于1960年代初期，耗资高达1亿新元用于土地平整和基础设施建设。1963年，首批工业用地准备就绪，但最初的招商引资并不顺利，投资者对在新加坡设厂持观望态度。然而，吴庆瑞博士并未放弃，他通过提供税收优惠、建设标准厂房以及确保稳定的劳工环境等一系列措施，积极吸引国内外投资。这些政策的实施，逐步改变了裕廊地区的经济面貌，使其从一个偏远的沼泽地，逐渐发展成为新加坡乃至东南亚重要的工业中心，为先驱单选区乃至整个国家的经济腾飞注入了强大动力。
+
+\section{城市规划与建设进程}
+先驱单选区所处的裕廊地区，其城市化进程是新加坡国家发展战略的重要组成部分。在1960年代初期，面对严峻的失业问题和经济转型需求，新加坡政府在荷兰经济学家阿尔伯特·温塞米乌斯和时任财政部长吴庆瑞博士的推动下，启动了裕廊工业区的宏伟计划。这片曾经的沼泽地，在投入巨额资金进行填海造地和基础设施建设后，于1963年开始提供工业用地。尽管初期招商引资面临挑战，但政府通过提供税收优惠、建设标准厂房以及确保劳工稳定等一系列措施，成功吸引了国内外投资，使得裕廊在1960年代末期拥有181家工厂投入生产，逐步发展成为重要的工业中心。
+
+随着工业化的推进，裕廊地区的人口也迅速增长，对住房的需求日益迫切。为此，新加坡政府的建屋发展局（HDB）于1960年代开始在裕廊新镇建设公共住房。到1969年，已有16,000人居住在建屋发展局建造的组屋和店屋中。裕廊镇管理局（JTC）作为专门负责工业区开发和管理的机构，在一段时间内也承担了住宅和工业开发职能，直至1982年建屋发展局重新接管该地区的住房需求。这一时期的城市规划不仅关注工业发展，也同步推进了居住区的建设，旨在为工业区工人提供便利的住房，形成职住平衡的社区。
+
+裕廊地区的城市规划还包括了公共设施和休闲空间的建设，以提升居民的生活品质。例如，位于文礼路的裕华园（Chinese Garden）于1971年至1975年间建成，由台湾建筑师俞允辰设计，其独特的北方皇家园林风格，包括桥梁、亭台和宝塔，使其成为1970年代至1980年代的热门婚纱摄影地点，为裕廊新镇增添了文化和休闲的活力。这些规划和建设举措，共同塑造了先驱单选区及其周边地区从工业腹地到宜居社区的城市面貌，体现了新加坡在城市发展中工业与居住并重的综合规划理念。
+
+\section{重要地标与建筑}
+先驱单选区作为新加坡西部的重要区域，其发展过程中形成了一系列具有代表性的地标和设施，这些不仅满足了居民的日常生活需求，也承载了社区的公共功能。其中，先驱购物中心（Pioneer Mall）曾是该区域重要的邻里购物中心，为周边居民提供零售、餐饮等服务。该购物中心为四层建筑，内部设有建屋发展局（HDB）的服务中心，方便居民办理相关事务。然而，该购物中心已于2019年6月29日关闭，其未来的发展和替代方案将对当地居民的生活产生影响。
+
+在社区设施方面，先驱单选区内设有先驱邻里中心（Frontier Community Club），该中心位于裕廊西中路3号60号，是居民进行社区活动、参与文化艺术项目的重要场所。该中心通过举办各类活动，促进了社区凝聚力，为不同年龄层的居民提供了交流和互动的平台。此外，裕廊西地区还分布着其他社区中心，如裕廊春社区俱乐部（Jurong Spring CC）和裕廊绿社区俱乐部（Jurong Green Community Club），这些设施共同构成了区域内完善的社区服务网络，支持着居民的社会生活和文化需求。
+
+虽然先驱单选区以其工业腹地的背景而闻名，但其周边的裕廊湖区（Jurong Lake District）则拥有如裕华园（Chinese Garden）等文化地标，尽管裕华园不在先驱单选区内，但其作为裕廊地区的重要文化景点，对先驱居民的休闲生活具有辐射作用。这些地标和设施的变迁与发展，反映了先驱单选区在城市化进程中，从单一的工业功能区逐步向集居住、商业、社区服务于一体的综合性区域转型。
+
+\section{人口变迁与族群结构}
+先驱单选区所在的裕廊西地区，其人口结构与族群变迁反映了新加坡城市化进程中的社会缩影。根据2020年的人口普查数据，裕廊西地区展现出比全国平均水平更高的族群多样性。尽管华人依然是该地区的主要族群，占总人口的69.88\%，但这一比例明显低于全国74.35\%的平均水平。与此同时，马来族和印度族人口分别占17.71\%和10.03\%，其他族群占2.38\%，这种多元的族群构成使得该地区在文化和语言上呈现出丰富的多样性。值得注意的是，裕廊西是新加坡唯一一个在家中最常使用华语的人数超过英语的规划区，这在一定程度上反映了该地区独特的语言生态和社区文化背景。
+
+在人口变迁方面，随着1980年代以来建屋发展局（HDB）在裕廊西的大规模组屋建设，该地区人口迅速增长，从早期的工业区工人聚居地，发展成为一个成熟的住宅市镇。截至2025年，裕廊西的人口结构呈现出成熟的特征，中年人口比例较高，其中50至54岁年龄段的居民最为集中。此外，该地区高达91.0\%的居民居住在组屋中，这一比例远高于全国平均水平，且房屋拥有率也达到91.0\%，显示出该地区以公共住房为主导的稳定社区形态。这些人口特征不仅塑造了先驱单选区的社会面貌，也对其社区服务、教育资源和政治选举产生了深远影响。
+
+\section{近年发展与城市更新}
+先驱单选区及其周边地区近年来的发展与城市更新，是新加坡西部转型战略的重要组成部分。其中，裕廊湖区（Jurong Lake District, JLD）的开发是核心项目之一。该项目旨在将裕廊湖区打造成为新加坡的第二个中央商务区（Second CBD），重点发展海事、能源和信息技术等产业。2017年，政府宣布将裕廊湖区内一块360公顷的土地用于开发，预计在未来几十年内创造超过10万个就业机会。2023年6月，一块6.5公顷的白色地段被推出进行招标，标志着裕廊湖区开发进入实质性阶段，预示着该区域将迎来大规模的商业和基础设施建设，包括新的科学中心和裕廊门户枢纽（Jurong Gateway Hub）等。
+
+除了裕廊湖区，裕廊创新区（Jurong Innovation District, JID）也是推动先驱单选区周边区域发展的重要引擎。裕廊创新区汇集了国际和本地企业，形成了一个多元化的创新生态系统，专注于先进制造业、城市解决方案和清洁能源等领域。这些产业集群的形成，不仅吸引了高科技人才和投资，也为当地居民提供了更多的就业机会和经济发展动力。这些大型规划项目，旨在将裕廊地区从传统的工业区升级为集创新、商业、居住和休闲于一体的现代化城市中心。
+
+在社区层面，先驱单选区也积极推行邻里更新计划（Neighbourhood Renewal Programme, NRP），以改善居民的居住环境和生活品质。例如，先驱第一区（Pioneer Zone 1）的组屋（包括第687座至696座）已被纳入邻里更新计划，通过对现有组屋进行翻新、增设社区设施和绿化空间等措施，提升居民的社区归属感和满意度。这些城市更新项目，无论是宏观的区域发展规划，还是微观的邻里改善措施，都体现了新加坡政府对先驱单选区及其周边地区可持续发展和居民福祉的长期承诺。
+
+\section{社区记忆与空间认同}
+先驱单选区作为裕廊工业区的重要组成部分，其社区记忆与空间认同深受该地区从沼泽地到工业重镇，再到成熟住宅区的转型历程影响。对于早期迁入的居民，尤其是那些亲历了裕廊工业区在1960年代初期的开辟与建设的世代，他们的社区记忆往往与工业生产、艰苦创业以及国家经济腾飞的宏大叙事紧密相连。这些居民可能对裕廊河畔的工厂、早期的组屋生活以及社区内形成的互助网络有着深刻的记忆，这些记忆构成了他们对“先驱”身份的集体认同，象征着他们作为国家建设者的贡献与自豪。
+
+随着时间的推移和城市更新的不断深入，先驱单选区的人口结构也发生了变化。新一代的居民，特别是年轻家庭和在裕廊地区成长起来的青少年，他们的社区记忆可能更多地与现代化的公共设施、邻里公园、购物中心以及便捷的交通网络相关联。对于他们而言，裕廊湖区和裕廊创新区等新兴项目，可能更能激发他们对未来发展的想象和认同。这种代际之间的记忆差异，使得先驱单选区的社区认同呈现出多层次、动态演变的特征，既包含对过去工业辉煌的追溯，也融入了对现代宜居环境和未来发展潜力的期许。
+
+社区活动和邻里关系在塑造先驱单选区的空间认同中扮演着重要角色。通过社区俱乐部（如先驱邻里中心）举办的各类文化、教育和休闲活动，不同年龄层和背景的居民得以互动交流，共同构建新的社区记忆。例如，邻里更新计划的实施，不仅改善了居住环境，也为居民提供了参与社区建设的机会，从而增强了他们对居住空间的归属感。这些共同的经历和参与感，有助于弥合代际之间的记忆鸿沟，形成一个既尊重历史又面向未来的综合性社区认同。
+
+\section*{参考资料}
+\addcontentsline{toc}{section}{参考资料}
+\begin{enumerate}[label={[\arabic*]},leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item Wikipedia. Pioneer Single Member Constituency. \url{https://en.wikipedia.org/wiki/Pioneer_Single_Member_Constituency}
+  \item Roots.sg. Jurong New Town and Jurong Industrial Estate. \url{https://www.roots.gov.sg/stories-landing/stories/jurong-industrial-estate/story}
+  \item Wikipedia. Jurong West. \url{https://en.wikipedia.org/wiki/Jurong_West}
+  \item Facebook. The Frontier CC WEC. \url{https://www.facebook.com/FrontierWEC/}
+  \item Yelp. THE FRONTIER COMMUNITY CLUB. \url{https://www.yelp.com/biz/the-frontier-community-club-singapore}
+  \item OnePA. The Frontier CC. \url{https://www.onepa.gov.sg/cc/the-frontier-cc}
+  \item Streetdirectory.com. The Frontier Community Club (CC). \url{https://www.streetdirectory.com/sd_mobile/place/56782_142906/}
+  \item YouTube. [Wikipedia] Pioneer Mall. \url{https://www.youtube.com/watch?v=Gec5CteHSdk}
+  \item Streetdirectory.com. Pioneer Mall (Shopping Malls). \url{https://www.streetdirectory.com/sg/pioneer-mall/638-jurong-west-street-61-640638/6871_115698.html}
+  \item OnePA. Jurong Spring CC. \url{https://www.onepa.gov.sg/cc/jurong-spring-cc}
+  \item Streetdirectory.com. Jurong Green Community Club (CC). \url{https://www.streetdirectory.com/sg/jurong-green-community-club-cc/6-jurong-west-avenue-1-649520/4376_116754.html}
+  \item JLD.gov.sg. Jurong Lake District. \url{https://www.jld.gov.sg/}
+  \item Straits Times. Revised plans for Singapore's second CBD kick-started with the release of Jurong white site. \url{https://www.straitstimes.com/business/revised-plans-for-singapores-second-cbd-kickstarted-with-the-release-of-jurong-white-site}
+  \item Facebook. Seeing Pioneer through our everyday spaces, where community truly comes alive. \url{https://www.facebook.com/SGPioneer/videos/seeing-pioneer-through-our-everyday-spaces-where-community-truly-comes-alive-%EF%B8%8Ffr/1930963364211038/}
+  \item URA.sg. Bringing People Together in Jurong. \url{https://www.ura.gov.sg/Corporate/Resources/Ideas-and-Trends/Bringing-People-Together-in-Jurong}
+  \item JLD.gov.sg. Kampung Jurong Zine Throwback: The Making of Issue 1. \url{https://www.jld.gov.sg/events-and-resources/publications/kampung-jurong-1/}
+  \item National Archives of Singapore. Oral History Interviews. \url{https://www.nas.gov.sg/archivesonline/oral_history_interviews}
+  \item SFCCA.sg. 山遥路远话裕廊. \url{https://sfcca.sg/2020/10/30/%E5%B1%B1%E9%81%A5%E8%B7%AF%E8%BF%9C%E8%AF%9D%E8%A3%95%E5%BB%8A/}
+  \item 8world. 【GE2025】先驱单选区：人民行动党郑德源当选. \url{https://www.8world.com/singapore/ge2025-final-results-pioneer-smc-2778061}
+  \item CNA. GE2025: PAP's Patrick Tay and PSP's Stephanie Tan face off in Pioneer SMC rematch. \url{https://www.channelnewsasia.com/singapore/ge2025-pioneer-smc-pap-psp-patrick-tay-stephanie-tan-5080241}
+  \item Straits Times. GE2025: Reactions 'quite positive' so far, as Patrick Tay seeks to defend Pioneer SMC seat. \url{https://www.straitstimes.com/singapore/politics/ge2025-reactions-quite-positive-so-far-as-patrick-tay-seeks-to-defend-pioneer-smc-seat}
+  \item People's Action Party. PAP Candidate for Pioneer SMC. \url{https://www.pap.org.sg/featured/pap-candidate-for-pioneer-smc/}
+  \item Facebook. Our Pioneer Zone 1 team led by Joanne kicked off our Neighbourhood Renewal Programme (NRP) ground engagement today. \url{https://www.facebook.com/PatrickTayTG/posts/our-pioneer-zone-1-team-led-by-joanne-kicked-off-our-neighbourhood-renewal-progr/1353129236616039/}
+\end{enumerate}
+
+
+% ── 封底（pdfpages全页插入） ───────────────────────────────────────────────────────
+\backmatter
+%\includepdf[pages=1,fitpaper=true]{./images/book_backcover.pdf}
+
+\end{document}
